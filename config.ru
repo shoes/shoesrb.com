@@ -3,7 +3,7 @@ require 'bundler/setup'
 require 'webmachine'
 require 'webmachine/adapters/rack'
 
-require './shoes'
+Dir["resources/*"].each {|f| require "./#{f}" }
 
 Shoes = Webmachine::Application.new do |app|
   app.routes do
