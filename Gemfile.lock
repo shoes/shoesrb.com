@@ -8,6 +8,7 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    haml (3.1.4)
     i18n (0.6.0)
     rack (1.4.1)
 
@@ -15,5 +16,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   rack
   webmachine!
