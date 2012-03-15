@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // Manipulation Blocks</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>Manipulation Blocks</h1><div class="intro"><p>The manipulation methods below make quick work of shifting around slots and inserting new elements.</p></div><a name="append"></a><div class="method"><a href="Manipulation.html#append">append() { ... }</a> » self</div><div class="sample"><p>Adds elements to the end of a slot.</p><pre><code class="rb"> Shoes.app do
+   @slot = stack { para 'Good Morning' }
+   timer 3 do
+     @slot.append do
+       title "Breaking News"
+       tagline "Astronauts arrested for space shuttle DUI."
+     end
+   end
+ end
+</code></pre><p>The <code>title</code> and <code>tagline</code> elements will be added to the end of the <code>@slot</code>.</p></div><a name="after"></a><div class="method"><a href="Manipulation.html#after">after(element) { ... }</a> » self</div><div class="sample"><p>Adds elements to a specific place in a slot, just after the <code>element</code> which is a child of the slot.</p></div><a name="before"></a><div class="method"><a href="Manipulation.html#before">before(element) { ... }</a> » self</div><div class="sample"><p>Adds elements to a specific place in a slot, just before the <code>element</code> which is a child of the slot.</p></div><a name="clear"></a><div class="method"><a href="Manipulation.html#clear">clear()</a> » self</div><div class="sample"><p>Empties the slot of any elements, timers and nested slots.  This is effectively identical to looping through the contents of the slot and calling each element's <code>remove</code> method.</p></div><a name="clear"></a><div class="method"><a href="Manipulation.html#clear">clear() { ... }</a> » self</div><div class="sample"><p>The clear method also takes an optional block.  The block will be used to replace the contents of the slot.</p><pre><code class="rb"> Shoes.app do
+   @slot = stack { para "Old text" }
+   timer 3 do
+     @slot.clear { para "Brand new text" }
+   end
+ end
+</code></pre><p>In this example, the &quot;Old text&quot; paragraph will be cleared out, replaced by the &quot;Brand new text&quot; paragraph.</p></div><a name="prepend"></a><div class="method"><a href="Manipulation.html#prepend">prepend() { ... }</a> » self</div><div class="sample"><p>Adds elements to the beginning of a slot.</p><pre><code class="rb"> Shoes.app do
+   @slot = stack { para 'Good Morning' }
+   timer 3 do
+     @slot.prepend { para "Your car is ready." }
+   end
+ end
+</code></pre><p>The <code>para</code> element is added to the beginning of the <code>@slot</code>.</p></div><p class="next">Next: <a href="Position.html">Position of a Slot</a></p></div><div class="sidebar"><img src="static/shoes-icon.png"></img><ul><li><a href="http://shoesrb.com/manual/" class="prime">HELP</a></li><li><a href="Hello.html">Hello!</a></li><li><a href="Shoes.html">Shoes</a></li><li><a href="Slots.html">Slots</a><ul class="sub"><li><a href="Art.html">Art</a></li><li><a href="Element.html">Element</a></li><li><a href="Events.html">Events</a></li><li><a href="Manipulation.html">Manipulation</a></li><li><a href="Position.html">Position</a></li><li><a href="Traversing.html">Traversing</a></li></ul></li><li><a href="Elements.html">Elements</a></li><li><a href="AndSoForth.html">AndSoForth</a></li></ul></div></div></body></html>

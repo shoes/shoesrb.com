@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // The App Object</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>The App Object</h1><div class="intro"><p>An App is a single window running code at a URL. When you switch URLs, a new App object is created and filled up with stacks, flows and other Shoes elements.</p></div><p>The App is the window itself. Which may be closed or cleared and filled with new elements. <img src="static/man-app.png" /></p><p>The App itself, in slot/box terminology, is a flow.  See the <em>Slots</em> section for more, but this just means that any elements placed directly at the top-level will flow.</p><a name="shoes.app"></a><div class="method"><a href="App.html#shoes.app">Shoes.app(styles) { ... }</a> » Shoes::App</div><div class="sample"><p>Starts up a Shoes app window.  This is the starting place for making a Shoes program.  Inside the block, you fill the window with various Shoes elements (buttons, artwork, etc.) and, outside the block, you use the <code>styles</code> to describe how big the window is.  Perhaps also the name of the app or if it's resizable.</p><pre><code class="rb"> Shoes.app(:title => "White Circle",
+   :width => 200, :height => 200, :resizable => false) {
+     background black
+     fill white
+     oval :top => 20, :left => 20, :radius => 160
+ }
+</code></pre><p>In the case above, a small window is built.  200 pixels by 200 pixels.  It's not resizable.  And, inside the window, two elements: a black background and a white circle.</p><p>Once an app is created, it is added to the <a href="App.html#Shoes.APPS">Shoes.APPS</a> list.  If you want an app to spawn more windows, see the <a href="Element.html#window">window</a> method and the <a href="Element.html#dialog">dialog</a> method.</p></div><a name="shoes.apps"></a><div class="method"><a href="App.html#shoes.apps">Shoes.APPS()</a> » An array of Shoes::App objects</div><div class="sample"><p>Builds a complete list of all the Shoes apps that are open right now.  Once an app is closed, it is removed from the list.  Yes, you can run many apps at once in Shoes.  It's completely encouraged.</p></div><a name="clipboard"></a><div class="method"><a href="App.html#clipboard">clipboard()</a> » a string</div><div class="sample"><p>Returns a string containing all of the text that's on the system clipboard.  This is the global clipboard that every program on the computer cuts and pastes into.</p></div><a name="clipboard="></a><div class="method"><a href="App.html#clipboard=">clipboard = a string</a></div><div class="sample"><p>Stores <code>a string</code> of text in the system clipboard.</p></div><a name="close"></a><div class="method"><a href="App.html#close">close()</a></div><div class="sample"><p>Closes the app window.  If multiple windows are open and you want to close the entire application, use the built-in method <code>exit</code>.</p></div><a name="download"></a><div class="method"><a href="App.html#download">download(url: a string, styles)</a></div><div class="sample"><p>Starts a download thread (much like XMLHttpRequest, if you're familiar with JavaScript.)  This method returns immediately and runs the download in the background.  Each download thread also fires <code>start</code>, <code>progress</code> and <code>finish</code> events.  You can send the download to a file or just get back a string (in the <code>finish</code> event.)</p><p>If you attach a block to a download, it'll get called as the <code>finish</code> event.</p><pre><code class="rb"> Shoes.app do
+   stack do
+     title "Searching Google", :size => 16
+     @status = para "One moment..."
+     # Search Google for 'shoes' and print the HTTP headers
+     download "http://www.google.com/search?q=shoes" do |goog|
+       @status.text = "Headers: " + goog.response.headers.inspect
+     end
+   end
+ end
+</code></pre><p>And, if we wanted to use the downloaded data, we'd get it using <code>goog.response.body</code>.  This example is truly the simplest form of <code>download</code>: pulling some web data down into memory and handling it once it's done.</p><p>Another simple use of <code>download</code> is to save some web data to a file, using the <code>:save</code> style.</p><pre><code class="rb"> Shoes.app do
+   stack do
+     title "Downloading Google image", :size => 16
+     @status = para "One moment..."
+     download "http://www.google.com/logos/nasa50th.gif",
+       :save => "nasa50th.gif" do
+         @status.text = "Okay, is downloaded."
+     end
+   end
+ end
+</code></pre><p>In this case, you can still get the headers for the downloaded file, but <code>response.body</code> will be <code>nil</code>, since the data wasn't saved to memory.  You will need to open the file to get the downloaded goods.</p><p>If you need to send certain headers or actions to the web server, you can use the <code>:method</code>, <code>:headers</code> and <code>:body</code> styles to customize the HTTP request.  (And, if you need to go beyond these, you can always break out Ruby's OpenURI class.)</p><pre><code class="rb"> Shoes.app do
+   stack do
+     title "POSTing to Google", :size => 16
+     @status = para "One moment..."
+     download "http://www.stevex.net/dump.php",
+              :method => "POST", :body => "v=1.0&q=shoes" do |dump|
+       require 'hpricot'
+       @status.text = Hpricot(dump.response.body).inner_text
+     end
+   end
+ end
+</code></pre><p>As you can see from the above example, Shoes includes the Hpricot library for parsing HTML.</p></div><a name="location"></a><div class="method"><a href="App.html#location">location()</a> » a string</div><div class="sample"><p>Gets a string containing the URL of the current app.</p></div><a name="mouse"></a><div class="method"><a href="App.html#mouse">mouse()</a> » an array of numbers: button, left, top</div><div class="sample"><p>Identifies the mouse cursor's location, along with which button is being pressed.</p><pre><code class="rb"> Shoes.app do
+   @p = para
+   animate do
+     button, left, top = self.mouse
+     @p.replace "mouse: #{button}, #{left}, #{top}"
+   end
+ end
+</code></pre></div><a name="owner"></a><div class="method"><a href="App.html#owner">owner()</a> » Shoes::App</div><div class="sample"><p>Gets the app which launched this app.  In most cases, this will be <code>nil</code>.  But if this app was launched using the <a href="Element.html#window">window</a> method, the owner will be the app which called <code>window</code>.</p></div><a name="started?"></a><div class="method"><a href="App.html#started?">started?()</a> » true or false</div><div class="sample"><p>Has the window been fully constructed and displayed?  This is useful for threaded code which may try to use the window before it is completely built.  (Also see the <code>start</code> event which fires once the window is open.)</p></div><a name="visit"></a><div class="method"><a href="App.html#visit">visit(url: a string)</a></div><div class="sample"><p>Changes the location, in order to view a different Shoes URL.</p><p>Absolute URLs (such as http://google.com) are okay, but Shoes will be expecting a Shoes application to be at that address.  (So, google.com won't work, as it's an HTML app.)</p></div><p class="next">Next: <a href="Styles.html">The Styles Master List</a></p></div><div class="sidebar"><img src="static/shoes-icon.png"></img><ul><li><a href="http://shoesrb.com/manual/" class="prime">HELP</a></li><li><a href="Hello.html">Hello!</a></li><li><a href="Shoes.html">Shoes</a><ul class="sub"><li><a href="Built-in.html">Built-in</a></li><li><a href="App.html">App</a></li><li><a href="Styles.html">Styles</a></li><li><a href="Classes.html">Classes</a></li><li><a href="Colors.html">Colors</a></li></ul></li><li><a href="Slots.html">Slots</a></li><li><a href="Elements.html">Elements</a></li><li><a href="AndSoForth.html">AndSoForth</a></li></ul></div></div></body></html>
