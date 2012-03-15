@@ -1,0 +1,19 @@
+GIT
+  remote: https://github.com/seancribbs/webmachine-ruby.git
+  revision: b543db2648ada02cda681e2f0e52eca5a385e13b
+  specs:
+    webmachine (0.4.1)
+      i18n (>= 0.4.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    i18n (0.6.0)
+    rack (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rack
+  webmachine!
