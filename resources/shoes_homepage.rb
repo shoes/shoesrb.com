@@ -2,7 +2,8 @@ require 'haml'
 
 class ShoesHomepage < Webmachine::Resource
   def to_html
-    engine = Haml::Engine.new(File.read("views/index.html.haml"))
-    engine.render(Object.new)
+    Haml::Engine.new(File.read("views/layout.html.haml")).render do
+      Haml::Engine.new(File.read("views/index.html.haml")).render
+    end
   end
 end
