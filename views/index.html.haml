@@ -2,10 +2,10 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "utf-8"}
-      %title Bootstrap, from Twitter
+      %title Shoes! The easiest little GUI toolkit, for Ruby.
       %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-        %meta{:content => "", :name => "description"}
-          %meta{:content => "", :name => "author"}
+        %meta{:content => "The website for Shoes, a GUI toolkit for Ruby", :name => "description"}
+          %meta{:content => "Team Shoes", :name => "author"}
             / Le styles
             %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}
               :css
@@ -30,43 +30,63 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{:href => "#"} Project name
+          %a.brand{:href => "#"} Shoes
           .nav-collapse
             %ul.nav
               %li.active
                 %a{:href => "#"} Home
               %li
-                %a{:href => "#about"} About
+                %a{:href => "/about"} About
               %li
-                %a{:href => "#contact"} Contact
+                %a{:href => "/manual"} Manual
+              %li
+                %a{:href => "https://github.com/shoes/shoes"} Code
+              %li
+                %a{:href => "#"} Blog
           / /.nav-collapse
     .container
-      / Main hero unit for a primary marketing message or call to action
       .hero-unit
-        %h1 Hello, world!
-        %p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+        %img{:src => "/img/shoes-icon.png", :alt => "shoes logo", :style => "float:left;padding-left:20px;padding-right:20px"}/
+        %h1 Shoes!
         %p
-          %a.btn.btn-primary.btn-large Learn more »
+          Ever wanted to build a GUI? Annoyed that it's so much effort? Shoes
+          makes building for Mac, Windows, and Linux <em>super</em> simple.
+        %p
+          %a.btn.btn-primary.btn-large{:href => "/about"} Learn more »
       / Example row of columns
       .row
         .span4
-          %h2 Heading
-          %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          %h2 About
           %p
-            %a.btn{:href => "#"} View details »
+            Basically, making desktop applications is really annoying. There's
+            so many details to take care of, and you'd really rather just be
+            building your application. Shoes handles doing all of the
+            cross-platform stuff for you, and gives you native widgets on each
+            platform.
+          %p
+            %a.btn{:href => "/about"} Read More »
         .span4
-          %h2 Heading
-          %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+          %h2 Manual
           %p
-            %a.btn{:href => "#"} View details »
+            If you're already using Shoes, you'll probably need to look things
+            up from time to time. There's a manual in Shoes already, but if
+            you prefer to look things up on the web, we've also provided a
+            manual for you as well.
+          %p
+            %a.btn{:href => "/manual"} Check it out »
         .span4
-          %h2 Heading
-          %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          %h2 Blog
           %p
-            %a.btn{:href => "#"} View details »
+            We're going to write from time to time about what's new in
+            Shoes-land. It's not quite ready yet, but we'll be unveilling it
+            in the near future. Keep up with the latest developments, see what
+            other people are building, and hear about new features as we build
+            them!
+          %p
+            %a.btn{:href => "#"} Coming soon!
       %hr
         %footer
-          %p © Company 2012
+          %p By Team Shoes
     / /container
     /
       Le javascript
