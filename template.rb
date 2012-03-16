@@ -1,6 +1,6 @@
 require 'haml'
 
-class Render
+class Template
   def initialize(view)
     @view = view
   end
