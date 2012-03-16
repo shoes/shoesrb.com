@@ -19,12 +19,10 @@ class BlogResource < Webmachine::Resource
   def to_html
     return "INDEX" unless @post
 
-    Haml::Engine.new(File.read("views/layout.html.haml")).render do
-      Haml::Engine.new(File.read("views/post.html.haml")).render(Object.new, 
-        :contents => @post.output,
-        :title => @post.metadata["title"],
-        :date => @post.metadata["date"]
-        )
-    end
+    Render.new(:post).render(
+      :contents => @post.output,
+      :title => @post.metadata["title"],
+      :date => @post.metadata["date"]
+    )
   end
 end
