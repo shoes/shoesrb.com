@@ -8,6 +8,8 @@ Dir["resources/*"].each {|f| require "./#{f}" }
 Shoes = Webmachine::Application.new do |app|
   app.routes do
     add [], ShoesHomepage 
+    add ["blog"], BlogResource
+    add ["blog", :slug], BlogResource
     add ['*'], StaticResource, :root => "public"
   end
   app.configure do |config|
