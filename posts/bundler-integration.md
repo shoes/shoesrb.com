@@ -22,11 +22,11 @@ Ready!
 
 You can specify bundler version with:
 
-      bundler :version => '~> 1.1.1'
+    bundler :version => '~> 1.1.1'
 
 Or the `Gemfile` name:
 
-      bundler :file => "Gemfile#{ENV['APP_MODE']}"
+    bundler :file => "Gemfile#{ENV['APP_MODE']}"
 
 Available form this commit https://github.com/shoes/shoes/commit/9114457d487353a0c16e521284ad164835c64b4e
 
