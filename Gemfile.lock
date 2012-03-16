@@ -10,12 +10,16 @@ GEM
   specs:
     haml (3.1.4)
     i18n (0.6.0)
+    metadown (1.0.1)
+      redcarpet
     rack (1.4.1)
+    redcarpet (2.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   haml
+  metadown
   rack
   webmachine!
