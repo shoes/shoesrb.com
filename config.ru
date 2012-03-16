@@ -5,7 +5,7 @@ require 'webmachine/adapters/rack'
 
 Dir["resources/*"].each {|f| require "./#{f}" }
 
-require "./render"
+require "./template"
 
 Shoes = Webmachine::Application.new do |app|
   app.routes do

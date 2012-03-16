@@ -19,7 +19,7 @@ class BlogResource < Webmachine::Resource
   def to_html
     return "INDEX" unless @post
 
-    Render.new(:post).render(
+    Template.new(:post).render(
       :contents => @post.output,
       :title => @post.metadata["title"],
       :date => @post.metadata["date"]
