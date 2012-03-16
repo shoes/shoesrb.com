@@ -1,0 +1,8 @@
+%h1 The Shoes Blog
+
+%p Stuff and things
+
+%ul 
+  - posts.each do |post|
+    %li <a href="/blog/#{post.metadata['slug']}">#{post.metadata["title"]}</a>
+
