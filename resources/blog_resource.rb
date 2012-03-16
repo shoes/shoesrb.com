@@ -12,7 +12,7 @@ class BlogResource < Webmachine::Resource
   def resource_exists?
     return true unless request.path_info[:slug] #index
 
-    @post = $posts[request.path_info[:slug]] if request.path_info[:slug]
+    @post = $posts[request.path_info[:slug]]
     !@post.nil?
   end
 
