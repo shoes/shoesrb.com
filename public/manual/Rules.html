@@ -74,7 +74,7 @@
      end
    end
  end
-</code></pre><p>Fixed heights on slots should be less common.  Usually you want your text and images to just flow down the window as far as they can.  Height usually happens naturally.</p><p>The important thing here is that fixed heights actually force slots to behave differently.  To be sure that the end of the slot is chopped off perfectly, the slot becomes a <strong>nested window</strong>.  A new layer is created by the operating system to keep the slot in a fixed square.</p><p>On difference between normal slots and nested window slots is that the latter can have scrollbars.</p><pre><code class="rb"> Shoes.app do
+</code></pre><p>Fixed heights on slots should be less common.  Usually you want your text and images to just flow down the window as far as they can.  Height usually happens naturally.</p><p>The important thing here is that fixed heights actually force slots to behave differently.  To be sure that the end of the slot is chopped off perfectly, the slot becomes a <strong>nested window</strong>.  A new layer is created by the operating system to keep the slot in a fixed square.</p><p>One difference between normal slots and nested window slots is that the latter can have scrollbars.</p><pre><code class="rb"> Shoes.app do
    stack :width => 200, :height => 200, :scroll => true do
      background "#DFA"
      100.times do |i|
