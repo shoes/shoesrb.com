@@ -58,6 +58,33 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
+.horse {
+  margin-bottom: 40px;
+}
+.platforms {
+  width: 100%;
+}
+.platform {
+  width: 100px;
+  height: 100px;
+  padding: 40px;
+}
+.ikon {
+  padding: 5px;
+  vertical-align: middle;
+}
+.igon {
+  width: 50px;
+  vertical-align: middle;
+}
+.tut {
+  position: relative;
+}
+.headsupport {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+}
 button,
 input,
 select,
@@ -111,6 +138,11 @@ body {
   line-height: 18px;
   color: #333333;
   background-color: #ffffff;
+	background: url('/img/background.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 a {
   color: #0088cc;
@@ -121,6 +153,8 @@ a:hover {
   text-decoration: underline;
 }
 .row {
+  padding: 20px;
+  background: #fff;
   margin-left: -20px;
   *zoom: 1;
 }
@@ -142,13 +176,14 @@ a:hover {
   width: 140px;
 }
 .span3 {
-  width: 220px;
+  width: 280px;
 }
 .span4 {
   width: 300px;
 }
 .span5 {
   width: 380px;
+  padding: 20px;
 }
 .span6 {
   width: 460px;
@@ -309,6 +344,7 @@ h6 {
   font-weight: bold;
   color: #333333;
   text-rendering: optimizelegibility;
+  display: inline-block;
 }
 h1 small,
 h2 small,
@@ -3462,11 +3498,7 @@ a.thumbnail:hover {
 }
 .hero-unit {
   padding: 60px;
-  margin-bottom: 30px;
   background-color: #f5f5f5;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
 }
 .hero-unit h1 {
   margin-bottom: 0;

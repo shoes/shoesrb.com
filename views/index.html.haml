@@ -1,39 +1,46 @@
 .hero-unit
-  %img{:src => "/img/shoes-icon.png", :alt => "shoes logo", :style => "float:left;padding-left:20px;padding-right:20px"}/
-  %h1 Shoes!
-  %p
-    Ever wanted to build a GUI? Annoyed that it's so much effort? Shoes
-    makes building for Mac, Windows, and Linux <em>super</em> simple.
-  %p
-    %a.btn.btn-primary.btn-large{:href => "/about"} Learn more »
-/ Example row of columns
+  .horse
+    %img{:src => "/img/shoes-icon.png", :alt => "shoes logo", :style => "float:left;padding-left:20px;padding-right:20px"}/
+    %h1 Shoes!
+    %p
+      Ever wanted to build a GUI? Annoyed that it's so much effort? Shoes
+      makes building for Mac, Windows, and Linux <em>super</em> simple.
+    %p
+      %a.btn.btn-primary.btn-large{:href => "/about"} Learn more »
+  .platforms
+    %img{:src => "/img/screen.png" }
+    %img{:src => "/img/lion.png", :class => "platform"}
+    %img{:src => "/img/mountain_lion.png", :class => "platform"}
+    %img{:src => "/img/windows.png", :class => "platform"}
+    %img{:src => "/img/ubuntu.png", :class => "platform"}
+    %p
+      GUI Awesomeness across all major platforms!
+      <em>Mac OS X</em>, <em>Linux</em> or <em>Windows</em>.
+      Shoes loves them all.
+
 .row
-  .span4
-    %h2 About
+  .span3
+    %h2 Tutorials
+    %img{:src => "/img/guides.png", :class => "ikon"}
     %p
-      Basically, making desktop applications is really annoying. There's
-      so many details to take care of, and you'd really rather just be
-      building your application. Shoes handles doing all of the
-      cross-platform stuff for you, and gives you native widgets on each
-      platform.
+      New to Shoes? Great! There are tons of resources available to get
+      you started with Shoes.
     %p
-      %a.btn{:href => "/about"} Read More »
-  .span4
-    %h2 Manual
-    %p
-      If you're already using Shoes, you'll probably need to look things
-      up from time to time. There's a manual in Shoes already, but if
-      you prefer to look things up on the web, we've also provided a
-      manual for you as well.
-    %p
-      %a.btn{:href => "/manual/Hello.html"} Check it out »
-  .span4
+      %a.btn{:href => "/tutorials", :class => "ikon"} Read More »
+  .span3
     %h2 Blog
+    %img{:src => "/img/blog.png", :class => "ikon"}
     %p
-      We're going to write from time to time about what's new in
-      Shoes-land. It's not quite ready yet, but we'll be unveilling it
-      in the near future. Keep up with the latest developments, see what
+      Keep up with the latest developments, see what
       other people are building, and hear about new features as we build
       them!
     %p
-      %a.btn{:href => "/blog"} Read the blog »
+      %a.btn{:href => "/blog"} Check it out »
+  .span3
+    %h2 Contribute
+    %img{:src => "/img/contribute.png", :class => "ikon"}
+    %p
+      Want to contribute? Fantastic! The Shoes Team is always looking
+      for motivated contributers. Help us make Shoes even more better.
+    %p
+      %a.btn{:href => "/contribute"} Read the blog »

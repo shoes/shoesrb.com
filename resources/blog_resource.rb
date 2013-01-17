@@ -2,9 +2,9 @@ require 'metadown'
 
 $posts = Dir["posts/*"].collect do |file|
   Metadown.render(File.read(file))
-end.sort{|a,b| a.metadata["date"] <=> b.metadata["date"]}.reverse
+end.sort{|a,b| b.metadata["date"] <=> a.metadata["date"]}
 
-class BlogResource < Webmachine::Resource  
+class BlogResource < Webmachine::Resource
   def resource_exists?
     return true unless request.path_info[:slug] #index
 
