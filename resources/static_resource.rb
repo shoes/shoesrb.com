@@ -20,7 +20,7 @@ class StaticResource < Webmachine::Resource
   def serve_file
     # Note this is probably not a good idea for big files.
     # In the future, WM should be able to stream out IO objects.
-    @pathname.read 
+    @pathname.read
   end
 end
 

@@ -9,9 +9,12 @@ require "./template"
 
 Shoes = Webmachine::Application.new do |app|
   app.routes do
-    add [], ShoesHomepage 
+    add [], ShoesHomepage
+    add ["tutorials"], TutorialsPage
+    add ["about"], AboutPage
     add ["blog"], BlogResource
     add ["blog", :slug], BlogResource
+    add ["contribute"], ContributePage
     add ['*'], StaticResource, :root => "public"
   end
   app.configure do |config|

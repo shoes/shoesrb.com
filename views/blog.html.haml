@@ -1,9 +1,10 @@
-%h1 The Shoes Blog
+.row
+  %h1 The Shoes Blog
 
-%p Welcome to the Shoes blog! Here's all the posts we have so far:
+  %p Welcome to the Shoes blog! Here's all the posts we have so far:
 
-- posts.each do |post|
-  %h2 <a href="/blog/#{post.metadata['slug']}">#{post.metadata["title"]}</a>
-  %h3= post.metadata["date"]
-  %p= post.output
+  - posts.each do |post|
+    %h2 <a href="/blog/#{post.metadata['slug']}">#{post.metadata["title"]}</a>
+    %h3= post.metadata["date"]
+    %p= post.output
 
