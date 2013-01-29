@@ -249,6 +249,9 @@ a:hover {
   margin-left: -20px;
   *zoom: 1;
 }
+.center{
+  margin: 0 auto;
+}
 .row:before, .row:after {
   display: table;
   content: "";
