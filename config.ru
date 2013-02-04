@@ -15,6 +15,8 @@ Shoes = Webmachine::Application.new do |app|
     add ["blog"], BlogResource
     add ["blog", :slug], BlogResource
     add ["contribute"], ContributePage
+    add ["downloads"], DownloadsPage
+    add ["downloads", :filename], DownloadResource
     add ['*'], StaticResource, :root => "public"
   end
   app.configure do |config|
