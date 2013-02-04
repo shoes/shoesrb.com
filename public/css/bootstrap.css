@@ -246,7 +246,6 @@ a:hover {
 .row {
   padding: 20px;
   background: #fff;
-  margin-left: -20px;
   *zoom: 1;
 }
 .center{
