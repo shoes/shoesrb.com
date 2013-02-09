@@ -131,6 +131,37 @@ img {
   display: inline-block;
   vertical-align: middle;
 }
+.downloads{
+  position: relative;
+}
+#download{
+  opacity: 0.8;
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  background: url('/img/download.jpg') no-repeat;
+  width: 425px;
+  height: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 0 6px #CCC;
+  -moz-box-shadow: 0 0 6px #CCC;
+  box-shadow: 0 0 6px #CCC;
+}
+.arrow{
+  opacity: 0.3;
+  background: url('/img/arrow.jpg') no-repeat;
+  float: left;
+  width: 128px;
+  height: 128px;
+}
+.arrow1{
+  opacity: 0.8;
+  background: url('/img/arrow.jpg') no-repeat;
+  float: left;
+  width: 128px;
+  height: 128px;
+}
 #walk{
  	background: url('/img/sprite2.png') no-repeat -52px -4px;
 	width: 40px;
