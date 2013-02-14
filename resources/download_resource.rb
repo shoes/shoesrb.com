@@ -11,7 +11,10 @@
 #
 class DownloadResource < Webmachine::Resource
   DOWNLOADS = {
-    "shoes-app-template-0.0.1.zip" => "https://s3.amazonaws.com/net.wasnotrice.shoes/wrappers/shoes-app-template-0.0.1.zip"
+    "shoes-app-template-0.0.1.zip" => "https://s3.amazonaws.com/net.wasnotrice.shoes/wrappers/shoes-app-template-0.0.1.zip",
+    "shoes-3.1.0.run" => "https://github.com/downloads/shoes/shoes/shoes-3.1.0.run",
+    "shoes-3.1.0.dmg" => "https://github.com/downloads/shoes/shoes/shoes-3.1.0.dmg",
+    "shoes3.exe.zip" => "https://github.com/downloads/shoes/shoes/shoes3.exe.zip",
   }
 
   # shows up in the URL like so: http://shoesrb.com/downloads/:filename

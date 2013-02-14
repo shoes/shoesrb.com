@@ -148,6 +148,9 @@ img {
   -moz-box-shadow: 0 0 6px #CCC;
   box-shadow: 0 0 6px #CCC;
 }
+.downloads ul {
+  list-style: none;
+}
 .arrow{
   opacity: 0.3;
   background: url('/img/arrow.jpg') no-repeat;
