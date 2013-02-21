@@ -6,8 +6,13 @@
       %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
         %meta{:content => "The website for Shoes, a GUI toolkit for Ruby", :name => "description"}
           %meta{:content => "Team Shoes", :name => "author"}
+
+            %link{:href => "/css/code.css", :rel => "stylesheet"}
+            %script{:type => "text/javascript", :src => "/js/highlight.pack.js"}
+            <script>hljs.initHighlightingOnLoad();</script>
             / Le styles
             %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}
+            %link{:href => "/css/wt.css", :rel => "stylesheet"}
               :css
                 body {
                   padding-top: 60px;
