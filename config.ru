@@ -17,6 +17,7 @@ Shoes = Webmachine::Application.new do |app|
     add ["contribute"], ContributePage
     add ["downloads"], DownloadsPage
     add ["downloads", :filename], DownloadResource
+    add ["walkthrough"], WalkthroughPage
     add ['*'], StaticResource, :root => "public"
   end
   app.configure do |config|

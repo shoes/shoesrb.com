@@ -69,53 +69,53 @@ img {
   height: 100px;
 }
 #lion{
-	background: url('/img/sprite.png') no-repeat -6px -59px;
-	width: 100px;
-	height: 100px;
+  background: url('/img/sprite.png') no-repeat -6px -59px;
+  width: 100px;
+  height: 100px;
   margin: 40px;
   display: inline-block;
 }
 #mountain_lion{
-	background: url('/img/sprite.png') no-repeat -6px -262px;
-	width: 100px;
-	height: 100px;
+  background: url('/img/sprite.png') no-repeat -6px -262px;
+  width: 100px;
+  height: 100px;
   margin: 40px;
   display: inline-block;
 }
 #windows{
-	background: url('/img/sprite.png') no-repeat 0 -369px;
-	width: 110px;
-	height: 99px;
+  background: url('/img/sprite.png') no-repeat 0 -369px;
+  width: 110px;
+  height: 99px;
   margin: 40px;
   display: inline-block;
 }
 #ubuntu{
-	background: url('/img/sprite.png') no-repeat -4px -161px;
-	width: 100px;
-	height: 100px;
+  background: url('/img/sprite.png') no-repeat -4px -161px;
+  width: 100px;
+  height: 100px;
   margin: 40px;
   display: inline-block;
 }
 #tutorials{
   background: url('/img/sprite.png') no-repeat 0px -482px;
-	width: 45px;
-	height: 33px;
+  width: 45px;
+  height: 33px;
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
 }
 #blog{
-	background: url('/img/sprite.png') no-repeat -1px -524px;
-	width: 45px;
-	height: 35px;
+  background: url('/img/sprite.png') no-repeat -1px -524px;
+  width: 45px;
+  height: 35px;
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
 }
 #contribute{
-	background: url('/img/sprite.png') no-repeat -57px -515px;
-	width: 48px;
-	height: 44px;
+  background: url('/img/sprite.png') no-repeat -57px -515px;
+  width: 48px;
+  height: 44px;
   display: inline-block;
   vertical-align: middle;
   margin: 5px;
@@ -125,9 +125,9 @@ img {
   top: -50px;
   right: -10px;
 
- 	background: url('/img/sprite2.png') no-repeat -1px -52px;
-	width: 429px;
-	height: 178px;
+  background: url('/img/sprite2.png') no-repeat -1px -52px;
+  width: 429px;
+  height: 178px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -166,33 +166,33 @@ img {
   height: 128px;
 }
 #walk{
- 	background: url('/img/sprite2.png') no-repeat -52px -4px;
-	width: 40px;
-	height: 42px;
+  background: url('/img/sprite2.png') no-repeat -52px -4px;
+  width: 40px;
+  height: 42px;
   display: inline-block;
   vertical-align: middle;
   margin: 2px;
 }
 #book{
- 	background: url('/img/sprite2.png') no-repeat 0 0;
-	width: 44px;
-	height: 48px;
+  background: url('/img/sprite2.png') no-repeat 0 0;
+  width: 44px;
+  height: 48px;
   display: inline-block;
   vertical-align: middle;
   margin: 2px;
 }
 #manual{
   background: url('/img/sprite2.png') no-repeat -163px -1px;
-	width: 62px;
-	height: 48px;
+  width: 62px;
+  height: 48px;
   display: inline-block;
   vertical-align: middle;
   margin: 2px;
 }
 #rdocs{
- 	background: url('/img/sprite2.png') no-repeat -95px 0;
-	width: 63px;
-	height: 49px;
+  background: url('/img/sprite2.png') no-repeat -95px 0;
+  width: 63px;
+  height: 49px;
   display: inline-block;
   vertical-align: middle;
   margin: 2px;
@@ -263,11 +263,11 @@ body {
   line-height: 18px;
   color: #333333;
   background-color: #ffffff;
-	background: url('/img/background.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  background: url('/img/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 a {
   color: #0088cc;
@@ -3652,4 +3652,8 @@ a.thumbnail:hover {
 }
 .invisible {
   visibility: hidden;
+}
+.walkthrough {
+  background: red;
+  border: 1px solid black;
 }
