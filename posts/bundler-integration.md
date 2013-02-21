@@ -15,7 +15,7 @@ This reminded me of a Gemfile, so why not add Bundler support? So I did! Create
 a `Gemfile`:
 
     source "https://test.rubygems.org"
-    
+
     gem "twitter"
 
 And in your application use this setup block:
