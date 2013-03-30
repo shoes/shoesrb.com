@@ -15,7 +15,7 @@ Okay, so, a simple Shoes program.
 
 <div class="row2">
   <img src="./img/wt/001.png">
-  <pre>
+  <pre class="wt">
     <code class="ruby">
       Shoes.app { button "Push me" }
     </code>
@@ -31,7 +31,7 @@ We can place a few buttons in a *stack*.
 
 <div class="row2">
   <img src="./img/wt/002.png">
-  <pre>
+  <pre class="wt">
     <code class="ruby">
       Shoes.app {
         stack {
@@ -52,7 +52,7 @@ Okay, let's give the stack a bit of a *margin*. Scoot it out from the edge.
 
 <div class="row2">
   <img src="./img/wt/003.png">
-  <pre>
+  <pre class="wt">
     <code class="ruby">
       Shoes.app {
         background white
@@ -79,7 +79,7 @@ Time for something new, artwork!  Let's draw!
 
 <div class="row2">
   <img src="./img/wt/004.png">
-  <pre>
+  <pre class="wt">
     <code class="ruby">
       Shoes.app {
         oval(
@@ -102,7 +102,7 @@ Now, a rectangle and an arrow.
 
 <div class="row2">
   <img src="./img/wt/005.png">
-  <pre>
+  <pre class="wt">
     <code class="ruby">
       Shoes.app {
         fill red
@@ -135,7 +135,7 @@ Of course, you can always design your app with an *image*. Even images from the 
 
 <div class="row2">
 <img src="./img/wt/nks-kidnap.png">
-  <pre>
+  <pre class="wt">
   <code class="ruby">
   Shoes.app {
     image "http://spiralofhope.com/i/ruby-shoes--nks-kidnap.png"
@@ -158,7 +158,7 @@ Now, a very important element: the *para*. As in: paragraph. Probably the third 
 
 <div class="row2">
   <img src="./img/wt/007.png">
-  <pre>
+  <pre class="wt">
     <code class="ruby">
       Shoes.app {
         para strong("Q."), " Are you beginning to grasp hold of Shoes?"
@@ -173,7 +173,7 @@ Beyond para, you've got *title* and *subtitle*, which are bigger fonts. You can 
 
 <div class="row2">
 <img src="./img/wt/008.png">
-<pre>
+<pre class="wt">
   <code class="ruby">
   Shoes.app {
     stack(:margin => 6) {
@@ -192,7 +192,7 @@ Keep track of stuff by naming them as variables.
 
 <div class="row2">
 <img src="./img/wt/009.png">
-<pre>
+<pre class="wt">
   <code class="ruby">
   Shoes.app {
     @push = button "Push me"
@@ -209,7 +209,7 @@ You can then put the variables into action. When the button is clicked, the `@no
 
 <div class="row2">
 <img src="./img/wt/010.png">
-<pre>
+<pre class="wt">
   <code class="ruby">
   Shoes.app {
     @push = button "Push me"
@@ -228,7 +228,7 @@ See if you can figure out this one. How does the gradient work? How are the lett
 
 <div class="row2">
 <img src="./img/wt/011.png">
-<pre>
+<pre class="wt">
   <code class="ruby">
   Shoes.app do
     background "#F3F".."#F90"
@@ -252,7 +252,7 @@ Aha, here's a flow. It keeps the text box and the button side-by-side.
 
 <div class="row2">
 <img src="./img/wt/012.png">
-<pre>
+<pre class="wt">
   <code class="ruby">
   Shoes.app do
     background "#EFC"
@@ -278,7 +278,7 @@ In this one, we make a five-point star. And it follows the mouse around as you m
 
 <div class="row2">
 <img src="./img/wt/013.png">
-<pre>
+<pre class="wt">
   <code class="ruby">
   Shoes.app do
     @shape = star(:points => 5)
@@ -296,7 +296,7 @@ On to a taste of animation. The Shoes icon moves randomly a bunch of times each 
 
 <div class="row2">
 <img src="/img/wt/014.png">
-<pre>
+<pre class="wt">
   <code class="ruby">
   Shoes.app do
     @shoes = image(
@@ -323,7 +323,7 @@ Remember a few examples ago when we handled a button click? How about doing the 
 
 <div class="row2">
 <img src="/img/wt/015.png">
-<pre>
+<pre class="wt">
   <code class="ruby">
     Shoes.app do
       @poem = stack do
@@ -354,7 +354,7 @@ Okay, last one for now. Let's generate a hundred random circles. This example al
 
 <div class="row2">
 <img src="/img/wt/016.png">
-  <pre>
+  <pre class="wt">
     <code class="ruby">
     Shoes.app(:width => 300, :height => 400) do
       fill rgb(0, 0.6, 0.9, 0.1)

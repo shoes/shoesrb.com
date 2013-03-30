@@ -1,32 +1,29 @@
 !!!
-%html{:lang => "en"}
+%html{lang: "en"}
   %head
-    %meta{:charset => "utf-8"}
-      %title Shoes! The easiest little GUI toolkit, for Ruby.
-      %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-        %meta{:content => "The website for Shoes, a GUI toolkit for Ruby", :name => "description"}
-          %meta{:content => "Team Shoes", :name => "author"}
+    %meta{charset: "utf-8"}
+    %title Shoes! The easiest little GUI toolkit, for Ruby.
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}
+    %meta{content: "The website for Shoes, a GUI toolkit for Ruby", name: "description"}
+    %meta{content: "Team Shoes", name: "author"}
 
-            %link{:href => "/css/code.css", :rel => "stylesheet"}
-            %script{:type => "text/javascript", :src => "/js/highlight.pack.js"}
-            <script>hljs.initHighlightingOnLoad();</script>
-            / Le styles
-            %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}
-            %link{:href => "/css/wt.css", :rel => "stylesheet"}
-              :css
-                body {
-                  padding-top: 60px;
-                  padding-bottom: 40px;
-                }
-                  %link{:href => "/css/bootstrap-responsive.css", :rel => "stylesheet"}
-                / Le HTML5 shim, for IE6-8 support of HTML5 elements
-                /[if lt IE 9]
-                  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-                / Le fav and touch icons
-                %link{:href => "/ico/favicon.ico", :rel => "shortcut icon"}
-                  %link{:href => "/ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}
-                    %link{:href => "/ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
-                      %link{:href => "/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}
+    %script{type: "text/javascript", src: "/js/highlight.pack.js"}
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    / Le styles
+    - sheets = %w|bootstrap shoes code walkthrough blog bootstrap-responsive|
+    - sheets.each do |sheet|
+      %link{href: "/css/#{sheet}.css", rel: "stylesheet"}
+
+    / Le HTML5 shim, for IE6-8 support of HTML5 elements
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    / Le fav and touch icons
+    %link{href: "/ico/favicon.ico", rel: "shortcut icon"}
+    %link{href: "/ico/apple-touch-icon-114-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "114x114"}
+    %link{href: "/ico/apple-touch-icon-72-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "72x72"}
+    %link{href: "/ico/apple-touch-icon-57-precomposed.png", rel: "apple-touch-icon-precomposed"}
+
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -35,22 +32,22 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{:href => "/"} Shoes
+          %a.brand{href: "/"} Shoes
           .nav-collapse
             %ul.nav
-              %li{ :class => ('active' if page == :index) }
-                %a{:href => "/"} Home
-              %li{ :class => ('active' if page == :downloads) }
-                %a{:href => "/downloads"} Downloads
-              %li{ :class => ('active' if page == :tutorials) }
-                %a{:href => "/tutorials"} Tutorials
-              %li{ :class => ('active' if page == :blog) }
-                %a{:href => "/blog"} Blog
-              %li{ :class => ('active' if page == :contribute) }
-                %a{:href => "/contribute"} Contribute
-              %li{ :class => ('active' if page == :about) }
-                %a{:href => "/about"} About
-          / /.nav-collapse
+              %li{ class: ('active' if page == :index) }
+                %a{href: "/"} Home
+              %li{ class: ('active' if page == :downloads) }
+                %a{href: "/downloads"} Downloads
+              %li{ class: ('active' if page == :tutorials) }
+                %a{href: "/tutorials"} Tutorials
+              %li{ class: ('active' if page == :blog) }
+                %a{href: "/blog"} Blog
+              %li{ class: ('active' if page == :contribute) }
+                %a{href: "/contribute"} Contribute
+              %li{ class: ('active' if page == :about) }
+                %a{href: "/about"} About
+
     .container
       = yield
       %hr
