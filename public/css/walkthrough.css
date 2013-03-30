@@ -17,13 +17,10 @@ p {
   font-size: 14px;
   line-height: 1.43em;
 }
-pre {
+.wt {
   float: right;
   margin-top: 20px;
   min-width: 453px;
-}
-pre code {
-  float: left;
 }
 .row2 {
   padding: 0px;
@@ -40,4 +37,3 @@ pre code {
 hr {
   margin-top: 40px;
 }
-

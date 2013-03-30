@@ -1,6 +1,8 @@
-%h1= title
-%h3 Posted on #{date}
-%hr/
+.post
+  %h4 Posted on #{date}
+  %br
+  %h1= title
 
-:preserve
-  #{contents}
+  .content
+    :preserve
+      #{contents}
