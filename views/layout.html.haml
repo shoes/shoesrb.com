@@ -38,17 +38,17 @@
           %a.brand{:href => "/"} Shoes
           .nav-collapse
             %ul.nav
-              %li
+              %li{ :class => ('active' if page == :index) }
                 %a{:href => "/"} Home
-              %li
+              %li{ :class => ('active' if page == :downloads) }
                 %a{:href => "/downloads"} Downloads
-              %li
+              %li{ :class => ('active' if page == :tutorials) }
                 %a{:href => "/tutorials"} Tutorials
-              %li
+              %li{ :class => ('active' if page == :blog) }
                 %a{:href => "/blog"} Blog
-              %li
+              %li{ :class => ('active' if page == :contribute) }
                 %a{:href => "/contribute"} Contribute
-              %li
+              %li{ :class => ('active' if page == :about) }
                 %a{:href => "/about"} About
           / /.nav-collapse
     .container
