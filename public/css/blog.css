@@ -1,0 +1,18 @@
+.preview {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.post {
+  background: white;
+  padding: 60px;
+  width: 80%;
+  border: 1px solid #ccc;
+}
+.content {
+  width: 80%;
+}
+
