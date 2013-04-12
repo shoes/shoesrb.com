@@ -8,3 +8,4 @@ gem 'rack'
 
 gem 'haml'
 gem 'metadown'
+gem 'rdiscount'
