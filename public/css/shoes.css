@@ -11,6 +11,10 @@
   width: 100%;
   text-align: center;
 }
+.about {
+  margin: 20px;
+  padding: 20px;
+}
 #lion{
   background: url('/img/sprite.png') no-repeat -6px -59px;
   width: 100px;
@@ -69,6 +73,17 @@
   right: -10px;
 
   background: url('/img/sprite2.png') no-repeat -1px -52px;
+  width: 429px;
+  height: 178px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#why{
+  position: absolute;
+  top: -40px;
+  right: -180px;
+
+  background: url('/img/why.png') no-repeat -1px -12px;
   width: 429px;
   height: 178px;
   display: inline-block;

@@ -13,6 +13,7 @@ GEM
     metadown (1.0.1)
       redcarpet
     rack (1.4.1)
+    rdiscount (2.0.7.2)
     redcarpet (2.1.0)
 
 PLATFORMS
@@ -22,4 +23,5 @@ DEPENDENCIES
   haml
   metadown
   rack
+  rdiscount
   webmachine!
