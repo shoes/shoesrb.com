@@ -3,6 +3,8 @@
 
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 gem 'webmachine', :git => "https://github.com/seancribbs/webmachine-ruby.git"
 gem 'rack'
 
