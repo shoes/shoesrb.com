@@ -16,3 +16,6 @@ task :"new_post", :title do |t, args|
   end
 end
 
+task :default do
+  puts "This is so that Travis can deploy the site. Neat!"
+end
