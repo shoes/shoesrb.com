@@ -27,5 +27,5 @@ if [[ "$TRAVIS" == "true" ]]; then
   heroku plugins:install https://github.com/ddollar/heroku-anvil
 fi
 
-heroku build -r shoes-cedar -b https://github.com/heroku/heroku-buildpack-ruby.git
+heroku build -r shoes-cedar
 
