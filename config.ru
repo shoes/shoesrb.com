@@ -19,7 +19,7 @@ Shoes = Webmachine::Application.new do |app|
     add ["downloads", :filename], DownloadResource
     add ["get_help"], GetHelpPage
     add ["walkthrough"], WalkthroughPage
-    add ['*'], StaticResource, :root => "public"
+    add ['*'], StaticResource, root: "public"
   end
   app.configure do |config|
     config.adapter = :Rack

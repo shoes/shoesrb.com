@@ -1,6 +1,6 @@
 desc "Make a new post"
 task :"new_post", :title do |t, args|
-  args.with_defaults(:title => 'new-post')
+  args.with_defaults(title: 'new-post')
   title = args.title
   filename = "posts/#{title.downcase.gsub(/\W/, "-")}.md"
 

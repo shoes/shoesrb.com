@@ -15,12 +15,12 @@ class BlogResource < Webmachine::Resource
   def to_html
     if @post
       Template.new(:post).render(
-        :contents => @post.output,
-        :title => @post.metadata["title"],
-        :date => @post.metadata["date"]
+        contents: @post.output,
+        title: @post.metadata["title"],
+        date: @post.metadata["date"]
       )
     else
-      Template.new(:blog).render(:posts => $posts)
+      Template.new(:blog).render(posts: $posts)
     end
   end
 end
