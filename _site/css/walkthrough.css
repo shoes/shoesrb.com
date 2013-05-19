@@ -1,0 +1,39 @@
+.walkthrough {
+  background: white;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+h1 {
+  line-height: 2em;
+}
+h2 {
+  line-height: 2em;
+}
+h3 {
+  line-height: 2em;
+}
+p {
+  font-size: 14px;
+  line-height: 1.43em;
+}
+.wt {
+  float: right;
+  margin-top: 20px;
+  min-width: 453px;
+}
+.row2 {
+  padding: 0px;
+  background: #fff;
+  *zoom: 1;
+}
+.row2:before, .row2:after {
+  display: table;
+  content: "";
+}
+.row2:after {
+  clear: both;
+}
+hr {
+  margin-top: 40px;
+}

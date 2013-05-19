@@ -1,6 +1,0 @@
-language: ruby
-rvm:
-  - 1.9.3
-env:
-  - secure: "HYcZQm34SYN201anHVqK4kvzyPRY9e9t0FLTBNJY/wu56Eo4URjpJjR+fHqV\nn1Vi/4lmDvOf8+cnx+4HJfQ249yqUT6GcDUsSsS/fzVebfj06MXydvPGKz2w\nKlgDzgnxkyks0tgcGt1gKagW9fd7vJGTD98xuSn5JiOmx81HMrs="
-after_success: ./deploy
