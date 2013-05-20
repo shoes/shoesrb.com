@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <div class='row'>
-<h2><a href="/blog/memorial-day-shoes-madness">Memorial Day Shoes Madness!</a></h2>
+<h2><a href="{{ post.url }}">Memorial Day Shoes Madness!</a></h2>
 <h3>2012-05-29 15:24</h3>
 <p>
 <p>Memorial Day Weekend 2012 was a big one for the Shoes community!

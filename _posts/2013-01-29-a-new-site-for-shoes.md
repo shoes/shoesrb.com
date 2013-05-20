@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <div class='row'>
-<h2><a href="/blog/a-new-site-for-shoes">A new site for Shoes!</a></h2>
+<h2><a href="{{ post.url }}">A new site for Shoes!</a></h2>
 <h3>2013-01-29 12:47</h3>
 <p>We have a beautiful new website, courtesy of <a href="https://github.com/wpp">Philipp</a>.
 I&#39;d tell you to check it out, but you&#39;re already on it!</p>
