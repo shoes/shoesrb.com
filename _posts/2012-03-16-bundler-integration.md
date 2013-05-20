@@ -10,7 +10,7 @@ layout: default
 </div>
 
 <div class='row'>
-<h2><a href="/blog/bundler-integration">Bundler integration</a></h2>
+<h2><a href="{{ post.url }}">Bundler integration</a></h2>
 <h3>2012-03-16 04:52</h3>
 <p>
 <p>Shoes is an older Ruby project, and it pre-dates a lot of modern Ruby tools. To
