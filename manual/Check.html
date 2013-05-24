@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // Check</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>Check</h1><div class="intro"><p>Check boxes are clickable square boxes than can be either checked or unchecked.  A single checkbox usually asks a &quot;yes&quot; or &quot;no&quot; question.  Sets of checkboxes are also seen in to-do lists. <img src="static/man-ele-check.png" /></p></div><p>Here's a sample checklist.</p><pre><code class="rb"> Shoes.app do
+   stack do
+     flow { check; para "Frances Johnson" }
+     flow { check; para "Ignatius J. Reilly" }
+     flow { check; para "Winston Niles Rumfoord" }
+   end
+ end
+</code></pre><p>You basically have two ways to use a check.  You can attach a block to the check and it'll get called when the check gets clicked.  And/or you can just use the <code>checked?</code> method to go back and see if a box has been checked or not.</p><p>Okay, let's add to the above example.</p><pre><code class="rb"> Shoes.app do
+   @list = ['Frances Johnson', 'Ignatius J. Reilly',
+     'Winston Niles Rumfoord']
+   stack do
+     @list.map! do |name|
+       flow { @c = check; para name }
+       [@c, name]
+     end
+     button "What's been checked?" do
+       selected = @list.map { |c, name| name if c.checked? }.compact
+       alert("You selected: " + selected.join(', '))
+     end
+   end
+ end
+</code></pre><p>So, when the button gets pressed, each of the checks gets asked for its status, using the <code>checked?</code> method.</p><p>Button methods are listed below, but also see the list of <a href="Common.html">Common</a> methods, which all elements respond to.</p><a name="checked?"></a><div class="method"><a href="Check.html#checked?">checked?()</a> » true or false</div><div class="sample"><p>Returns whether the box is checked or not.  So, <code>true</code> means &quot;yes, the box is checked!&quot;</p></div><a name="checked="></a><div class="method"><a href="Check.html#checked=">checked = true or false</a></div><div class="sample"><p>Marks or unmarks the check box.  Using <code>checked = false</code>, for instance, unchecks the box.</p></div><a name="click"></a><div class="method"><a href="Check.html#click">click() { |self| ... }</a> » self</div><div class="sample"><p>When the check is clicked, its <code>click</code> block is called.  The block is handed <code>self</code>, which is the check object which was clicked.</p><p>Clicks are sent for both checking and unchecking the box.</p></div><a name="focus"></a><div class="method"><a href="Check.html#focus">focus()</a> » self</div><div class="sample"><p>Moves focus to the check.  The check will be highlighted and, if the user hits Enter, the check will be toggled between its checked and unchecked states.</p></div><p class="next">Next: <a href="EditBox.html">EditBox</a></p></div><div class="sidebar"><img src="static/shoes-icon.png"></img><ul><li><a href="http://shoesrb.com/manual/" class="prime">HELP</a></li><li><a href="Hello.html">Hello!</a></li><li><a href="Shoes.html">Shoes</a></li><li><a href="Slots.html">Slots</a></li><li><a href="Elements.html">Elements</a><ul class="sub"><li><a href="Common.html">Common</a></li><li><a href="Background.html">Background</a></li><li><a href="Border.html">Border</a></li><li><a href="Button.html">Button</a></li><li><a href="Check.html">Check</a></li><li><a href="EditBox.html">EditBox</a></li><li><a href="EditLine.html">EditLine</a></li><li><a href="Image.html">Image</a></li><li><a href="ListBox.html">ListBox</a></li><li><a href="Progress.html">Progress</a></li><li><a href="Radio.html">Radio</a></li><li><a href="Shape.html">Shape</a></li><li><a href="TextBlock.html">TextBlock</a></li><li><a href="Timers.html">Timers</a></li><li><a href="Video.html">Video</a></li></ul></li><li><a href="AndSoForth.html">AndSoForth</a></li></ul></div></div></body></html>

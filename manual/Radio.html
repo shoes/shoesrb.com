@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // Radio</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>Radio</h1><div class="intro"><p>Radio buttons are a group of clickable circles.  Click a circle and it'll be marked.  Only one radio button can be marked at a time.  (This is similar to the ListBox, where only one option can be selected at a time.) <img src="static/man-ele-radio.png" /></p></div><p>So, how do you decide when to use radio buttons and when to use list boxes?  Well, list boxes only show one highlighted item unless you click on the box and the drop-down appears.  But radio buttons are all shown, regardless of which is marked.</p><pre><code class="rb"> Shoes.app do
+   para "Among these films, which do you prefer?\n"
+   radio; para strong("The Taste of Tea"), " by Katsuhito Ishii\n"
+   radio; para strong("Kin-Dza-Dza"), " by Georgi Danelia\n"
+   radio; para strong("Children of Heaven"), " by Majid Majidi\n"
+ end
+</code></pre><p>Only one of these three radios can be checked at a time, since they are grouped together in the same slot (along with a bunch of <code>para</code>.)</p><p>If we move them each into their own slot, the example breaks.</p><pre><code class="rb"> Shoes.app do
+   stack do
+     para "Among these films, which do you prefer?"
+     flow { radio; para "The Taste of Tea by Katsuhito Ishii" }
+     flow { radio; para "Kin-Dza-Dza by Georgi Danelia" }
+     flow { radio; para "Children of Heaven by Majid Majidi" }
+   end
+ end
+</code></pre><p>This can be fixed, though.  You can group together radios from different slots, you just have to give them all the same group name.</p><p>Here, let's group all these radios in the <code>:films</code> group.</p><pre><code class="rb"> Shoes.app do
+   stack do
+     para "Among these films, which do you prefer?"
+     flow do
+       radio :films
+       para "The Taste of Tea by Katsuhito Ishii"
+     end
+     flow do
+       radio :films
+       para "Kin-Dza-Dza by Georgi Danelia"
+     end
+     flow do
+       radio :films
+       para "Children of Heaven by Majid Majidi"
+     end
+   end
+ end
+</code></pre><p>For more methods beyond those listed below, also look into the <a href="Common.html">Common</a> methods page.  Because you get those methods on every radio as well.</p><a name="checked?"></a><div class="method"><a href="Radio.html#checked?">checked?()</a> » true or false</div><div class="sample"><p>Returns whether the radio button is checked or not.  So, <code>true</code> means &quot;yes, it is checked!&quot;</p></div><a name="checked="></a><div class="method"><a href="Radio.html#checked=">checked = true or false</a></div><div class="sample"><p>Marks or unmarks the radio button.  Using <code>checked = false</code>, for instance, clears the radio.</p></div><a name="click"></a><div class="method"><a href="Radio.html#click">click() { |self| ... }</a> » self</div><div class="sample"><p>When the radio button is clicked, its <code>click</code> block is called.  The block is handed <code>self</code>, which is an object representing the radio which was clicked.</p><p>Clicks are sent for both marking and unmarking the radio.</p></div><a name="focus"></a><div class="method"><a href="Radio.html#focus">focus()</a> » self</div><div class="sample"><p>Moves focus to the radio.  The radio will be highlighted and, if the user hits Enter, the radio will be toggled between its marked and unmarked states.</p></div><p class="next">Next: <a href="Shape.html">Shape</a></p></div><div class="sidebar"><img src="static/shoes-icon.png"></img><ul><li><a href="http://shoesrb.com/manual/" class="prime">HELP</a></li><li><a href="Hello.html">Hello!</a></li><li><a href="Shoes.html">Shoes</a></li><li><a href="Slots.html">Slots</a></li><li><a href="Elements.html">Elements</a><ul class="sub"><li><a href="Common.html">Common</a></li><li><a href="Background.html">Background</a></li><li><a href="Border.html">Border</a></li><li><a href="Button.html">Button</a></li><li><a href="Check.html">Check</a></li><li><a href="EditBox.html">EditBox</a></li><li><a href="EditLine.html">EditLine</a></li><li><a href="Image.html">Image</a></li><li><a href="ListBox.html">ListBox</a></li><li><a href="Progress.html">Progress</a></li><li><a href="Radio.html">Radio</a></li><li><a href="Shape.html">Shape</a></li><li><a href="TextBlock.html">TextBlock</a></li><li><a href="Timers.html">Timers</a></li><li><a href="Video.html">Video</a></li></ul></li><li><a href="AndSoForth.html">AndSoForth</a></li></ul></div></div></body></html>

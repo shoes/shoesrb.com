@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // The Rules of Shoes</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>The Rules of Shoes</h1><div class="intro"><p>Time to stop guessing how Shoes works.  Some of the tricky things will come back to haunt you.  I've boiled down the central rules to Shoes.  These are the things you MUST know to really make it all work.</p></div><p>These are general rules found throughout Shoes.  While Shoes has an overall philosophy of simplicity and clarity, there are a few points that need to be studied and remembered.</p><h4>Shoes Tricky Blocks</h4><p>Okay, this is absolutely crucial.  Shoes does a trick with blocks.  This trick makes everything easier to read.  But it also can make blocks harder to use once you're in deep.</p><p><strong>Let's take a normal Ruby block:</strong></p><pre><code class="rb"> ary = ['potion', 'swords', 'shields']
+ ary.each do |item|
+   puts item
+ end
+</code></pre><p>In Shoes, these sorts of blocks work the same.  This block above loops through the array and stores each object in the <code>item</code> variable.  The <code>item</code> variable disappears (goes out of scope) when the block ends.</p><p>One other thing to keep in mind is that <code>self</code> stays the same inside normal Ruby blocks.  Whatever <code>self</code> was before the call to <code>each</code>, it is the same inside the <code>each</code> block.</p><p><strong>Both of these things are also true for most Shoes blocks.</strong></p><pre><code class="rb"> Shoes.app do
+   stack do
+     para "First"
+     para "Second"
+     para "Third"
+   end
+ end
+</code></pre><p>Here we have two blocks.  The first block is sent to <code>Shoes.app</code>.  This <code>app</code> block changes <code>self</code>.</p><p>The other block is the <code>stack</code> block.  That block does NOT change self.</p><p><strong>For what reason does the <code>app</code> block change self?</strong>  Let's start by spelling out that last example completely.</p><pre><code class="rb"> Shoes.app do
+   self.stack do
+     self.para "First"
+     self.para "Second"
+     self.para "Third"
+   end
+ end
+</code></pre><p>All of the <code>self</code>s in the above example are the App object.  Shoes uses Ruby's <code>instance_eval</code> to change self inside the <code>app</code> block.  So the method calls to <code>stack</code> and <code>para</code> get sent to the app.</p><p><strong>This also is why you can use instance variables throughout a Shoes app:</strong></p><pre><code class="rb"> Shoes.app do
+   @s = stack do
+     @p1 = para "First"
+     @p2 = para "Second"
+     @p3 = para "Third"
+   end
+ end
+</code></pre><p>These instance variables will all end up inside the App object.</p><p><strong>Whenever you create a new window, <code>self</code> is also changed.</strong>  So, this means the <a href="Element.html#window">window</a> and <a href="Element.html#dialog">dialog</a> methods, in addition to Shoes.app.</p><pre><code class="rb"> Shoes.app :title => "MAIN" do
+   para self
+   button "Spawn" do
+     window :title => "CHILD" do
+       para self
+     end
+   end
+ end
+</code></pre><h4>Block Redirection</h4><p>The <code>stack</code> block is a different story, though.  It doesn't change <code>self</code> and it's basically a regular block.</p><p><strong>But there's a trick:</strong> when you attach a <code>stack</code> and give it a block, the App object places that stack in its memory.  The stack gets popped off when the block ends.  So all drawing inside the block gets <strong>redirected</strong> from the App's top slot to the new stack.</p><p>So those three <code>para</code>s will get drawn on the <code>stack</code>, even though they actually get sent to the App object first.</p><pre><code class="rb"> Shoes.app do
+   stack do
+     para "First"
+     para "Second"
+     para "Third"
+   end
+ end
+</code></pre><p>A bit tricky, you see?  This can bite you even if you know about it.</p><p>One way it'll get you is if you try to edit a stack somewhere else in your program, outside the <code>app</code> block.</p><p>Like let's say you pass around a stack object.  And you have a class that edits that object.</p><pre><code class="rb"> class Messenger
+   def initialize(stack)
+     @stack = stack
+   end
+   def add(msg)
+     @stack.append do
+       para msg
+     end
+   end
+ end
+</code></pre><p>So, let's assume you pass the stack object into your Messenger class when the app starts.  And, later, when a message comes in, the <code>add</code> method gets used to append a paragraph to that stack.  Should work, right?</p><p>Nope, it won't work.  The <code>para</code> method won't be found.  The App object isn't around any more.  And it's the one with the <code>para</code> method.</p><p>Fortunately, each Shoes object has an <code>app</code> method that will let you reopen the App object so you can do somefurther editing.</p><pre><code class="rb"> class Messenger
+   def initialize(stack)
+     @stack = stack
+   end
+   def add(msg)
+     @stack.app do
+       @stack.append do
+         para msg
+       end
+     end
+   end
+ end
+</code></pre><p>As you can imagine, the <code>app</code> object changes <code>self</code> to the App object.</p><p>So the rules here are:</p><p>1. <strong>Methods named &quot;app&quot; or which create new windows alter <code>self</code> to the App object.</strong><br />
+(This is true for both Shoes.app and Slot.app, as well as <a href="Element.html#window">window</a> and <a href="Element.html#dialog">dialog</a>.)<br />
+2. <strong>Blocks attached to stacks, flows or any manipulation method (such as append) do not change self.  Instead, they pop the slot on to the app's editing stack.</strong></p><h4>Careful With Fixed Heights</h4><p>Fixed widths on slots are great so you can split the window into columns.</p><pre><code class="rb"> Shoes.app do
+   flow do
+     stack :width => 200 do
+       caption "Column one"
+       para "is 200 pixels wide"
+     end
+     stack :width => -200 do
+       caption "Column two"
+       para "is 100% minus 200 pixels wide"
+     end
+   end
+ end
+</code></pre><p>Fixed heights on slots should be less common.  Usually you want your text and images to just flow down the window as far as they can.  Height usually happens naturally.</p><p>The important thing here is that fixed heights actually force slots to behave differently.  To be sure that the end of the slot is chopped off perfectly, the slot becomes a <strong>nested window</strong>.  A new layer is created by the operating system to keep the slot in a fixed square.</p><p>One difference between normal slots and nested window slots is that the latter can have scrollbars.</p><pre><code class="rb"> Shoes.app do
+   stack :width => 200, :height => 200, :scroll => true do
+     background "#DFA"
+     100.times do |i|
+       para "Paragraph No. #{i}"
+     end
+   end
+ end
+</code></pre><p>These nested windows require more memory.  They tax the application a bit more.  So if you're experiencing some slowness with hundreds of fixed-height slots, try a different approach.</p><h4>Image and Shape Blocks</h4><p>Most beginners start littering the window with shapes.  It's just easier to throw all your rectangles and ovals in a slot.</p><p><strong>However, bear in mind that Shoes will create objects for all those shapes!</strong></p><pre><code class="rb"> Shoes.app do
+   fill black(0.1)
+   100.times do |i|
+     oval i, i, i * 2
+   end
+ end
+</code></pre><p>In this example, one-hundred Oval objects are created.  This isn't too bad.  But things would be slimmer if we made these into a single shape.</p><pre><code class="rb"> Shoes.app do
+   fill black(0.1)
+   shape do
+     100.times do |i|
+       oval i, i, i * 2
+     end
+   end
+ end
+</code></pre><p>Oh, wait.  The ovals aren't filled in this time!  That's because the ovals have been combined into a single huge shape.  And Shoes isn't sure where to fill in this case.</p><p>So you usually only want to combine into a single shape when you're dealing strictly with outlines.</p><p>Another option is to combine all those ovals into a single image.</p><pre><code class="rb"> Shoes.app do
+   fill black(0.1)
+   image 300, 300 do
+     100.times do |i|
+       oval i, i, i * 2
+     end
+   end
+ end
+</code></pre><p>There we go!  The ovals are all combined into a single 300 x 300 pixel image.  In this case, storing that image in memory might be much bigger than having one-hundred ovals around.  But when you're dealing with thousands of shapes, the image block can be cheaper.</p><p>The point is: it's easy to group shapes together into image or shape blocks, so give it a try if you're looking to gain some speed.  Shape blocks particularly will save you some memory and speed.</p><h4>UTF-8 Everywhere</h4><p>Ruby itself isn't Unicode aware.  And UTF-8 is a type of Unicode.  (See <a href="http://en.wikipedia.org/wiki/UTF-8" target="_new">Wikipedia</a> for a full explanation of UTF-8.)</p><p>However, UTF-8 is common on the web.  And lots of different platforms support it.  So to cut down on the amount of conversion that Shoes has to do, Shoes expects all strings to be in UTF-8 format.</p><p>This is great because you can show a myriad of languages (Russian, Japanese, Spanish, English) using UTF-8 in Shoes.  Just be sure that your text editor uses UTF-8!</p><p>To illustrate:</p><pre><code class="rb"> Shoes.app do
+   stack :margin => 10 do
+     @edit = edit_box :width => 1.0 do
+       @para.text = @edit.text
+     end
+     @para = para ""
+   end
+ end
+</code></pre><p>This app will copy anything you paste into the edit box and display it in a Shoes paragraph.  You can try copying some foreign text (such as Greek or Japanese) into this box to see how it displays.</p><p>This is a good test because it proves that the edit box gives back UTF-8 characters.  And the paragraph can be set to any UTF-8 characters.</p><p><strong>Important note:</strong> if some UTF-8 characters don't display for you, you will need to change the paragraph's font.  This is especially common on OS X.</p><p>So, a good Japanese font on OS X is <strong>AppleGothic</strong> and on Windows is <strong>MS UI Gothic</strong>.</p><pre><code class="rb"> Shoes.app do
+   para "てすと (te-su-to)", :font => case RUBY_PLATFORM
+    when /mingw/; "MS UI Gothic"
+    when /darwin/; "AppleGothic, Arial"
+    else "Arial"
+    end
+ end
+</code></pre><p>Again, anything which takes a string in Shoes will need a UTF-8 string.  Edit boxes, edit lines, list boxes, window titles and text blocks all take UTF-8. If you give a string with bad characters in it, an error will show up in the console.</p><h4>The Main App and Its Requires</h4><p><strong>NOTE:</strong> This rule is for Raisins. Policeman uses TOPLEVEL_BINDING. So, you can get <code>main</code>, Ruby top-level object, with the first snippet. Although you need to use <code>Shoes::Para</code> instead of <code>Para</code> outside <code>Shoes.app</code> block.</p><p>Each Shoes app is given a little room where it can create itself.  You can create classes and set variables and they won't be seen by other Shoes programs.  Each program runs inside its own anonymous class.</p><pre><code class="rb"> main = self
+ Shoes.app do
+   para main.to_s
+ end
+</code></pre><p>This anonymous class is called <code>(shoes)</code> and it's just an empty, unnamed class.  The <code>Shoes</code> module is mixed into this class (using <code>include Shoes</code>) so that you can use either <code>Para</code> or <code>Shoes::Para</code> when referring to the paragraph class.</p><p>The advantages of this approach are:</p><ul><li>Shoes apps cannot share local variables. </li><li>Classes created in the main app code are temporary. </li><li>The Shoes module can be mixed in to the anonymous class, but not the top-level environment of Ruby itself. </li><li>Garbage collection can clean up apps entirely once they complete.</li></ul><p>The second part is especially important to remember.</p><pre><code class="rb"> class Storage; end
+ Shoes.app do
+   para Storage.new
+ end
+</code></pre><p>The <code>Storage</code> class will disappear once the app completes.  Other apps aren't able to use the Storage class.  And it can't be gotten to from files that are loaded using <code>require</code>.</p><p>When you <code>require</code> code, though, that code will stick around.  It will be kept in the Ruby top-level environment.</p><p>So, the rule is: <strong>keep your temporary classes in the code with the app and keep your permanent classes in requires.</strong></p><p class="next">Next: <a href="Shoes.html">Shoes</a></p></div><div class="sidebar"><img src="static/shoes-icon.png"></img><ul><li><a href="http://shoesrb.com/manual/" class="prime">HELP</a></li><li><a href="Hello.html">Hello!</a><ul class="sub"><li><a href="Introducing.html">Introducing</a></li><li><a href="Installing.html">Installing</a></li><li><a href="Rules.html">Rules</a></li></ul></li><li><a href="Shoes.html">Shoes</a></li><li><a href="Slots.html">Slots</a></li><li><a href="Elements.html">Elements</a></li><li><a href="AndSoForth.html">AndSoForth</a></li></ul></div></div></body></html>
