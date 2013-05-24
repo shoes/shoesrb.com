@@ -1,2 +1,4 @@
 name: Your New Jekyll Site
+safe: true
+lsi: false
 pygments: true
