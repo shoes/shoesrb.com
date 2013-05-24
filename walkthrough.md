@@ -1,3 +1,8 @@
+---
+layout: default
+title: Shoes! The Tutorial Walkthrough
+---
+
 Hello!
 ======
 
