@@ -18,7 +18,8 @@
 #os-nav {
   width: 100%;
   display: table;
-  margin-left: -5px;
+  margin-left: -15px;
+  padding: 15px;
 }
 #os-nav li {
   list-style: none;
