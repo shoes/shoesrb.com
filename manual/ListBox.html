@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // ListBox</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>ListBox</h1><div class="intro"><p>List boxes (also called &quot;combo boxes&quot; or &quot;drop-down boxes&quot; or &quot;select boxes&quot; in some places) are a list of options that drop down when you click on the box. <img src="static/man-ele-listbox.png" /></p></div><p>A list box gets its options from an array.  An array (a list) of strings, passed into the <code>:items</code> style.</p><pre><code class="rb"> Shoes.app do
    para "Choose a fruit:"
-   list_box :items => ["Grapes", "Pears", "Apricots"]
+   list_box items: ["Grapes", "Pears", "Apricots"]
  end
 </code></pre><p>So, the basic size of a list box is about 200 pixels wide and 28 pixels high.  You can adjust this length using the <code>:width</code> style.</p><pre><code class="rb"> Shoes.app do
    para "Choose a fruit:"
-   list_box :items => ["Grapes", "Pears", "Apricots"],
-     :width => 120, :choose => "Apricots" do |list|
+   list_box items: ["Grapes", "Pears", "Apricots"],
+     width: 120, choose: "Apricots" do |list|
        @fruit.text = list.text
    end
    @fruit = para "No fruit selected"

@@ -23,10 +23,10 @@
      @p3 = para "Third"
    end
  end
-</code></pre><p>These instance variables will all end up inside the App object.</p><p><strong>Whenever you create a new window, <code>self</code> is also changed.</strong>  So, this means the <a href="Element.html#window">window</a> and <a href="Element.html#dialog">dialog</a> methods, in addition to Shoes.app.</p><pre><code class="rb"> Shoes.app :title => "MAIN" do
+</code></pre><p>These instance variables will all end up inside the App object.</p><p><strong>Whenever you create a new window, <code>self</code> is also changed.</strong>  So, this means the <a href="Element.html#window">window</a> and <a href="Element.html#dialog">dialog</a> methods, in addition to Shoes.app.</p><pre><code class="rb"> Shoes.app title: "MAIN" do
    para self
    button "Spawn" do
-     window :title => "CHILD" do
+     window title: "CHILD" do
        para self
      end
    end
@@ -64,18 +64,18 @@
 (This is true for both Shoes.app and Slot.app, as well as <a href="Element.html#window">window</a> and <a href="Element.html#dialog">dialog</a>.)<br />
 2. <strong>Blocks attached to stacks, flows or any manipulation method (such as append) do not change self.  Instead, they pop the slot on to the app's editing stack.</strong></p><h4>Careful With Fixed Heights</h4><p>Fixed widths on slots are great so you can split the window into columns.</p><pre><code class="rb"> Shoes.app do
    flow do
-     stack :width => 200 do
+     stack width: 200 do
        caption "Column one"
        para "is 200 pixels wide"
      end
-     stack :width => -200 do
+     stack width: -200 do
        caption "Column two"
        para "is 100% minus 200 pixels wide"
      end
    end
  end
 </code></pre><p>Fixed heights on slots should be less common.  Usually you want your text and images to just flow down the window as far as they can.  Height usually happens naturally.</p><p>The important thing here is that fixed heights actually force slots to behave differently.  To be sure that the end of the slot is chopped off perfectly, the slot becomes a <strong>nested window</strong>.  A new layer is created by the operating system to keep the slot in a fixed square.</p><p>One difference between normal slots and nested window slots is that the latter can have scrollbars.</p><pre><code class="rb"> Shoes.app do
-   stack :width => 200, :height => 200, :scroll => true do
+   stack width: 200, height: 200, scroll: true do
      background "#DFA"
      100.times do |i|
        para "Paragraph No. #{i}"
@@ -105,15 +105,15 @@
    end
  end
 </code></pre><p>There we go!  The ovals are all combined into a single 300 x 300 pixel image.  In this case, storing that image in memory might be much bigger than having one-hundred ovals around.  But when you're dealing with thousands of shapes, the image block can be cheaper.</p><p>The point is: it's easy to group shapes together into image or shape blocks, so give it a try if you're looking to gain some speed.  Shape blocks particularly will save you some memory and speed.</p><h4>UTF-8 Everywhere</h4><p>Ruby itself isn't Unicode aware.  And UTF-8 is a type of Unicode.  (See <a href="http://en.wikipedia.org/wiki/UTF-8" target="_new">Wikipedia</a> for a full explanation of UTF-8.)</p><p>However, UTF-8 is common on the web.  And lots of different platforms support it.  So to cut down on the amount of conversion that Shoes has to do, Shoes expects all strings to be in UTF-8 format.</p><p>This is great because you can show a myriad of languages (Russian, Japanese, Spanish, English) using UTF-8 in Shoes.  Just be sure that your text editor uses UTF-8!</p><p>To illustrate:</p><pre><code class="rb"> Shoes.app do
-   stack :margin => 10 do
-     @edit = edit_box :width => 1.0 do
+   stack margin: 10 do
+     @edit = edit_box width: 1.0 do
        @para.text = @edit.text
      end
      @para = para ""
    end
  end
 </code></pre><p>This app will copy anything you paste into the edit box and display it in a Shoes paragraph.  You can try copying some foreign text (such as Greek or Japanese) into this box to see how it displays.</p><p>This is a good test because it proves that the edit box gives back UTF-8 characters.  And the paragraph can be set to any UTF-8 characters.</p><p><strong>Important note:</strong> if some UTF-8 characters don't display for you, you will need to change the paragraph's font.  This is especially common on OS X.</p><p>So, a good Japanese font on OS X is <strong>AppleGothic</strong> and on Windows is <strong>MS UI Gothic</strong>.</p><pre><code class="rb"> Shoes.app do
-   para "てすと (te-su-to)", :font => case RUBY_PLATFORM
+   para "てすと (te-su-to)", font: case RUBY_PLATFORM
     when /mingw/; "MS UI Gothic"
     when /darwin/; "AppleGothic, Arial"
     else "Arial"

@@ -1,14 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // Border</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>Border</h1><div class="intro"><p>A border is a color, gradient or image painted in a line around the edge of any slot.  Like the Background element in the last section, a Border is a kind of Shoes::Pattern. <img src="static/man-ele-border.png" /></p></div><p>The first, crucial thing to know about border is that all borders paint a line around the <strong>inside</strong> of a slot, not the outside.  So, if you have a slot which is fifty pixels wide and you paint a five pixel border on it, that means there is a fourty pixel wide area inside the slot which is surrounded by the border.</p><p>This also means that if you paint a Border on top of a <a href="Background.html">Background</a>, the edges of the background will be painted over by the border.</p><p>Here is just such a slot:</p><pre><code class="rb"> Shoes.app do
-   stack :width => 50 do
-     border black, :strokewidth => 5
-     para "=^.^=", :stroke => green
+   stack width: 50 do
+     border black, strokewidth: 5
+     para "=^.^=", stroke: green
    end
  end
 </code></pre><p>If you want to paint a border around the outside of a slot, you'll need to wrap that slot in another slot.  Then, place the border in the outside slot.</p><pre><code class="rb"> Shoes.app do
-   stack :width => 60 do
-     border black, :strokewidth => 5
-     stack :width => 50 do
-       para "=^.^=", :stroke => green
+   stack width: 60 do
+     border black, strokewidth: 5
+     stack width: 50 do
+       para "=^.^=", stroke: green
      end
    end
  end

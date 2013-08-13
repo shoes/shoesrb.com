@@ -61,7 +61,7 @@ Okay, let's give the stack a bit of a *margin*. Scoot it out from the edge.
     <code class="ruby">
       Shoes.app {
         background white
-        stack(:margin => 8) {
+        stack(margin: 8) {
           button "A bed of clams"
           button "A coalition of cheetahs"
           button "A gulp of swallows"
@@ -87,11 +87,9 @@ Time for something new, artwork!  Let's draw!
   <pre class="wt">
     <code class="ruby">
       Shoes.app {
-        oval(
-          :left => 10,
-          :top => 10,
-          :radius => 40
-        )
+        oval(left:   10,
+             top:    10,
+             radius: 40)
       }
     </code>
   </pre>
@@ -111,16 +109,12 @@ Now, a rectangle and an arrow.
     <code class="ruby">
       Shoes.app {
         fill red
-        rect(
-          :left => 10,
-          :top => 10,
-          :width => 40
-        )
-        arrow(
-          :left => 30,
-          :top => 60,
-          :width => 40
-        )
+        rect(left:  10,
+             top:   10,
+             width: 40)
+        arrow(left:  30,
+              top:   60,
+              width: 40)
       }
     </code>
   </pre>
@@ -181,7 +175,7 @@ Beyond para, you've got *title* and *subtitle*, which are bigger fonts. You can 
 <pre class="wt">
   <code class="ruby">
   Shoes.app {
-    stack(:margin => 6) {
+    stack(margin: 6) {
       title "A Question"
       para strong("Q."), " Are you beginning to grasp hold of Shoes?"
       para em(strong("A."), " Quit pestering me, I'm hacking here.")
@@ -237,13 +231,11 @@ See if you can figure out this one. How does the gradient work? How are the lett
   <code class="ruby">
   Shoes.app do
     background "#F3F".."#F90"
-    title(
-      "Shoooes",
-      :top => 60,
-      :align => "center",
-      :font => "Trebuchet MS",
-      :stroke => white
-    )
+    title("Shoooes",
+          top:    60,
+          align:  "center",
+          font:   "Trebuchet MS",
+          stroke: white)
   end
   </code>
 </pre>
@@ -261,11 +253,10 @@ Aha, here's a flow. It keeps the text box and the button side-by-side.
   <code class="ruby">
   Shoes.app do
     background "#EFC"
-    border(
-      "#BE8",
-      :strokewidth => 6
-    )
-    stack(:margin => 12) do
+    border("#BE8",
+           strokewidth: 6)
+
+    stack(margin: 12) do
       para "Enter your name"
       flow do
         edit_line
@@ -286,7 +277,7 @@ In this one, we make a five-point star. And it follows the mouse around as you m
 <pre class="wt">
   <code class="ruby">
   Shoes.app do
-    @shape = star(:points => 5)
+    @shape = star(points: 5)
     motion do |left, top|
       @shape.move left, top
     end
@@ -306,8 +297,8 @@ On to a taste of animation. The Shoes icon moves randomly a bunch of times each 
   Shoes.app do
     @shoes = image(
       "http://spiralofhope.com/i/ruby-shoes--shoes.png",
-      :top => 100,
-      :left => 100
+      top:  100,
+      left: 100
     )
     animate do |i|
       @shoes.top += (-20..20).rand
@@ -361,16 +352,15 @@ Okay, last one for now. Let's generate a hundred random circles. This example al
 <img src="/img/wt/016.png">
   <pre class="wt">
     <code class="ruby">
-    Shoes.app(:width => 300, :height => 400) do
+    Shoes.app(width: 300, height: 400) do
       fill rgb(0, 0.6, 0.9, 0.1)
       stroke rgb(0, 0.6, 0.9)
       strokewidth 0.25
+      
       100.times do
-        oval(
-          :left => (-5..self.width).rand,
-          :top => (-5..self.height).rand,
-          :radius => (25..50).rand
-        )
+        oval(left:   (-5..self.width).rand,
+             top:    (-5..self.height).rand,
+             radius: (25..50).rand)
       end
     end
     </code>
