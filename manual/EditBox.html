@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // EditBox</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>EditBox</h1><div class="intro"><p>Edit boxes are wide, rectangular boxes for entering text.  On the web, they call these textareas.  These are multi-line edit boxes for entering longer descriptions.  Essays, even! <img src="static/man-ele-editbox.png" /></p></div><p>Without any other styling, edit boxes are sized 200 pixels by 108 pixels.  You can also use <code>:width</code> and <code>:height</code> styles to set specific sizes.</p><pre><code class="rb"> Shoes.app do
    edit_box
-   edit_box :width => 100, :height => 100
+   edit_box width: 100, height: 100
  end
 </code></pre><p>Other controls (like <a href="Button.html">Button</a> and <a href="Check.html">Check</a>) have only click events, but both <a href="EditLine.html">EditLine</a> and EditBox have a <code>change</code> event.  The <code>change</code> block is called every time someone types into or deletes from the box.</p><pre><code class="rb"> Shoes.app do
    edit_box do |e|
