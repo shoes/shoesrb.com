@@ -30,3 +30,4 @@ layout: default
 <p>For those that can't make it, we'll be using [Hangouts on Air](https://plus.google.com/u/0/b/115048537762125064206/115048537762125064206/videos) to put the videos on Youtube for anyone who wants to check out our talks.
 
 <p>Shoes on and see you all next month! :)
+</div>
