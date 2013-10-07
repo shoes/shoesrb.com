@@ -116,6 +116,20 @@
 .downloads ul {
   list-style: none;
 }
+
+.float-height-fix {
+  clear : both;
+}
+
+#download-notes {
+  font-style: italic;
+}
+
+#download-notes p,
+#download-notes a {
+  font-size: 10px;
+}
+
 .arrow{
   opacity: 0.3;
   background: url('/img/arrow.jpg') no-repeat;
