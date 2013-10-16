@@ -13,7 +13,7 @@ layout: default
   <h2><a href="{{ post.url }}">Shoes 4 Monthly Google Hangout</a></h2>
   <h3>2013-10-6 12:47</h3>
   <p></p>
-  <p>We had the first of our monthly Google Hangouts to talk about Shoes 4 this past Tuesday. It was great to meet everyone, and it was super exciting to talk about all the different things regarding Shoes:
+  <p>We had the first of our monthly Google Hangouts to talk about Shoes 4 earlier this month. It was great to meet everyone, and it was super exciting to talk about all the different things regarding Shoes:
     <ul>
       <li> We got to know each other better after our GitHub exchanges and learn about our different backgrounds.</li>
 
