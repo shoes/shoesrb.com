@@ -24,6 +24,9 @@ shoes 4 is a complete rewrite of the shoes DSL, shoes 3 is great but it has its
  installation problems that were hard to fix.
 
 shoes 4 is a united effort of the community to make shoes easy and fun again.
+ The primary purpose is to re-implement the functionality shoes3 offered,
+ improving features and squashing bugs along the way while making it easily
+ runnable on every operating system again.
 Also it's an all ruby rewrite - no C or Java code - just ruby. Easy to
 maintain. Easy to contribute! It has been in the making for almost 2 years now.
 
