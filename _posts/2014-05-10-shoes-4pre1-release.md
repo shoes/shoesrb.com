@@ -8,14 +8,15 @@ layout: default
 <div class='hero-unit'>
   <h1>The Shoes Blog</h1>
 </div>
-<h2><a href="{{ post.url }}">shoes 4.pre1 released!</a></h2>
-<h3>2014-05-10 16:00</h3>
+<h1><a href="{{ post.url }}">shoes 4.pre1 released!</a></h1>
+<em>2014-05-10 16:00</em>
 
 Hello shoesers out there! Long time no see! Wondering what we have been up to?
 
 Well we've been hard at work on [shoes 4](https://github
-.com/shoes/shoes4) - and today is a happy day because we can announce the
-first preview release!
+.com/shoes/shoes4)! Today is a happy day because we can announce the
+first preview release - just in time for the second birthday of the project
+(24th of May 2012)!
 
 ## shoes 4?
 
@@ -88,8 +89,7 @@ If you want to install shoes 4 straight from the github there are
 instructions at our [github repository README](https://github
 .com/shoes/shoes4#installing-shoes4-from-github).
 
-If you run into issues we'd appreciate it immensely if you reported them in
-[our issue tracker](https://github.com/shoes/shoes4/issues). Thank you <3
+If you run into issues we'd appreciate it immensely if you reported them in [our issue tracker](https://github.com/shoes/shoes4/issues). Thank you <3
 
 Also of course contributions, pull requests and feedback are extremely welcome!
 
@@ -99,7 +99,8 @@ This pre release is the first step on our way to a full blown of 4.0
 release.
 
 There will be subsequent pre-releases when we feel that a large enough set of
-issues has been fixed. You can have a look at our [milestone](https://github.com/shoes/shoes4/issues/milestones) to see the overall progress.
+issues has been fixed. You can have a look at our
+[milestone](https://github.com/shoes/shoes4/issues/milestones) to see the overall progress.
 
 The next big step is releasing a release candidate, that might as well take a
  while. We already have over 70 issues lined up that we want to fix. Please
