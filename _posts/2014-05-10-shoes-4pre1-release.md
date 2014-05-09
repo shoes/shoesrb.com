@@ -13,15 +13,15 @@ layout: default
 
 Hello shoesers out there! Long time no see! Wondering what we have been up to?
 
-Well we've been hard at work working on [shoes 4](https://github
+Well we've been hard at work on [shoes 4](https://github
 .com/shoes/shoes4) - and today is a happy day because we can announce the
 first preview release!
 
 ## shoes 4?
 
-shoes 4 is a complete rewrite of the shoes DSL, shoes 3 is great but it has its
+shoes 4 is a complete rewrite of the shoes DSL. shoes 3 is great but it has its
  problems... e.g. a lot of C-code which made it hard to maintain plus
- installation problems that were hard to fix.
+ difficult installation problems.
 
 shoes 4 is a united effort of the community to make shoes easy and fun again.
  The primary purpose is to re-implement the functionality shoes3 offered,
@@ -38,8 +38,8 @@ is ruby, not Java.
 ## Preview Release?
 
 shoes 4 is not quite done yet - this is the first release after almost 2 years
- of work - it's not quite ready for production use and is missing some
- features. However there is already a lot in there and a lot of vintage shoes
+ of work. It's not quite ready for production use and is missing some
+ features. However there is already a lot in there! A lot of vintage shoes
   programs run just fine and it's definitely possible to enjoy the power of
   shoes again!
 
@@ -55,9 +55,9 @@ shoes 4 is not quite done yet - this is the first release after almost 2 years
 
 ### What's missing?
 
-* proper handling of quite some styles/methods for the elements
+* proper handling of quite a few styles/methods for the elements
 * installers (right now it's "just" a gem)
-* packaging functionality - that's one of the big things missing a proof of
+* packaging functionality - that's one of the big things missing. A proof of
 concept for jar/mac apps exists though
 * support for the video element, which has also been dropped for now ([see this issue](https://github.com/shoes/shoes4/issues/113))
 * correct disposal of all operating system resources - e.g. might run into
@@ -75,7 +75,7 @@ you can do it like this: `rvm install jruby`
 
 Then while JRuby is selected as your main ruby do:
 
-    gem instal shoes --pre
+    gem install shoes --pre
 
 et voila!
 
@@ -84,7 +84,7 @@ available to you on the console for running shoes programs. E.g.
 
     shoes path/to/my/program/my_app.rb
 
-If you want to install shoes 4 straight from the github resources there are
+If you want to install shoes 4 straight from the github there are
 instructions at our [github repository README](https://github
 .com/shoes/shoes4#installing-shoes4-from-github).
 
