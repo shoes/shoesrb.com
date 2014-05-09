@@ -1,37 +1,40 @@
 ---
-title: "Shoes 4 pre release!"
+title: "shoes 4 pre release!"
 slug: "shoes-4-pre1-release"
 date: 2014-05-10 16:00
 layout: default
 ---
 
-
-# shoes 4.pre1 released!
+<div class='hero-unit'>
+  <h1>The Shoes Blog</h1>
+</div>
+<h2><a href="{{ post.url }}">shoes 4.pre1 released!</a></h2>
+<h3>2014-05-10 16:00</h3>
 
 Hello shoesers out there! Long time no see! Wondering what we have been up to?
 
-Well we've been hard at work working on [shoes4](https://github
+Well we've been hard at work working on [shoes 4](https://github
 .com/shoes/shoes4) - and today is a happy day because we can announce the
 first preview release!
 
-## shoes4?
+## shoes 4?
 
-shoes4 is a complete rewrite of the shoes DSL, shoes3 is great but it has its
+shoes 4 is a complete rewrite of the shoes DSL, shoes 3 is great but it has its
  problems... e.g. a lot of C-code which made it hard to maintain plus
  installation problems that were hard to fix.
 
-shoes4 is a united effort of the community to make shoes easy and fun again.
+shoes 4 is a united effort of the community to make shoes easy and fun again.
 Also it's an all ruby rewrite - no C or Java code - just ruby. Easy to
 maintain. Easy to contribute! It has been in the making for almost 2 years now.
 
-shoes4 uses [jruby](http://jruby.org/) to leverage the cross platform power of
+shoes 4 uses [jruby](http://jruby.org/) to leverage the cross platform power of
 [swt](http://www.eclipse.org/swt/) to build GUIs. That means you need to have a
 JVM installed but don't worry - all you need to ever write and worry about
 is ruby, not Java.
 
 ## Preview Release?
 
-shoes4 is not quite done yet - this is the first release after almost 2 years
+shoes 4 is not quite done yet - this is the first release after almost 2 years
  of work - it's not quite ready for production use and is missing some
  features. However there is already a lot in there and a lot of vintage shoes
   programs run just fine and it's definitely possible to enjoy the power of
@@ -78,7 +81,7 @@ available to you on the console for running shoes programs. E.g.
 
     shoes path/to/my/program/my_app.rb
 
-If you want to install shoes4 straight from the github resources there are
+If you want to install shoes 4 straight from the github resources there are
 instructions at our [github repository README](https://github
 .com/shoes/shoes4#installing-shoes4-from-github).
 
@@ -102,7 +105,7 @@ The next big step is releasing a release candidate, that might as well take a
 ## Thanks
 
 Last but not least heaps of thanks to everyone who ever contributed to shoes
-(shoes4 already has nearly 40 contributors! Wooohoooo!!!), reported an issue,
+(shoes 4 already has nearly 40 contributors! Wooohoooo!!!), reported an issue,
 gave us feedback or just used shoes and had a lot of fun with it.
 
 Special thanks goes to the JRuby organization which always supported us
