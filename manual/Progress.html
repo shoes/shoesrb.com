@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><title>The Shoes Manual // Progress</title><script type="text/javascript" src="static/code_highlighter.js"></script><script type="text/javascript" src="static/code_highlighter_ruby.js"></script><style type="text/css">@import 'static/manual.css';</style></head><body><div id="main"><div id="manual"><h2>The Shoes Manual</h2><h1>Progress</h1><div class="intro"><p>Progress bars show you how far along you are in an activity.  Usually, a progress bar represents a percentage (from 0% to 100%.)  Shoes thinks of progress in terms of the decimal numbers 0.0 to 1.0. <img src="static/man-ele-progress.png" /></p></div><p>A simple progress bar is 200 pixels wide, but you can use the <code>:width</code> style (as with all Shoes elements) to lengthen it.</p><pre><code class="rb"> Shoes.app do
-   stack :margin => 0.1 do
+   stack margin: 0.1 do
      title "Progress example"
-     @p = progress :width => 1.0
+     @p = progress width: 1.0
      animate do |i|
        @p.fraction = (i % 100) / 100.0
      end
