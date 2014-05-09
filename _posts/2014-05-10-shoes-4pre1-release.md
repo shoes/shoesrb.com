@@ -25,36 +25,43 @@ Also it's an all ruby rewrite - no C or Java code - just ruby. Easy to
 maintain. Easy to contribute! It has been in the making for almost 2 years now.
 
 shoes4 uses [jruby](http://jruby.org/) to leverage the cross platform power of
-[swt](http://www.eclipse.org/swt/) to build GUIs. That means you need to have
+[swt](http://www.eclipse.org/swt/) to build GUIs. That means you need to have a
 JVM installed but don't worry - all you need to ever write and worry about
 is ruby, not Java.
 
 ## Preview Release?
 
 shoes4 is not quite done yet - this is the first release after almost 2 years
- of work - it's not quite ready for production use yet and is missing some
- features.
+ of work - it's not quite ready for production use and is missing some
+ features. However there is already a lot in there and a lot of vintage shoes
+  programs run just fine and it's definitely possible to enjoy the power of
+  shoes again!
 
 ### What's in?
 
 * All shoes elements and DSL methods except for video are implemented
-* almost 600 resolved issues
+* almost [600 resolved issues](https://github.com/shoes/shoes4/issues?state=closed)
 * over 2000 commits
-* contributions from a lot of amazing people
 * many vintage shoes samples [are running](https://github
 .com/shoes/shoes4/blob/master/samples/README)
 * ability to install as a gem!
+* contributions from a lot of amazing people
 
 ### What's missing?
 
-* support for the video element, which has also been dropped for now even for
- a full release ([see this issue](https://github.com/shoes/shoes4/issues/113))
 * proper handling of quite some styles/methods for the elements
-* installers (right now it's just a gem)
+* installers (right now it's "just" a gem)
 * packaging functionality - that's one of the big things missing a proof of
 concept for jar/mac apps exists though
+* support for the video element, which has also been dropped for now ([see this issue](https://github.com/shoes/shoes4/issues/113))
+* correct disposal of all operating system resources - e.g. might run into
+out of handles errors
+* check [our issue tracker](https://github.com/shoes/shoes4/issues) for full
+blown list of known issues/feature requests
 
-## How do I get this?
+## How do I get this and run this?
+
+Alright, alright - enough talking!
 
 At first you have to install [JRuby](http://jruby.org/) - preferably a
 version of the 1.7 series (most current release is 1.7.12). If you use rvm
@@ -66,13 +73,31 @@ Then while JRuby is selected as your main ruby do:
 
 et voila!
 
-If you want to install straight from the github resources there are
-instructions at our [github repository](https://github.com/shoes/shoes4/).
+After installing the gem successfully you should have a `shoes` command
+available to you on the console for running shoes programs. E.g.
+
+    shoes path/to/my/program/my_app.rb
+
+If you want to install shoes4 straight from the github resources there are
+instructions at our [github repository README](https://github
+.com/shoes/shoes4#installing-shoes4-from-github).
 
 If you run into issues we'd appreciate it immensely if you reported them in
 [our issue tracker](https://github.com/shoes/shoes4/issues). Thank you <3
 
 Also of course contributions, pull requests and feedback are extremely welcome!
+
+## The road to a 4.0 release
+
+This pre release is the first step on our way to a full blown of 4.0
+release.
+
+There will be subsequent pre-releases when we feel that a large enough set of
+issues has been fixed. You can have a look at our [milestone](https://github.com/shoes/shoes4/issues/milestones) to see the overall progress.
+
+The next big step is releasing a release candidate, that might as well take a
+ while. We already have over 70 issues lined up that we want to fix. Please
+ report more though - we want to ship a bug free and fun software!
 
 ## Thanks
 
