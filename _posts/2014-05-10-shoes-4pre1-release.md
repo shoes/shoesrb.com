@@ -70,9 +70,9 @@ blown list of known issues/feature requests
 
 ## How do I get shoes 4 and run it?
 
-Alright, alright - enough talking!
+Alright, alright—enough talking!
 
-At first you have to install [JRuby](http://jruby.org/) - preferably a
+At first you have to install [JRuby](http://jruby.org/)—preferably a
 version of the 1.7 series (most current release is 1.7.12). If you use rvm
 you can do it like this: `rvm install jruby`
 
