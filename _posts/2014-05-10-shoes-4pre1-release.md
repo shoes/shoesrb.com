@@ -95,6 +95,38 @@ If you run into issues we'd appreciate it immensely if you reported them in [our
 
 Also of course contributions, pull requests and feedback are extremely welcome!
 
+## What does shoes 4 look like?
+
+Take this little sample program for instance:
+
+
+<pre><code>Shoes. app title: 'Hello Shoes' do
+  background gradient limegreen..blue
+  stack do
+    para 'This is just a very basic app'
+    button 'Click me' do alert 'Hello there!' end
+    image 'http://shoesrb.com/img/shoes-icon.png'
+  end
+end</code></pre>
+
+It creates this application (after clicking the button):
+
+![sample app](/img/sample_app.png)
+
+Here are screen shots from some applications running just fine on shoes 4:
+
+![sample tank](/img/sample_tank.png)
+
+Vintage tank game.
+
+![sample manual](/img/sample_manual.png)
+
+The good old shoes manual!
+
+You can check out more samples in the [samples directory](https://github.com/shoes/shoes4/blob/master/samples/).
+Not all of them are working yet though, so also make sure to check the [README](https://github.com/shoes/shoes4/blob/master/samples/README)
+for information about which samples work.
+
 ## The road to a 4.0 release
 
 This pre release is the first step on our way to an official 4.0.0
