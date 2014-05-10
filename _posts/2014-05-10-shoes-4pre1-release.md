@@ -91,7 +91,7 @@ If you want to install shoes 4 straight from the github there are
 instructions at our [github repository README](https://github
 .com/shoes/shoes4#installing-shoes4-from-github).
 
-If you run into issues we'd appreciate it immensely if you reported them in [our issue tracker](https://github.com/shoes/shoes4/issues). Thank you <3
+If you run into issues we'd appreciate it immensely if you reported them in [our issue tracker](https://github.com/shoes/shoes4/issues). Thank you ♥
 
 Also of course contributions, pull requests and feedback are extremely welcome!
 
