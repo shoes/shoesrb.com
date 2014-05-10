@@ -1,7 +1,7 @@
 ---
 title: "shoes 4 preview released!"
 slug: "shoes-4-preview-released"
-date: 2014-05-10 16:00
+date: 2014-05-10 16:20
 layout: default
 ---
 
@@ -151,3 +151,7 @@ shoes for 3 months. This release wouldn't have happened yet without their help.
 
  Also thanks to you for reading. Please try installing and running shoes on your
  machine. Let's have fun with shoes!
+
+ Shoes on!
+ 
+ Team Shoes
