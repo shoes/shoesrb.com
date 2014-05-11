@@ -29,7 +29,7 @@ shoes 4 is a united effort of the community to make shoes easy and fun again.
  improving features and squashing bugs along the way while making it easily
  runnable on every operating system again. The new codebase is modular and
  extensible, so it can support multiple rendering backends
- ([Qt](http://qt-project.org/), ([GTK](http://www.gtk.org/), etc). Also 
+ ([Qt](http://qt-project.org/), [GTK](http://www.gtk.org/), etc). Also
  it's an all ruby rewrite. There's no C or Java code, just ruby. Easy to
  maintain. Easy to contribute!
 
