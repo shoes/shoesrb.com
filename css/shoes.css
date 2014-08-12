@@ -50,30 +50,6 @@
     font-size: 40px;
   }
 }
-#tutorials{
-  background: url('/img/sprite.png') no-repeat 0px -482px;
-  width: 45px;
-  height: 33px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-}
-#blog{
-  background: url('/img/sprite.png') no-repeat -1px -524px;
-  width: 45px;
-  height: 35px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-}
-#contribute{
-  background: url('/img/sprite.png') no-repeat -57px -515px;
-  width: 48px;
-  height: 44px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-}
 #nobody{
   position: absolute;
   top: -50px;
@@ -137,44 +113,12 @@
   width: 128px;
   height: 128px;
 }
-.arrow1{
-  opacity: 0.8;
-  background: url('/img/arrow.jpg') no-repeat;
+.download-arrow.icon-download{
+  color: #cde4a8;
+  font-size: 110px;
   float: left;
   width: 128px;
-  height: 128px;
-}
-#walk{
-  background: url('/img/sprite2.png') no-repeat -52px -4px;
-  width: 40px;
-  height: 42px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 2px;
-}
-#book{
-  background: url('/img/sprite2.png') no-repeat 0 0;
-  width: 44px;
-  height: 48px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 2px;
-}
-#manual{
-  background: url('/img/sprite2.png') no-repeat -163px -1px;
-  width: 62px;
-  height: 48px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 2px;
-}
-#rdocs{
-  background: url('/img/sprite2.png') no-repeat -95px 0;
-  width: 63px;
-  height: 49px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 2px;
+  min-height: 2.2em;
 }
 .tut {
   position: relative;
@@ -188,4 +132,10 @@
   position: absolute;
   top: -40px;
   right: 0px;
+}
+h2 i{
+  color: #595959;
+}
+h1 i.icon-github{
+  font-size: .75em;
 }
