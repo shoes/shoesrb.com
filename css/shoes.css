@@ -139,3 +139,9 @@ h2 i{
 h1 i.icon-github{
   font-size: .75em;
 }
+body{
+  margin-top: 70px;
+}
+img{
+  max-width: 100%;
+}
