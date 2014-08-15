@@ -137,11 +137,6 @@ img.logo{
   margin: 10px auto;
   display: block;
 }
-.headsupport {
-  position: absolute;
-  top: -40px;
-  right: 0px;
-}
 h2{
   margin-bottom: 0;
 }
@@ -156,4 +151,13 @@ img{
 }
 #walkthrough{
   padding: 70px 20px 20px;
+}
+@media only screen and (max-width: 767px){
+  #download, #why, #nobody{
+    display: none;
+  }
+}
+.jumbotron h1, .jumbotron p{
+  position: relative;
+  z-index: 1;
 }
