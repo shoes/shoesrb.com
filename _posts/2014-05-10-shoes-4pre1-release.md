@@ -5,7 +5,7 @@ date: 2014-05-10 16:20
 layout: default
 ---
 
-<div class='hero-unit'>
+<div class='jumbotron'>
   <h1>The Shoes Blog</h1>
 </div>
 <h1><a href="{{ post.url }}">shoes 4 preview released!</a></h1>
@@ -153,5 +153,5 @@ shoes for 3 months. This release wouldn't have happened yet without their help.
  machine. Let's have fun with shoes!
 
  Shoes on!
- 
+
  Team Shoes

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Shoes! The Tutorial Walkthrough
+container_class: walkthrough
 ---
 
 Hello!
@@ -356,7 +357,7 @@ Okay, last one for now. Let's generate a hundred random circles. This example al
       fill rgb(0, 0.6, 0.9, 0.1)
       stroke rgb(0, 0.6, 0.9)
       strokewidth 0.25
-      
+
       100.times do
         oval(left:   (-5..self.width).rand,
              top:    (-5..self.height).rand,
