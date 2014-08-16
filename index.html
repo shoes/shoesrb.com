@@ -3,66 +3,43 @@ layout: default
 title: Shoes!
 ---
 
-<div class='hero-unit'>
-  <div class='intro'>
-    <img alt='shoes logo' id='icon' src='/img/shoes-icon.png' />
-    <h1>Shoes!</h1>
-    <p>
-      Ever wanted to build a GUI? Annoyed that it's so much effort? Shoes
-      makes building little graphical programs for Mac, Windows, and Linux <em>super</em> simple.
-    </p>
-    <p>
-      <a class='btn btn-primary btn-large' href='/tutorials.html'>Learn more »</a>
-    </p>
-  </div>
-  <div class='center'>
-    <img src='/img/screen.jpg' />
-    <ul id="os-nav">
-      <li><a class="os-link" href="/downloads.html"><i class="icon-apple os"></i></a></li>
-      <li><a class="os-link" href="/downloads.html"><i class="icon-windows os"></i></a></li>
-      <li><a class="os-link" href="/downloads.html"><i class="icon-linux os"></i></a></li>
-    </ul>
-    <p>
-      GUI Awesomeness across all major platforms!
-      <em>Mac OS X</em>, <em>Windows</em> or <em>Linux</em>.
-      Shoes loves them all.
-    </p>
-  </div>
-</div>
-<div class='row'>
-  <div class='span3'>
-    <h2><i class="icon-question-sign"></i> Tutorials</h2>
+<header>
+  <h1>Shoes!</h1>
 
-    <p>
-      New to Shoes? Great! There are tons of resources available to get
-      you started with Shoes.
-    </p>
-    <p>
-      <a class='btn' href='/tutorials.html'>Read More »</a>
-    </p>
-  </div>
-  <div class='span3'>
-    <h2><i class="icon-rss-sign"></i> Blog</h2>
+  <p class="tagline">Shoes is a <strong>tiny GUI toolkit</strong> for writing fun, simple applications in Ruby.</p>
+</header>
 
-    <p>
-      Keep up with the latest developments, see what
-      other people are building, and hear about new features as we build
-      them!
-    </p>
-    <p>
-      <a class='btn' href='/blog.html'>Check it out »</a>
-    </p>
-  </div>
-  <div class='span3'>
-    <h2><i class="icon-github"></i> Contribute</h2>
+{% highlight ruby %}
+Shoes.app(title: "Welcome to Shoes!", width: 600, height: 400) do
+  stack margin: 10 do
+    stack margin: 10 do
+      background gainsboro
+      subtitle "Ever wanted to build a GUI?"
+      tagline "Annoyed that it's so much effort?"
+    end
 
-    <p>
-      Want to contribute? Fantastic! The Shoes Team is always looking
-      for motivated contributers. Help us make Shoes even better.
-    </p>
-    <p>
-      <a class='btn' href='/contribute.html'>See our team »</a>
-    </p>
-  </div>
-</div>
+    flow do
+      buttons = {
+        search: "Search Stuff",
+        printer: "Print Page",
+        notes: "Open Notes",
+        photo: "Get Photo",
+        bluray: "Burn Disk"
+      }
 
+      buttons.each do |k, v|
+        stack width: 100 do
+          para value
+        end
+      end
+    end
+
+    stack margin: 10 do
+      background gainsboro
+      para "I just want to build..."
+      list_box items: ["my own twitter gui", "my own music player", "a time machine"]
+      button "No problemo, let's go!"
+    end
+  end
+end
+{% endhighlight %}

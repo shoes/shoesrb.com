@@ -1,0 +1,92 @@
+---
+---
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Source+Code+Pro);
+
+$background: #424242;
+$body-color: rgba(255, 255, 255, .95);
+
+@import "highlight";
+@import "reset";
+
+body {
+  background-color: $background;
+  color: $body-color;
+  font-family: 'Open Sans', helvetica, arial;
+  font-size: 1.2em;
+}
+
+// header
+header {
+  &:after {
+    display: block;
+    width: 50%;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+h1 {
+  font-size: 125px;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.tagline {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 25px;
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+// links
+a {
+  color: rgba(250, 250, 250, .9);
+  text-decoration: none;
+  $transition: .3s color ease-in-out;
+  transition: $transition;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+
+  &:hover {
+    color: rgba(250, 250, 250, .75);
+  }
+}
+
+// nav
+nav {
+  display: block;
+  margin-top: 15px;
+
+  ul {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      a { color: rgba(230, 230, 230, 1) }
+    }
+
+    a:not(:last-child):after {
+      content: '\00b7';
+      color: rgba(230, 230, 230, .8);
+    }
+  }
+}
+
+// code
+code {
+  font-family: 'Source Code Pro', monospace, courier;
+}
+
+pre {
+  font-size: 15px;
+  line-height: 19px;
+  margin: 0 20%;
+  padding: 30px;
+  background: rgba(45, 45, 45, .9);
+  overflow-x: scroll;
+  border-radius: 5px;
+}

@@ -6,3 +6,8 @@ keywords: ruby, gui, simple, ease, fun, native applications, toolkit, gui toolki
 # meta
 highlighter: pygments
 permalink: pretty
+
+# assets
+sass:
+  style: :compressed
+  sass_dir: /css/
