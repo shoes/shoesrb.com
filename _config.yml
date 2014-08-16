@@ -1,4 +1,8 @@
+# seo/content
 title: Shoes
-safe: true
-lsi: false
+description: Shoes is a tiny GUI toolkit for writing fun, simple applications in Ruby.
+keywords: ruby, gui, simple, ease, fun, native applications, toolkit, gui toolkit, windows, mac, Linux, cross platform, app, beginner, packaging
+
+# meta
 highlighter: pygments
+permalink: pretty
