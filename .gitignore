@@ -1,9 +1,7 @@
-# IDEs
 /.idea
 
 .rvmrc
 .bundle
-.ruby-*
-Gemfile.lock
+.sass-cache
 
 _site/

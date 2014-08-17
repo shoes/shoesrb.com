@@ -1,4 +1,13 @@
-name: Your New Jekyll Site
-safe: true
-lsi: false
-pygments: true
+# seo/content
+title: Shoes
+description: Shoes is a tiny GUI toolkit for writing fun, simple applications in Ruby.
+keywords: ruby, gui, simple, ease, fun, native applications, toolkit, gui toolkit, windows, mac, Linux, cross platform, app, beginner, packaging
+
+# meta
+highlighter: pygments
+permalink: pretty
+
+# assets
+sass:
+  style: :compressed
+  sass_dir: /css/

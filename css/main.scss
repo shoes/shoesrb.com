@@ -1,0 +1,186 @@
+---
+---
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Source+Code+Pro);
+
+$background: #ffffff;
+$dark-background: rgba(45, 45, 45, .9);
+$body-color: rgba(0, 0, 0, .9);
+
+// responsiveness
+@mixin breakpoint($point) {
+  @if $point == morbidly-obese-bear {
+    @media (min-width: 1601px) { @content; }
+  }
+  @if $point == papa-bear {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == goldilocks {
+    @media (max-width: 768px)  { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 650px)  { @content; }
+  }
+  @else if $point == more-than-baby-bear {
+    @media (min-width: 651px)  { @content; }
+  }
+  @else if $point == really-baby-bear {
+    @media (max-width: 350px)  { @content; }
+  }
+}
+
+@import "highlight";
+@import "normalize";
+
+body {
+  background-color: $background;
+  color: $body-color;
+  font-family: 'Open Sans', helvetica, arial;
+  font-size: 1.2em;
+}
+
+// header
+header {
+  &:after {
+    display: block;
+    width: 50%;
+    content: '';
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(220, 220, 220, 1);
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+  color: $body-color;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 125px;
+  @include breakpoint(baby-bear) { font-size: 75px; }
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 50px;
+  @include breakpoint(baby-bear) { font-size: 30px; }
+  color: rgba(75, 75, 75, 1);
+}
+
+.tagline {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 25px;
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+// nav
+nav {
+  background: #f3f3f3;
+  width: 100%;
+  text-align: center;
+
+  ul {
+    li {
+      transition: .25s background ease;
+      margin-left: -5px;
+
+      a {
+        color: rgba(75, 75, 75, .85);
+        font-size: 14px;
+        font-weight: 700;
+        padding: 18px;
+        display: block;
+        $transition: .3s background ease-in-out;
+        transition: $transition;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+      }
+
+      &:hover {
+        background: rgba(200, 200, 200, .55);
+      }
+    }
+  }
+}
+
+nav.desktop-nav {
+  @include breakpoint(baby-bear) { display: none !important; }
+  margin-top: -20px;
+  ul li {
+    display: inline-block;
+  }
+}
+
+nav.mobile-nav {
+  @include breakpoint(more-than-baby-bear) { display: none !important; }
+  table {
+    width: 100%;
+
+    td {
+      padding: 18px 0;
+      text-align: center;
+      width: 16.66%;
+      font-size: 14px;
+      font-weight: 700;
+
+      $transition: .3s background ease-in-out;
+      transition: $transition;
+      -webkit-transition: $transition;
+      -moz-transition: $transition;
+
+      &:hover {
+        background: rgba(200, 200, 200, .55);
+      }
+    }
+  }
+}
+
+// code
+code {
+  font-family: 'Source Code Pro', monospace, courier;
+}
+
+pre {
+  font-size: 15px;
+  line-height: 19px;
+  margin: 0 10%;
+  padding: 30px;
+  background: $dark-background;
+  overflow-x: scroll;
+  border-radius: 10px;
+}
+
+// body
+a {
+  text-decoration: none;
+}
+
+p, .content ul {
+  margin: 15px 18%;
+  @include breakpoint(baby-bear) { margin: 15px 10%; }
+  font-size: 1em;
+  line-height: 150%;
+
+  li { font-size: .9em; }
+}
+
+.content p {
+  a {
+    color: #aaa;
+    border-bottom: 1px dashed #424242;
+    transition: .3s all;
+
+    &:hover { color: #444 !important; }
+  }
+}
