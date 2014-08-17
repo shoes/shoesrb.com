@@ -7,6 +7,28 @@ $background: #ffffff;
 $dark-background: rgba(45, 45, 45, .9);
 $body-color: rgba(0, 0, 0, .9);
 
+// responsiveness
+@mixin breakpoint($point) {
+  @if $point == morbidly-obese-bear {
+    @media (min-width: 1601px) { @content; }
+  }
+  @if $point == papa-bear {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == goldilocks {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 650px)  { @content; }
+  }
+  @else if $point == really-baby-bear {
+    @media (max-width: 350px) { @content; }
+  }
+}
+
 @import "highlight";
 @import "reset";
 
@@ -30,12 +52,23 @@ header {
   }
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
   color: $body-color;
-  font-size: 125px;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 125px;
+  @include breakpoint(baby-bear) { font-size: 75px; }
   font-weight: 700;
+}
+
+h2 {
+  font-size: 50px;
+  @include breakpoint(baby-bear) { font-size: 30px; }
+  color: rgba(75, 75, 75, 1);
 }
 
 .tagline {
@@ -76,10 +109,11 @@ nav {
   ul {
     li {
       display: inline-block;
-      transition: .3s background ease;
+      transition: .25s background ease;
+      margin-left: -5px;
 
       a {
-        color: rgba(75, 75, 75, .75);
+        color: rgba(75, 75, 75, .85);
         font-size: 14px;
         font-weight: 700;
         padding: 18px 15px;
@@ -91,7 +125,7 @@ nav {
       }
 
       &:hover {
-        background: rgba(45, 45, 45, .55);
+        background: rgba(200, 200, 200, .55);
       }
     }
   }
