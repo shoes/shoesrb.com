@@ -108,7 +108,6 @@ nav {
 
   ul {
     li {
-      display: inline-block;
       transition: .25s background ease;
       margin-left: -5px;
 
@@ -128,6 +127,13 @@ nav {
         background: rgba(200, 200, 200, .55);
       }
     }
+  }
+}
+
+nav.desktop-nav {
+  @include breakpoint(baby-bear) { display: none !important; }
+  ul li {
+    display: inline-block;
   }
 }
 
