@@ -3,8 +3,9 @@
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Source+Code+Pro);
 
-$background: #424242;
-$body-color: rgba(255, 255, 255, .95);
+$background: #ffffff;
+$dark-background: rgba(45, 45, 45, .9);
+$body-color: rgba(0, 0, 0, .9);
 
 @import "highlight";
 @import "reset";
@@ -21,11 +22,16 @@ header {
   &:after {
     display: block;
     width: 50%;
-    border-bottom: 1px solid #eee;
+    content: '';
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(220, 220, 220, 1);
   }
 }
 
 h1 {
+  color: $body-color;
   font-size: 125px;
   text-align: center;
   margin: 20px 0;
@@ -46,32 +52,45 @@ h1 {
 a {
   color: rgba(250, 250, 250, .9);
   text-decoration: none;
+  /*
   $transition: .3s color ease-in-out;
+  transition: $transition;
   transition: $transition;
   -webkit-transition: $transition;
   -moz-transition: $transition;
 
   &:hover {
-    color: rgba(250, 250, 250, .75);
+    color: rgba(250, 250, 250, .65);
   }
+  */
 }
 
 // nav
 nav {
-  display: block;
-  margin-top: 15px;
+  position: relative;
+  top: 0;
+  background: $dark-background;
+  width: 100%;
+  text-align: center;
 
   ul {
-    text-align: center;
-
     li {
       display: inline-block;
-      a { color: rgba(230, 230, 230, 1) }
-    }
+      transition: .3s background ease;
 
-    a:not(:last-child):after {
-      content: '\00b7';
-      color: rgba(230, 230, 230, .8);
+      a {
+        font-weight: 700;
+        padding: 18px 15px;
+        display: block;
+        $transition: .3s background ease-in-out;
+        transition: $transition;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+      }
+
+      &:hover {
+        background: rgba(45, 45, 45, .75);
+      }
     }
   }
 }
@@ -84,9 +103,9 @@ code {
 pre {
   font-size: 15px;
   line-height: 19px;
-  margin: 0 20%;
+  margin: 0 10%;
   padding: 30px;
-  background: rgba(45, 45, 45, .9);
+  background: $dark-background;
   overflow-x: scroll;
-  border-radius: 5px;
+  border-radius: 10px;
 }
