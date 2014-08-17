@@ -19,13 +19,16 @@ $body-color: rgba(0, 0, 0, .9);
     @media (max-width: 1250px) { @content; }
   }
   @else if $point == goldilocks {
-    @media (max-width: 768px) { @content; }
+    @media (max-width: 768px)  { @content; }
   }
   @else if $point == baby-bear {
     @media (max-width: 650px)  { @content; }
   }
+  @else if $point == more-than-baby-bear {
+    @media (min-width: 651px)  { @content; }
+  }
   @else if $point == really-baby-bear {
-    @media (max-width: 350px) { @content; }
+    @media (max-width: 350px)  { @content; }
   }
 }
 
@@ -69,7 +72,6 @@ h2 {
   font-size: 50px;
   @include breakpoint(baby-bear) { font-size: 30px; }
   color: rgba(75, 75, 75, 1);
-  text-decoration: underline;
 }
 
 .tagline {
@@ -84,7 +86,7 @@ h2 {
 
 // links
 a {
-  color: rgba(250, 250, 250, .9);
+  color: rgba(75, 75, 75, .9);
   text-decoration: none;
   /*
   $transition: .3s color ease-in-out;
@@ -104,7 +106,6 @@ nav {
   background: #f3f3f3;
   width: 100%;
   text-align: center;
-  margin-top: -20px;
 
   ul {
     li {
@@ -115,7 +116,7 @@ nav {
         color: rgba(75, 75, 75, .85);
         font-size: 14px;
         font-weight: 700;
-        padding: 18px 15px;
+        padding: 18px;
         display: block;
         $transition: .3s background ease-in-out;
         transition: $transition;
@@ -132,8 +133,33 @@ nav {
 
 nav.desktop-nav {
   @include breakpoint(baby-bear) { display: none !important; }
+  margin-top: -20px;
   ul li {
     display: inline-block;
+  }
+}
+
+nav.mobile-nav {
+  @include breakpoint(more-than-baby-bear) { display: none !important; }
+  table {
+    width: 100%;
+
+    td {
+      padding: 18px 0;
+      text-align: center;
+      width: 16.66%;
+      font-size: 14px;
+      font-weight: 700;
+
+      $transition: .3s background ease-in-out;
+      transition: $transition;
+      -webkit-transition: $transition;
+      -moz-transition: $transition;
+
+      &:hover {
+        background: rgba(200, 200, 200, .55);
+      }
+    }
   }
 }
 
@@ -153,6 +179,11 @@ pre {
 }
 
 // body
-p {
-  margin: 0 18%;
+p, .content ul {
+  margin: 15px 18%;
+  @include breakpoint(baby-bear) { margin: 15px 10%; }
+  font-size: 1em;
+  line-height: 150%;
+  
+  li { font-size: .9em; }
 }

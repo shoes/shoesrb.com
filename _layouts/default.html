@@ -15,11 +15,16 @@
     {% include nav.html %}
   </nav>
   <nav class="mobile-nav">
-    {% include nav.html %}
+    <table>
+      <tr>
+        <td><a href="/">Home</a></td>
+        <td><a href="/download/">Download</a></td>
+        <td><a href="/blog/">Blog</a></td>
+        <td><a href="/tutorial/">Tutorial</a></td>
+      </tr>
+    </table>
   </nav>
-    
-
-    {{ content }}
+    <div class="content">{{ content }}</div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
