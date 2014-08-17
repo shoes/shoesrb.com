@@ -69,7 +69,7 @@ a {
 nav {
   position: relative;
   top: 0;
-  background: rgba(0, 0, 0, .75);
+  background: #f3f3f3;
   width: 100%;
   text-align: center;
 
@@ -79,6 +79,7 @@ nav {
       transition: .3s background ease;
 
       a {
+        color: rgba(75, 75, 75, .75);
         font-size: 14px;
         font-weight: 700;
         padding: 18px 15px;
