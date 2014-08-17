@@ -30,7 +30,7 @@ $body-color: rgba(0, 0, 0, .9);
 }
 
 @import "highlight";
-@import "reset";
+@import "normalize";
 
 body {
   background-color: $background;
@@ -69,6 +69,7 @@ h2 {
   font-size: 50px;
   @include breakpoint(baby-bear) { font-size: 30px; }
   color: rgba(75, 75, 75, 1);
+  text-decoration: underline;
 }
 
 .tagline {
@@ -100,11 +101,10 @@ a {
 
 // nav
 nav {
-  position: relative;
-  top: 0;
   background: #f3f3f3;
   width: 100%;
   text-align: center;
+  margin-top: -20px;
 
   ul {
     li {
@@ -144,4 +144,9 @@ pre {
   background: $dark-background;
   overflow-x: scroll;
   border-radius: 10px;
+}
+
+// body
+p {
+  margin: 0 18%;
 }
