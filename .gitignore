@@ -2,5 +2,8 @@
 /.idea
 
 .rvmrc
+.bundle
+.ruby-*
+Gemfile.lock
 
 _site/
