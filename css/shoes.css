@@ -161,3 +161,17 @@ img{
   position: relative;
   z-index: 1;
 }
+
+.headsupport {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+}
+
+/* Homepage specific styles */
+.homepage.hero-unit {
+  padding: 0;
+}
+.homepage .intro {
+  padding: 0 60px;
+}
