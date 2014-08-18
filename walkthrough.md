@@ -2,6 +2,7 @@
 layout: default
 title: Shoes! The Tutorial Walkthrough
 container_class: walkthrough
+permalink: /walkthrough/
 ---
 
 Hello!
