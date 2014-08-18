@@ -1,4 +1,4 @@
-name: Your New Jekyll Site
+title: Shoes
 safe: true
 lsi: false
-pygments: true
+highlighter: pygments
