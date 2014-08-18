@@ -10,7 +10,7 @@ Hello!
 
 In case you've just arrived: Shoes is a graphics toolkit for writing colorful apps using [the Ruby programming language](http://www.ruby-lang.org/en/).  Ruby is built into Shoes.
 
-![000.jpg](./img/wt/000.jpg)
+![000.jpg](/img/wt/000.jpg)
 
 Shoes wants to fit in.  It will change the way it looks for each person's computer.  These screenshots were taken on my computer, but when you run them for yourself they will look just like your other programs.  Try it!
 
@@ -21,7 +21,7 @@ Shoes wants to fit in.  It will change the way it looks for each person's comput
 Okay, so, a simple Shoes program.
 
 <div class="row2">
-  <img src="./img/wt/001.png">
+  <img src="/img/wt/001.png">
   <pre class="wt">
     <code class="ruby">
       Shoes.app { button "Push me" }
@@ -37,7 +37,7 @@ The braces `{` and `}` are a kind of container. The button is "in" the app.
 We can place a few buttons in a *stack*.
 
 <div class="row2">
-  <img src="./img/wt/002.png">
+  <img src="/img/wt/002.png">
   <pre class="wt">
     <code class="ruby">
       Shoes.app {
@@ -58,7 +58,7 @@ Stacks are essential! The most important two elements in Shoes are *stacks* and 
 Okay, let's give the stack a bit of a *margin*. Scoot it out from the edge.
 
 <div class="row2">
-  <img src="./img/wt/003.png">
+  <img src="/img/wt/003.png">
   <pre class="wt">
     <code class="ruby">
       Shoes.app {
@@ -85,7 +85,7 @@ TODO:  Change the background to another more noticeable colour.  Re-screenshot.
 Time for something new, artwork!  Let's draw!
 
 <div class="row2">
-  <img src="./img/wt/004.png">
+  <img src="/img/wt/004.png">
   <pre class="wt">
     <code class="ruby">
       Shoes.app {
@@ -106,7 +106,7 @@ Notice that while buttons just dropped into the window, we drew the circle at a 
 Now, a rectangle and an arrow.
 
 <div class="row2">
-  <img src="./img/wt/005.png">
+  <img src="/img/wt/005.png">
   <pre class="wt">
     <code class="ruby">
       Shoes.app {
@@ -135,7 +135,7 @@ TODO:  Change the colour of the two shapes.  Then update the screenshot.
 Of course, you can always design your app with an *image*. Even images from the web!
 
 <div class="row2">
-<img src="./img/wt/nks-kidnap.png">
+<img src="/img/wt/nks-kidnap.png">
   <pre class="wt">
   <code class="ruby">
   Shoes.app {
@@ -158,7 +158,7 @@ Shoes even caches images in memory and on disk, like browsers do. Images are loa
 Now, a very important element: the *para*. As in: paragraph. Probably the third most important element (after stacks and flows.)
 
 <div class="row2">
-  <img src="./img/wt/007.png">
+  <img src="/img/wt/007.png">
   <pre class="wt">
     <code class="ruby">
       Shoes.app {
@@ -173,7 +173,7 @@ Now, a very important element: the *para*. As in: paragraph. Probably the third 
 Beyond para, you've got *title* and *subtitle*, which are bigger fonts. You can add a bunch of font styles as well. Look for *strong* and *em* in this bit.
 
 <div class="row2">
-<img src="./img/wt/008.png">
+<img src="/img/wt/008.png">
 <pre class="wt">
   <code class="ruby">
   Shoes.app {
@@ -192,7 +192,7 @@ Beyond para, you've got *title* and *subtitle*, which are bigger fonts. You can 
 Keep track of stuff by naming them as variables.
 
 <div class="row2">
-<img src="./img/wt/009.png">
+<img src="/img/wt/009.png">
 <pre class="wt">
   <code class="ruby">
   Shoes.app {
@@ -209,7 +209,7 @@ Keep track of stuff by naming them as variables.
 You can then put the variables into action. When the button is clicked, the `@note` changes to the message shown in the picture.
 
 <div class="row2">
-<img src="./img/wt/010.png">
+<img src="/img/wt/010.png">
 <pre class="wt">
   <code class="ruby">
   Shoes.app {
@@ -228,7 +228,7 @@ You can then put the variables into action. When the button is clicked, the `@no
 See if you can figure out this one. How does the gradient work? How are the letters styled?
 
 <div class="row2">
-<img src="./img/wt/011.png">
+<img src="/img/wt/011.png">
 <pre class="wt">
   <code class="ruby">
   Shoes.app do
@@ -250,7 +250,7 @@ In this example, I used *do* and end *rather* than the braces `{` and `}`. They 
 Aha, here's a flow. It keeps the text box and the button side-by-side.
 
 <div class="row2">
-<img src="./img/wt/012.png">
+<img src="/img/wt/012.png">
 <pre class="wt">
   <code class="ruby">
   Shoes.app do
@@ -275,7 +275,7 @@ Aha, here's a flow. It keeps the text box and the button side-by-side.
 In this one, we make a five-point star. And it follows the mouse around as you move.
 
 <div class="row2">
-<img src="./img/wt/013.png">
+<img src="/img/wt/013.png">
 <pre class="wt">
   <code class="ruby">
   Shoes.app do
@@ -373,7 +373,7 @@ Don't worry if you haven't picked up a whole lot reading through these. To get t
 
 ----------------------
 
-![shoes.png](./img/wt/shoes.png)
+![shoes.png](/img/wt/shoes.png)
 
 Ready for more? See the [manuals](http://shoesrb.com/manual/Hello.html) page for a pair of longer instructions. Particularly the guide book [Nobody Knows Shoes](http://cloud.github.com/downloads/shoes/shoes/nks.pdf), which teaches the ten essential commands to get going with Shoes.
 
