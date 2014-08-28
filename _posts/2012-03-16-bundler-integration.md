@@ -5,7 +5,7 @@ date: 2012-03-16 04:52
 layout: default
 ---
 
-<div class='hero-unit'>
+<div class='jumbotron'>
   <h1>The Shoes Blog</h1>
 </div>
 

@@ -1,19 +1,35 @@
-#icon {
- float:left;
- padding-left:20px;
- padding-right:20px;
+html{
+  background: fixed no-repeat center center url('/img/background.jpg');
 }
-.intro {
-  margin-top: 30px;
-  margin-bottom: 30px;
+body{
+  background: none;
+}
+.main{
+  background: #FFF;
+  padding-bottom: 40px;
+  border-radius: 0 0 6px 6px;
+}
+.navbar-inverse .navbar-brand{
+  font-weight: bold;
+  color: #ccc;
+}
+.navbar-inverse .navbar-brand:hover{
+  color: #fff;
+}
+.intro{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+img.logo{
+  margin: 40px auto 0;
+  display: block;
+}
+.intro h1{
+  line-height: 1.2;
 }
 .center {
   width: 100%;
   text-align: center;
-}
-.about {
-  margin: 20px;
-  padding: 20px;
 }
 #os-nav {
   width: 100%;
@@ -50,33 +66,9 @@
     font-size: 40px;
   }
 }
-#tutorials{
-  background: url('/img/sprite.png') no-repeat 0px -482px;
-  width: 45px;
-  height: 33px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-}
-#blog{
-  background: url('/img/sprite.png') no-repeat -1px -524px;
-  width: 45px;
-  height: 35px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-}
-#contribute{
-  background: url('/img/sprite.png') no-repeat -57px -515px;
-  width: 48px;
-  height: 44px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px;
-}
 #nobody{
   position: absolute;
-  top: -50px;
+  top: 0;
   right: -10px;
 
   background: url('/img/sprite2.png') no-repeat -1px -52px;
@@ -87,31 +79,25 @@
 }
 #why{
   position: absolute;
-  top: -40px;
-  right: -180px;
+  top: 20px;
+  right: 0;
 
   background: url('/img/why.png') no-repeat -1px -12px;
-  width: 429px;
-  height: 178px;
-  display: inline-block;
-  vertical-align: middle;
+  width: 257px;
+  height: 234px;
 }
 .downloads{
   position: relative;
 }
 #download{
-  opacity: 0.8;
   position: absolute;
-  top: -50px;
+  top: 0;
   right: -50px;
   background: url('/img/download.jpg') no-repeat;
   width: 425px;
   height: 200px;
   display: inline-block;
   vertical-align: middle;
-  -webkit-box-shadow: 0 0 6px #CCC;
-  -moz-box-shadow: 0 0 6px #CCC;
-  box-shadow: 0 0 6px #CCC;
 }
 .downloads ul {
   list-style: none;
@@ -137,55 +123,41 @@
   width: 128px;
   height: 128px;
 }
-.arrow1{
-  opacity: 0.8;
-  background: url('/img/arrow.jpg') no-repeat;
+.download-arrow.fa{
+  color: #cde4a8;
+  font-size: 110px;
   float: left;
   width: 128px;
-  height: 128px;
-}
-#walk{
-  background: url('/img/sprite2.png') no-repeat -52px -4px;
-  width: 40px;
-  height: 42px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 2px;
-}
-#book{
-  background: url('/img/sprite2.png') no-repeat 0 0;
-  width: 44px;
-  height: 48px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 2px;
-}
-#manual{
-  background: url('/img/sprite2.png') no-repeat -163px -1px;
-  width: 62px;
-  height: 48px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 2px;
-}
-#rdocs{
-  background: url('/img/sprite2.png') no-repeat -95px 0;
-  width: 63px;
-  height: 49px;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 2px;
+  min-height: 2.2em;
 }
 .tut {
   position: relative;
 }
 #team {
-  background: url('/img/team.jpg') no-repeat;
-  border: 5px solid #eee;
-  margin: 10px;
+  margin: 10px auto;
+  display: block;
 }
-.headsupport {
-  position: absolute;
-  top: -40px;
-  right: 0px;
+h2{
+  margin-bottom: 0;
+}
+h2 i{
+  color: #595959;
+}
+h1 i.fa-github{
+  font-size: .75em;
+}
+img{
+  max-width: 100%;
+}
+#walkthrough{
+  padding: 70px 20px 20px;
+}
+@media only screen and (max-width: 767px){
+  #download, #why, #nobody{
+    display: none;
+  }
+}
+.jumbotron h1, .jumbotron p{
+  position: relative;
+  z-index: 1;
 }
