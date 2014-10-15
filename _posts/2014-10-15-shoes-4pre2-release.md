@@ -58,7 +58,7 @@ Improvements (36)
 * Update list of app level styles and partially fix rotate angle issues [2affdbb]
 * Shoes application context improved to avoid conflicts between user-defined and shoes-defined methods. [732108a]
 * Builtin methods are also available from the Shoes class [de37d59]
-* #gray, #rgb and #gradient builtin methods [8f7ee92]
+* \#gray, #rgb and #gradient builtin methods [8f7ee92]
 * Removed redrawing triggers after Dimension methods  [61a55ba]
 * Apply fraction from progress initialize [b241240]
 * Trigger redraw on hover/leave for slot and image update [ae5dfb5]
