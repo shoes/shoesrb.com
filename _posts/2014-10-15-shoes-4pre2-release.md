@@ -1,0 +1,121 @@
+---
+title: "shoes 4 preview 2 released!"
+slug: "shoes-4-preview-2-released"
+date: 2014-10-15 18:20
+layout: default
+---
+
+<div class='jumbotron'>
+  <h1>The Shoes Blog</h1>
+</div>
+<h1><a href="{{ post.url }}">shoes 4 preview 2 released!</a></h1>
+<em>2014/10/15</em>
+
+Hey shoesers,
+At long last, we've finally gotten the next pre-release version (4.0.0.pre2) of Shoes out onto Rubygems. Hurray!
+
+You can install the gem with this simple command:
+
+    gem install shoes --pre
+
+The biggest change (aside from nice new features and bug fixes listed in our neatly updated CHANGELOG!) is that Shoes now ships as three separate gems:
+
+* shoes -- Home to the shoes executable. Declares dependencies on other shoes gems for ease of installation.
+* shoes-dsl -- Code for the Shoes DSL. No direct UI rendering and will be reused with all future backends.
+* shoes-swt -- The first Shoes backend, implemented in JRuby on the SWT library via the swt gem.
+
+The gem command should pick up those additional dependencies, though, so you still only have to say `gem install shoes --pre` to get the latest goodness.
+
+As always, we'd love for you to try it out and let us know of any bugs you see along the way.
+
+Huge thanks to all the awesome folks who contributed to this release. <3
+
+If you're interested in the details, here goes the changelog:
+
+4.0.0.pre2 (438 commits)
+----------------
+
+New features (2)
+----------------
+
+* Shoes 4.0.0.pre1 was a single gem. Now we ship as as three gems [e16a0c4]:
+
+  * shoes -- Home to the shoes executable. Declares dependencies on other
+    shoes gems for ease of installation.
+  * shoes-dsl -- Code for the Shoes DSL. No direct UI rendering and will be
+    reused with all future backends.
+  * shoes-swt -- The first Shoes backend, implemented in JRuby on the SWT
+    library via the swt gem.
+
+* Full style-setting functionality (element#style, setters, hash, app level) [56d91f8]
+
+Improvements (36)
+-----------------
+
+* Update SWT to 4.4 [536ffae]
+* Update packaging dependency to 0.2.0 now supporting rubyzip > 1.0 [c3dd289]
+* Update all elements to use new style methods [1b76aa3, 29498d1, d569a77, e6eec90, 54e5edf, 1238977, 2dc222f, dbeffff, 25b2ec6, cb865a6, 49fa0a1]
+* Update list of app level styles and partially fix rotate angle issues [2affdbb]
+* Shoes application context improved to avoid conflicts between user-defined and shoes-defined methods. [732108a]
+* Builtin methods are also available from the Shoes class [de37d59]
+* #gray, #rgb and #gradient builtin methods [8f7ee92]
+* Removed redrawing triggers after Dimension methods  [61a55ba]
+* Apply fraction from progress initialize [b241240]
+* Trigger redraw on hover/leave for slot and image update [ae5dfb5]
+* Nobody Knows Shoes samples added [68e84e6]
+* Add sample56 snapshot [e7eb0d3]
+* Add scroll* methods to slots. Scrolling functionality not implemented yet. [6fb0e79]
+* Click passes element, not coordinates to most blocks [78ecb23]
+* Allow button calls without a button name [a315ef4]
+* Add common #to_s and #inspect methods for DSL objects [350c4dc]
+* Disposal for Images and Patterns. [ddcd9fb]
+* Move Swt::TextBlock related classes to subdirectory. [226e03f]
+* Revise TextBlock cursor to be more like other text functionality. [f016ee7]
+* Updated manual to show correct syntax for rect. [2fee530]
+* App#parent method to show the parent of the slot currently evaled [48e811f]
+* Add keypress to close app cleanly when running leak hunter and dispose of app-level resources. [af4d6bb]
+
+Bug Fixes (32)
+--------------
+
+* Fix running bin/shoes.bat from source [fe47075]
+* Move shoes executable from shoes-dsl to shoes [92583e6]
+* Fix for crash on empty link text [3da3159]
+* Hide only the elements of a slot, not its parent contents  [f2ea17c]
+* Fix crash for Border when hiding [1c2ab74]
+* Methods defined in widgets are available in URL instances [3a94afb]
+* Make texts know their TextBlock and hence their visibility [7b4ea24]
+* Non resizable apps can not be maximized (fixes resizable on mac) #872 [b08b215]
+* Keypress#remove removes the keys listener and does not blow up [498588c]
+* Run shape blocks with app as self [dbb0a46]
+* When an element is removed or removed, cursor shouldn't change shape over that location. [918288f, 7fcd93a]
+* Removing children from slot should trigger redraw [be35743]
+* Fix for allowing widgets to use widget DSL methods [99d22e1]
+* Fix for secret on edit lines [79c4c98]
+* Fix crash computing height with hidden elements [41ebafe]
+* Fix for unbounded height crash on centering [11fc3ae]
+* Windows build requires shoes.bat from ext/install [232ec68]
+* Reuse created fonts in the factory [7959bd8]
+* Disposal of Shape SWT resources. [650365b]
+* Fix for offsetting of second text segments [97fe79b]
+* Consider relatively positioned elements for slot height [3e71126]
+* Fix fatal exceptions in samples/simple-calc.rb [d53d588]
+* Fix slot clearing [3697802]
+* Don't clear top_slot when clear is called, clear current_slot [a57778c]
+* Handling for text centering [87405f5]
+* Fix common remove to allow removal of slots [c25df7e]
+* Clear transform after painting each object, to avoid side effects on other painters [5a57ce3]
+* Fix off by one error in slot positioning. [baee69a]
+* Dispose of transform resources. [265600c]
+* Only report start/end relative to the parent if there is one [c82e763]
+* Links must be cleared on TextBlock#replace [4b90786]
+
+Contributors (16)
+-----------------
+
+Jason R. Clark, Eric Watson, Tobias Pfeiffer, KC Erb, Charles Chamberlain,
+George, Marcell Monteiro Cruz, Glenn Murray, Jason Clark, Tim Krajcar,
+glenn-murray-bse, KCErb, PeterWAWood, Suirtimed, ashbb, Carlos R Tirado
+
+
+Shoes on!
