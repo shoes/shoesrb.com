@@ -28,7 +28,7 @@ The gem command should pick up those additional dependencies, though, so you sti
 
 As always, we'd love for you to try it out and let us know of any bugs you see along the way.
 
-Huge thanks to all the awesome folks who contributed to this release. <3
+Huge thanks to all the awesome folks who contributed to this release. &lt;3
 
 If you're interested in the details, here goes the changelog:
 
