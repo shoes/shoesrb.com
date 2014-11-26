@@ -157,7 +157,31 @@ img{
     display: none;
   }
 }
+
 .jumbotron h1, .jumbotron p{
   position: relative;
   z-index: 1;
+}
+
+#contribute .jumbotron p {
+  margin: -30px 0 0 0;
+}
+
+#contribute #team {
+  margin: 20px 0 0 0;
+}
+
+#contribute .team-member img {
+  width: 100px;
+}
+
+#contribute .team-member h4 {
+  margin: 0;
+  font-size: 100%;
+}
+
+#contribute .team-member p {
+  margin: 0 0 20px 0;
+  font-size: 95%;
+  font-weight: normal;
 }
