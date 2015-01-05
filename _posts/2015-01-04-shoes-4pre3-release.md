@@ -1,5 +1,5 @@
 ---
-title: "shoes 4 preview 3 released!"
+title: "Shoes 4 preview 3 released!"
 slug: "shoes-4-preview-3-released"
 date: 2015-01-04 09:25
 layout: default
@@ -8,13 +8,13 @@ layout: default
 <div class='jumbotron'>
   <h1>The Shoes Blog</h1>
 </div>
-<h1><a href="{{ post.url }}">shoes 4 preview 3 released!</a></h1>
+<h1><a href="{{ post.url }}">Shoes 4 preview 3 released!</a></h1>
 <em>2015/01/04</em>
 
 Howdy Shoes fans!
 
 [A new pre-release version
-(4.0.0.pre3)](https://rubygems.org/gems/shoes/versions/4.0.0.pre2) is up on
+(4.0.0.pre3)](https://rubygems.org/gems/shoes/versions/4.0.0.pre3) is up on
 Rubygems! Install with this simple command:
 
     gem install shoes --pre
