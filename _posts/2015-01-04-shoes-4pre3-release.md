@@ -48,7 +48,7 @@ Huge thanks to everyone who helped out with this release. \o/ &lt;3
 
 For the detail-oriented, here's the changelog!
 
-4.0.0.pre3 (195 commits)
+4.0.0.pre3 (199 commits)
 ------------------------
 
 New features (1)
@@ -59,15 +59,12 @@ New features (1)
 
   * shoes -- Now a meta-gem with the default installation as dependencies. It
     contains no code of its own (any shared code goes in shoes-core).
-  * shoes-core -- The DSL and supporting code to share between Shoes
-    backends
+  * shoes-core -- The DSL and supporting code to share between Shoes backends
   * shoes-swt -- The first Shoes backend, based on SWT + JRuby
-  * shoes-package -- Shoes packaging logic, separated to avoid
-    pulling unneeded gems along in packaged apps
-  * shoes-highlighter -- Extracted syntax highlighting from
-    Hackety-Hack
-  * shoes-manual -- Extracted content and display for Shoes
-    manual
+  * shoes-package -- Shoes packaging logic, separated to avoid pulling
+    unneeded gems along in packaged apps
+  * shoes-highlighter -- Extracted syntax highlighting from Hackety-Hack
+  * shoes-manual -- Extracted content and display for Shoes manual
 
 Breaking Changes (1)
 --------------------
@@ -85,9 +82,10 @@ Improvements (7)
 * TextBlocks have #parent not #parent_text  [52fab93]
 * shoes.gemspec at top of project [369f7d3]
 
-Bug Fixes (9)
+Bug Fixes (10)
 -------------
 
+* Links with empty text crash [a8fb745]
 * Fix copying to/from system clipboard [e965e59]
 * Position a slot's elements correctly when the slot has a margin [d72d7ef]
 * Fix overlapping text with differing text heights [4db98b0]
