@@ -6,16 +6,15 @@ permalink: /blog/
 
 <div class='jumbotron'>
   <h1>The Shoes Blog</h1>
-  <p>Welcome to the Shoes blog! Here's all the posts we have so far:</p>
+  <p>Shoes blogs that we know about.  Here's all the posts we have so far:</p>
 </div>
 
 <div class='row'>
   <div class="col-md-12">
-    <p>Shoes 3.2 has it's own blog <a href="http://walkabout.mvmanila.com">Shoes 3.2</a>
-    That's where you want to go to read what's happening with the Red (original)
-     Shoes.
+    <p>Shoes 3.2 has it's own blog <a href="http://walkabout.mvmanila.com">Walkabout Shoes</a>
+    where you can see what's happening with the Red (original) Shoes. Comments are allowed.
     </p>
-    <p>Older posts from the Shoes4 blog:</p>
+    <p>Shoes 4 announcements:</p>
     <ul class="posts">
       {% for post in site.posts %}
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>

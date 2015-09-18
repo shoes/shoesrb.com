@@ -32,14 +32,22 @@ permalink: /about/
 
     <h2>Shoes 3.2</h2>
     <p>
-    Shoes 3.0 and Shoes 3.1 fell into neglect and stopped keeping pace with
-    changes in Linux, OSX, Windows and Ruby. Shoes 3.2 is primarily a mainentance
-    release so Red Shoes can run on 2014 versions of Linux, Windows, OSX and Ruby.
+    Shoes 3.0 and Shoes 3.1 (policeman) fell into neglect and stopped keeping pace with
+    changes in Linux, OSX, Windows and MRI Ruby. Shoes 3.2 (aka federales) restarted Shoes 3 (MRI Ruby)
+    so Red Shoes can run on 2015 versions of Linux, Windows, OSX and Ruby.  It fixed
+    some very old and debilitating bugs and adds some spiffy features that <b>bare metal</b> or MRI users may like.
     </p>
     <h2>Shoes 4</h2>
 
-    <p>Shoes 4 is a total re-write of Shoes. It's being done in JRuby. There are
-    a few related projects:</p>
+    <p>Shoes 4 is a total re-write of Shoes. It's being done in JRuby with best practices. 
+    It re-implements the original Shoes 3 definition of Shoes in a pure Ruby friendly way
+    whereas Shoes 3.x is more difficult for Rubyists to modify since it has C and Objective-C 
+    components and a build process that is <i>less than easy to understand.</i> 
+    Shoes 3.2 also has hardware costs and web hosting costs which makes if difficult
+    for many developers to duplicate.
+    
+    <p>Shoes 4 uses modern Ruby practices and tools and has spawned
+    a few related projects:</p> 
 
     <p>ShoesSpec: An executable specification for Shoes implementations, so that
     others can co-exist. A few other Shoes projects exist already, and a
