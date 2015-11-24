@@ -14,6 +14,10 @@ In case you've just arrived: Shoes is a graphics toolkit for writing colorful ap
 
 Shoes wants to fit in.  It will change the way it looks for each person's computer.  These screenshots were taken on my computer, but when you run them for yourself they will look just like your other programs.  Try it!
 
+## Installation
+
+If you haven't already installed Shoes, instructions can be found [here](/manual/Installing.html).
+
 ----------------------
 
 ## The Tutorial Walkthrough
