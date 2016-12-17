@@ -118,9 +118,9 @@ Now, a rectangle and an arrow.
         rect(left:  10,
              top:   10,
              width: 40)
-        arrow(left:  30,
-              top:   60,
-              width: 40)
+        arrow(30,  # left
+              60,  # top
+              40)  # width
       }
     </code>
   </pre>
