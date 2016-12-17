@@ -365,9 +365,9 @@ Okay, last one for now. Let's generate a hundred random circles. This example al
       strokewidth 0.25
 
       100.times do
-        oval(left:   (-5..self.width).rand,
-             top:    (-5..self.height).rand,
-             radius: (25..50).rand)
+        oval(left:   rand(-5..self.width),
+             top:    rand(-5..self.height),
+             radius: rand(25..50))
       end
     end
     </code>
