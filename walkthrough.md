@@ -283,7 +283,8 @@ In this one, we make a five-point star. And it follows the mouse around as you m
 <pre class="wt">
   <code class="ruby">
   Shoes.app do
-    @shape = star(points: 5)
+    # star(left, top, points)
+    @shape = star(0, 0, 5)
     motion do |left, top|
       @shape.move left, top
     end
