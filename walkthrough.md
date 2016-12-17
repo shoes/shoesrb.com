@@ -340,7 +340,7 @@ Remember a few examples ago when we handled a button click? How about doing the 
     The scenery."
       end
       para(
-        link("Clear").click do
+        link("Clear") do
           @poem.clear
         end
       )
