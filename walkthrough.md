@@ -307,8 +307,8 @@ On to a taste of animation. The Shoes icon moves randomly a bunch of times each 
       left: 100
     )
     animate do |i|
-      @shoes.top += (-20..20).rand
-      @shoes.left += (-20..20).rand
+      @shoes.top += rand(-20..20)
+      @shoes.left += rand(-20..20)
     end
   end
   </code>
@@ -350,6 +350,7 @@ Remember a few examples ago when we handled a button click? How about doing the 
 
 So, when the link gets clicked, the stack gets cleared. The poem will disappear.
 
+
 ----------------------
 
 Okay, last one for now. Let's generate a hundred random circles. This example also uses the *rgb* method to make colors from red, green and blue fractions.
@@ -364,9 +365,9 @@ Okay, last one for now. Let's generate a hundred random circles. This example al
       strokewidth 0.25
 
       100.times do
-        oval(left:   (-5..self.width).rand,
-             top:    (-5..self.height).rand,
-             radius: (25..50).rand)
+        oval(left:   rand(-5..self.width),
+             top:    rand(-5..self.height),
+             radius: rand(25..50))
       end
     end
     </code>
