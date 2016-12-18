@@ -118,9 +118,9 @@ Now, a rectangle and an arrow.
         rect(left:  10,
              top:   10,
              width: 40)
-        arrow(30,  # left
-              60,  # top
-              40)  # width
+        arrow(left:  30,
+              top:   60,
+              width: 40)
       }
     </code>
   </pre>
@@ -283,8 +283,7 @@ In this one, we make a five-point star. And it follows the mouse around as you m
 <pre class="wt">
   <code class="ruby">
   Shoes.app do
-    # star(left, top, points)
-    @shape = star(0, 0, 5)
+    @shape = star(points: 5)
     motion do |left, top|
       @shape.move left, top
     end
