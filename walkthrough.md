@@ -339,7 +339,7 @@ Remember a few examples ago when we handled a button click? How about doing the 
     The scenery."
       end
       para(
-        link("Clear") do
+        link("Clear").click do
           @poem.clear
         end
       )
@@ -349,6 +349,7 @@ Remember a few examples ago when we handled a button click? How about doing the 
 </div>
 
 So, when the link gets clicked, the stack gets cleared. The poem will disappear.
+
 
 ----------------------
 
