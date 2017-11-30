@@ -126,9 +126,7 @@ img.logo{
 .download-arrow.fa{
   color: #cde4a8;
   font-size: 110px;
-  float: left;
-  width: 128px;
-  min-height: 2.2em;
+  margin-bottom: 10px;
 }
 .tut {
   position: relative;
