@@ -1,43 +1,113 @@
 ---
-- login: ashbb
+25582:
+  login: ashbb
+  id: 25582
   avatar_url: https://avatars2.githubusercontent.com/u/25582?v=4
   url: https://api.github.com/users/ashbb
-- login: davorb
+  html_url: https://github.com/ashbb
+  name: ashbb
+  company: 
+  blog: http://vgoff.posterous.com/
+  location: Japan
+  bio: 
+798427:
+  login: davorb
+  id: 798427
   avatar_url: https://avatars0.githubusercontent.com/u/798427?v=4
   url: https://api.github.com/users/davorb
-- login: fism88
+  html_url: https://github.com/davorb
+  name: Davor Babić
+  company: 
+  blog: ''
+  location: Lund, Sweden
+  bio: λ
+297730:
+  login: fism88
+  id: 297730
   avatar_url: https://avatars0.githubusercontent.com/u/297730?v=4
   url: https://api.github.com/users/fism88
-- login: jasonrclark
+  html_url: https://github.com/fism88
+  name: Faraaz Ismail
+  company: 
+  blog: ''
+  location: Austin, TX
+  bio: 
+130504:
+  login: jasonrclark
+  id: 130504
   avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
   url: https://api.github.com/users/jasonrclark
-- login: jrgifford
+  html_url: https://github.com/jasonrclark
+  name: Jason R. Clark
+  company: New Relic
+  blog: http://jasonrclark.com
+  location: Portland, OR
+  bio: Rubyist, cyclist, homebrewist
+567771:
+  login: jrgifford
+  id: 567771
   avatar_url: https://avatars2.githubusercontent.com/u/567771?v=4
   url: https://api.github.com/users/jrgifford
-- login: KCErb
+  html_url: https://github.com/jrgifford
+  name: James Gifford
+  company: "@rvshare "
+  blog: https://armyofminions.com
+  location: Cleveland OH
+  bio: Startups and Software. I help make things not suck.
+4992244:
+  login: KCErb
+  id: 4992244
   avatar_url: https://avatars2.githubusercontent.com/u/4992244?v=4
   url: https://api.github.com/users/KCErb
-- login: mpapis
+  html_url: https://github.com/KCErb
+  name: KC Erb
+  company: 
+  blog: ''
+  location: Salt Lake City, UT
+  bio: 
+48054:
+  login: mpapis
+  id: 48054
   avatar_url: https://avatars0.githubusercontent.com/u/48054?v=4
   url: https://api.github.com/users/mpapis
-- login: nashby
+  html_url: https://github.com/mpapis
+  name: Michal Papis
+  company: Opensource, Toptal
+  blog: http://niczsoft.com
+  location: Gorzow Wlkp., Poland
+  bio: 
+200500:
+  login: nashby
+  id: 200500
   avatar_url: https://avatars1.githubusercontent.com/u/200500?v=4
   url: https://api.github.com/users/nashby
-- login: pjfitzgibbons
+11318:
+  login: pjfitzgibbons
+  id: 11318
   avatar_url: https://avatars2.githubusercontent.com/u/11318?v=4
   url: https://api.github.com/users/pjfitzgibbons
-- login: plexus
+32212:
+  login: plexus
+  id: 32212
   avatar_url: https://avatars2.githubusercontent.com/u/32212?v=4
   url: https://api.github.com/users/plexus
-- login: PragTob
+606517:
+  login: PragTob
+  id: 606517
   avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
   url: https://api.github.com/users/PragTob
-- login: steveklabnik
+27786:
+  login: steveklabnik
+  id: 27786
   avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
   url: https://api.github.com/users/steveklabnik
-- login: wasnotrice
+908:
+  login: wasnotrice
+  id: 908
   avatar_url: https://avatars2.githubusercontent.com/u/908?v=4
   url: https://api.github.com/users/wasnotrice
-- login: ychatz
+567750:
+  login: ychatz
+  id: 567750
   avatar_url: https://avatars1.githubusercontent.com/u/567750?v=4
   url: https://api.github.com/users/ychatz
