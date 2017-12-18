@@ -7,77 +7,35 @@ permalink: /contribute/
 <div id="contribute">
   <div class='jumbotron'>
     <h1>C<i class="fa fa-github"></i>ntribute</h1>
-    <p>...and become a part of the Shoes Team!</p>
+      <p>...and become a part of the Shoes Team!</p>
 
     <div id="team">
-        <div class="row">
+      <div class="row">
+        {% for member in site.data.members %}
           <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/ashbb.jpg">
-            <h4><a href="http://github.com/ashbb" target="_blank">ashbb</a></h4>
-            <p>ashbb</p>
+            <img src="{{ member.avatar_url }}">
+            <h4><a href="{{ member.html_url }}" target="_blank">{{member.login}}</a></h4>
+            <p>{{member.name}}</p>
           </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/ccoupe.jpg">
-            <h4><a href="http://github.com/ccoupe" target="_blank">ccoupe</a></h4>
-            <p>Cecil Coupe</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/davorb.jpg">
-            <h4><a href="http://github.com/davorb" target="_blank">davorb</a></h4>
-            <p>Davor Babić</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/kcerb.jpg">
-            <h4><a href="http://github.com/KCErb" target="_blank">KCErb</a></h4>
-            <p>KC Erb</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/jasonrclark.jpg">
-            <h4><a href="http://github.com/jasonrclark" target="_blank">jasonrclark</a></h4>
-            <p>Jason R. Clark</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/jrgifford.jpg">
-            <h4><a href="http://github.com/jrgifford" target="_blank">jrgifford</a></h4>
-            <p>James Gifford</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/pjfitzgibbons.jpg">
-            <h4><a href="http://github.com/pjfitzgibbons" target="_blank">pjfitzgibbons</a></h4>
-            <p>Peter Fitzgibbons</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/pragtob.jpg">
-            <h4><a href="http://github.com/PragTob" target="_blank">PragTob</a></h4>
-            <p>Tobias Pfeiffer</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/steveklabnik.jpg">
-            <h4><a href="http://github.com/steveklabnik" target="_blank">steveklabnik</a></h4>
-            <p>Steve Klabnik</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="/img/team/wasnotrice.jpg">
-            <h4><a href="http://github.com/wasnotrice" target="_blank">wasnotrice</a></h4>
-            <p>Eric Watson</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="http://placehold.it/100/f9f/fff&text=YOU!">
-            <h4>you</h4>
-            <p>You</p>
-          </div>
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="http://placehold.it/100/ff9/000&text=YOU 2">
-            <h4>you2</h4>
-            <p>You too!</p>
-          </div>
-        </div>
+        {% endfor %}
+      </div>
     </div>
-
   </div>
 
+  <div class='jumbotron'>
+    <div id="team">
+      <div class="row">
+        {% for user in site.data.community %}
+          <div class="col-xs-6 col-sm-2 team-member">
+            <img src="{{ user.avatar_url }}">
+            <h4><a href="{{ user.html_url }}" target="_blank">{{user.login}}</a></h4>
+            <p>{{user.name}}</p>
+          </div>
+        {% endfor %} 
+      </div>
+    </div>
+  </div>
+</div>
 
   <div class='row'>
     <div class="col-md-2">

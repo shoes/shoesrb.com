@@ -185,3 +185,8 @@ img{
   font-size: 95%;
   font-weight: normal;
 }
+
+.team-member {
+  border: 1px solid blue;
+  height: 170px;
+}
