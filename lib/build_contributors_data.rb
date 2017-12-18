@@ -75,8 +75,7 @@ class Parser
   end
 end
 
-
-# get organization members
+# get org members
 github = Github.new
 members = Parser.members(github.members)
 members.each do |member_hash|
@@ -85,11 +84,11 @@ members.each do |member_hash|
 end
 File.open('_data/members.yml', 'w') { |f| f.write members.to_yaml }
 
-#get repos
+# get repos
 repos = Parser.repos(github.repos)
 File.open('_data/repos.yml', 'w') {|f| f.write repos.to_yaml } 
 
-# get info for contributors to each repo
+# get info on contributors to repos
 repos.each do |repo|
   contributors = github.contributors(repo['name'])
   contributors.map! do |contributor_hash|
@@ -101,4 +100,15 @@ repos.each do |repo|
 end
 File.open('_data/repo_with_contributors.yml', 'w') {|f| f.write repos.to_yaml}
 
-
+# build the community data
+# (unique contributors who are not org members)
+contributors = []
+repos.each do |repo|
+  repo['contributors'].each do |contributor|
+    contributors << contributor
+  end
+end
+contributors = contributors.uniq! {|e| e['login']}
+member_logins = members.map {|e| e['login']}
+community = contributors.select {|e| !member_logins.include? e['login']}
+File.open('_data/community.yml', 'w') {|f| f.write community.to_yaml}
