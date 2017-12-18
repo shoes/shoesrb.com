@@ -1,37 +1,4 @@
 ---
-- login: ashbb
-  id: 25582
-  avatar_url: https://avatars2.githubusercontent.com/u/25582?v=4
-  url: https://api.github.com/users/ashbb
-  contributions: 142
-  html_url: https://github.com/ashbb
-  name: ashbb
-  company: 
-  blog: http://vgoff.posterous.com/
-  location: Japan
-  bio: 
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 141
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
-- login: wasnotrice
-  id: 908
-  avatar_url: https://avatars2.githubusercontent.com/u/908?v=4
-  url: https://api.github.com/users/wasnotrice
-  contributions: 87
-  html_url: https://github.com/wasnotrice
-  name: Eric Watson
-  company: 
-  blog: ''
-  location: 
-  bio: 
 - login: ender672
   id: 41417
   avatar_url: https://avatars2.githubusercontent.com/u/41417?v=4
@@ -43,18 +10,6 @@
   blog: http://www.holymonkey.com
   location: Graton, CA
   bio: 
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 19
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
 - login: ccoupe
   id: 222691
   avatar_url: https://avatars3.githubusercontent.com/u/222691?v=4
@@ -110,28 +65,6 @@
   blog: http://wilkie.io
   location: Pittsburgh
   bio: 
-- login: mpapis
-  id: 48054
-  avatar_url: https://avatars0.githubusercontent.com/u/48054?v=4
-  url: https://api.github.com/users/mpapis
-  contributions: 7
-  html_url: https://github.com/mpapis
-  name: Michal Papis
-  company: Opensource, Toptal
-  blog: http://niczsoft.com
-  location: Gorzow Wlkp., Poland
-  bio: 
-- login: jrgifford
-  id: 567771
-  avatar_url: https://avatars2.githubusercontent.com/u/567771?v=4
-  url: https://api.github.com/users/jrgifford
-  contributions: 6
-  html_url: https://github.com/jrgifford
-  name: James Gifford
-  company: "@rvshare "
-  blog: https://armyofminions.com
-  location: Cleveland OH
-  bio: Startups and Software. I help make things not suck.
 - login: codeodor
   id: 23479
   avatar_url: https://avatars1.githubusercontent.com/u/23479?v=4
@@ -165,17 +98,6 @@
   blog: http://zzak.io
   location: Yanaka, Tokyo
   bio: 
-- login: jasonrclark
-  id: 130504
-  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
-  url: https://api.github.com/users/jasonrclark
-  contributions: 5
-  html_url: https://github.com/jasonrclark
-  name: Jason R. Clark
-  company: New Relic
-  blog: http://jasonrclark.com
-  location: Portland, OR
-  bio: Rubyist, cyclist, homebrewist
 - login: ferbass
   id: 209654
   avatar_url: https://avatars0.githubusercontent.com/u/209654?v=4
@@ -186,17 +108,6 @@
   company: "@Drivemode "
   blog: http://www.ferbass.com
   location: 埼玉県、本庄市
-  bio: 
-- login: nashby
-  id: 200500
-  avatar_url: https://avatars1.githubusercontent.com/u/200500?v=4
-  url: https://api.github.com/users/nashby
-  contributions: 3
-  html_url: https://github.com/nashby
-  name: Vasiliy Ermolovich
-  company: 
-  blog: http://twitter.com/nashby_
-  location: Belarus, Minsk
   bio: 
 - login: pvande
   id: 2350
@@ -288,17 +199,6 @@
   blog: http://kerrizor.com
   location: Seattle, WA
   bio: "Developer and lackwit gadabout \U0001F496"
-- login: ychatz
-  id: 567750
-  avatar_url: https://avatars1.githubusercontent.com/u/567750?v=4
-  url: https://api.github.com/users/ychatz
-  contributions: 2
-  html_url: https://github.com/ychatz
-  name: Yannis Chatzimichos
-  company: Google
-  blog: ''
-  location: Zurich, Switzerland
-  bio: 
 - login: atownley
   id: 179614
   avatar_url: https://avatars0.githubusercontent.com/u/179614?v=4
@@ -332,51 +232,6 @@
   blog: ''
   location: Los Angeles
   bio: 
-- login: wasnotrice
-  id: 908
-  avatar_url: https://avatars2.githubusercontent.com/u/908?v=4
-  url: https://api.github.com/users/wasnotrice
-  contributions: 46
-  html_url: https://github.com/wasnotrice
-  name: Eric Watson
-  company: 
-  blog: ''
-  location: 
-  bio: 
-- login: jasonrclark
-  id: 130504
-  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
-  url: https://api.github.com/users/jasonrclark
-  contributions: 43
-  html_url: https://github.com/jasonrclark
-  name: Jason R. Clark
-  company: New Relic
-  blog: http://jasonrclark.com
-  location: Portland, OR
-  bio: Rubyist, cyclist, homebrewist
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 32
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 9
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
 - login: ndrluis
   id: 1859449
   avatar_url: https://avatars3.githubusercontent.com/u/1859449?v=4
@@ -421,39 +276,6 @@
   blog: http://devyn.me/
   location: Richmond, BC
   bio: 
-- login: ashbb
-  id: 25582
-  avatar_url: https://avatars2.githubusercontent.com/u/25582?v=4
-  url: https://api.github.com/users/ashbb
-  contributions: 2
-  html_url: https://github.com/ashbb
-  name: ashbb
-  company: 
-  blog: http://vgoff.posterous.com/
-  location: Japan
-  bio: 
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 1
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
-- login: ccoupe
-  id: 222691
-  avatar_url: https://avatars3.githubusercontent.com/u/222691?v=4
-  url: https://api.github.com/users/ccoupe
-  contributions: 1169
-  html_url: https://github.com/ccoupe
-  name: Cecil  Coupe
-  company: 
-  blog: http://walkabout.mvmanila.com
-  location: Boise, Id. USA
-  bio: 
 - login: passenger94
   id: 10730930
   avatar_url: https://avatars2.githubusercontent.com/u/10730930?v=4
@@ -476,83 +298,6 @@
   blog: http://mecenia.blogspot.com/
   location: 
   bio: 
-- login: ashbb
-  id: 25582
-  avatar_url: https://avatars2.githubusercontent.com/u/25582?v=4
-  url: https://api.github.com/users/ashbb
-  contributions: 120
-  html_url: https://github.com/ashbb
-  name: ashbb
-  company: 
-  blog: http://vgoff.posterous.com/
-  location: Japan
-  bio: 
-- login: ender672
-  id: 41417
-  avatar_url: https://avatars2.githubusercontent.com/u/41417?v=4
-  url: https://api.github.com/users/ender672
-  contributions: 35
-  html_url: https://github.com/ender672
-  name: Timothy Elliott
-  company: Loggly
-  blog: http://www.holymonkey.com
-  location: Graton, CA
-  bio: 
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 27
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
-- login: tnobuhito
-  id: 48888
-  avatar_url: https://avatars0.githubusercontent.com/u/48888?v=4
-  url: https://api.github.com/users/tnobuhito
-  contributions: 13
-  html_url: https://github.com/tnobuhito
-  name: tnobuhito
-  company: Japan
-  blog: ''
-  location: 
-  bio: 
-- login: martindemello
-  id: 16215
-  avatar_url: https://avatars2.githubusercontent.com/u/16215?v=4
-  url: https://api.github.com/users/martindemello
-  contributions: 10
-  html_url: https://github.com/martindemello
-  name: Martin DeMello
-  company: Google
-  blog: http://zem.novylen.net
-  location: San Francisco
-  bio: 
-- login: greatseth
-  id: 5200
-  avatar_url: https://avatars0.githubusercontent.com/u/5200?v=4
-  url: https://api.github.com/users/greatseth
-  contributions: 8
-  html_url: https://github.com/greatseth
-  name: Seth Thomas Rasmussen
-  company: 
-  blog: ''
-  location: 
-  bio: 
-- login: wilkie
-  id: 31674
-  avatar_url: https://avatars3.githubusercontent.com/u/31674?v=4
-  url: https://api.github.com/users/wilkie
-  contributions: 8
-  html_url: https://github.com/wilkie
-  name: wilkie
-  company: 
-  blog: http://wilkie.io
-  location: Pittsburgh
-  bio: 
 - login: dredknight
   id: 12410314
   avatar_url: https://avatars3.githubusercontent.com/u/12410314?v=4
@@ -564,39 +309,6 @@
   blog: ''
   location: 
   bio: ailqk
-- login: pvande
-  id: 2350
-  avatar_url: https://avatars2.githubusercontent.com/u/2350?v=4
-  url: https://api.github.com/users/pvande
-  contributions: 3
-  html_url: https://github.com/pvande
-  name: Pieter van de Bruggen
-  company: 
-  blog: ''
-  location: Portland, OR
-  bio: 
-- login: DarkTatka
-  id: 24458
-  avatar_url: https://avatars3.githubusercontent.com/u/24458?v=4
-  url: https://api.github.com/users/DarkTatka
-  contributions: 2
-  html_url: https://github.com/DarkTatka
-  name: Vojtech Salbaba
-  company: Friendly systems
-  blog: ''
-  location: Czech Republic
-  bio: 
-- login: jmhodges
-  id: 598
-  avatar_url: https://avatars2.githubusercontent.com/u/598?v=4
-  url: https://api.github.com/users/jmhodges
-  contributions: 2
-  html_url: https://github.com/jmhodges
-  name: Jeff Hodges
-  company: Darkish Green
-  blog: http://somethingsimilar.com
-  location: San Francisco
-  bio: 
 - login: Fornost461
   id: 6820182
   avatar_url: https://avatars3.githubusercontent.com/u/6820182?v=4
@@ -607,28 +319,6 @@
   company: 
   blog: ''
   location: 
-  bio: 
-- login: ecarnevale
-  id: 2395
-  avatar_url: https://avatars1.githubusercontent.com/u/2395?v=4
-  url: https://api.github.com/users/ecarnevale
-  contributions: 1
-  html_url: https://github.com/ecarnevale
-  name: Emanuel Carnevale
-  company: 
-  blog: http://twitter.com/onigiri
-  location: Italy
-  bio: 
-- login: evanfarrar
-  id: 7092
-  avatar_url: https://avatars0.githubusercontent.com/u/7092?v=4
-  url: https://api.github.com/users/evanfarrar
-  contributions: 1
-  html_url: https://github.com/evanfarrar
-  name: Evan Farrar
-  company: Pivotal
-  blog: ''
-  location: Los Angeles
   bio: 
 - login: raggi
   id: 348
@@ -674,17 +364,6 @@
   blog: http://www.canonical.org/~paulv/
   location: Dayton, Ohio
   bio: 
-- login: devyn
-  id: 10729
-  avatar_url: https://avatars1.githubusercontent.com/u/10729?v=4
-  url: https://api.github.com/users/devyn
-  contributions: 1
-  html_url: https://github.com/devyn
-  name: Devyn Cairns
-  company: 
-  blog: http://devyn.me/
-  location: Richmond, BC
-  bio: 
 - login: gwenn
   id: 45554
   avatar_url: https://avatars2.githubusercontent.com/u/45554?v=4
@@ -718,74 +397,6 @@
   blog: ''
   location: 
   bio: 
-- login: zzak
-  id: 277819
-  avatar_url: https://avatars1.githubusercontent.com/u/277819?v=4
-  url: https://api.github.com/users/zzak
-  contributions: 17
-  html_url: https://github.com/zzak
-  name: Zachary Scott
-  company: "@CircleCI"
-  blog: http://zzak.io
-  location: Yanaka, Tokyo
-  bio: 
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 7
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 14
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 5
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 12
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 3
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
 - login: luislavena
   id: 4182
   avatar_url: https://avatars2.githubusercontent.com/u/4182?v=4
@@ -918,150 +529,6 @@
   blog: ''
   location: Buffalo, NY
   bio: 
-- login: ender672
-  id: 41417
-  avatar_url: https://avatars2.githubusercontent.com/u/41417?v=4
-  url: https://api.github.com/users/ender672
-  contributions: 1
-  html_url: https://github.com/ender672
-  name: Timothy Elliott
-  company: Loggly
-  blog: http://www.holymonkey.com
-  location: Graton, CA
-  bio: 
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 1
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
-- login: ashbb
-  id: 25582
-  avatar_url: https://avatars2.githubusercontent.com/u/25582?v=4
-  url: https://api.github.com/users/ashbb
-  contributions: 126
-  html_url: https://github.com/ashbb
-  name: ashbb
-  company: 
-  blog: http://vgoff.posterous.com/
-  location: Japan
-  bio: 
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 123
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
-- login: wasnotrice
-  id: 908
-  avatar_url: https://avatars2.githubusercontent.com/u/908?v=4
-  url: https://api.github.com/users/wasnotrice
-  contributions: 93
-  html_url: https://github.com/wasnotrice
-  name: Eric Watson
-  company: 
-  blog: ''
-  location: 
-  bio: 
-- login: ender672
-  id: 41417
-  avatar_url: https://avatars2.githubusercontent.com/u/41417?v=4
-  url: https://api.github.com/users/ender672
-  contributions: 35
-  html_url: https://github.com/ender672
-  name: Timothy Elliott
-  company: Loggly
-  blog: http://www.holymonkey.com
-  location: Graton, CA
-  bio: 
-- login: pjfitzgibbons
-  id: 11318
-  avatar_url: https://avatars2.githubusercontent.com/u/11318?v=4
-  url: https://api.github.com/users/pjfitzgibbons
-  contributions: 23
-  html_url: https://github.com/pjfitzgibbons
-  name: Peter Fitzgibbons
-  company: 
-  blog: http://peter.fitzgibbons.info
-  location: Evanston, IL
-  bio: 
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 14
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
-- login: ccoupe
-  id: 222691
-  avatar_url: https://avatars3.githubusercontent.com/u/222691?v=4
-  url: https://api.github.com/users/ccoupe
-  contributions: 13
-  html_url: https://github.com/ccoupe
-  name: Cecil  Coupe
-  company: 
-  blog: http://walkabout.mvmanila.com
-  location: Boise, Id. USA
-  bio: 
-- login: tnobuhito
-  id: 48888
-  avatar_url: https://avatars0.githubusercontent.com/u/48888?v=4
-  url: https://api.github.com/users/tnobuhito
-  contributions: 13
-  html_url: https://github.com/tnobuhito
-  name: tnobuhito
-  company: Japan
-  blog: ''
-  location: 
-  bio: 
-- login: martindemello
-  id: 16215
-  avatar_url: https://avatars2.githubusercontent.com/u/16215?v=4
-  url: https://api.github.com/users/martindemello
-  contributions: 10
-  html_url: https://github.com/martindemello
-  name: Martin DeMello
-  company: Google
-  blog: http://zem.novylen.net
-  location: San Francisco
-  bio: 
-- login: greatseth
-  id: 5200
-  avatar_url: https://avatars0.githubusercontent.com/u/5200?v=4
-  url: https://api.github.com/users/greatseth
-  contributions: 8
-  html_url: https://github.com/greatseth
-  name: Seth Thomas Rasmussen
-  company: 
-  blog: ''
-  location: 
-  bio: 
-- login: wilkie
-  id: 31674
-  avatar_url: https://avatars3.githubusercontent.com/u/31674?v=4
-  url: https://api.github.com/users/wilkie
-  contributions: 8
-  html_url: https://github.com/wilkie
-  name: wilkie
-  company: 
-  blog: http://wilkie.io
-  location: Pittsburgh
-  bio: 
 - login: swerner
   id: 138379
   avatar_url: https://avatars1.githubusercontent.com/u/138379?v=4
@@ -1073,173 +540,6 @@
   blog: ''
   location: New York City
   bio: 
-- login: codeodor
-  id: 23479
-  avatar_url: https://avatars1.githubusercontent.com/u/23479?v=4
-  url: https://api.github.com/users/codeodor
-  contributions: 6
-  html_url: https://github.com/codeodor
-  name: Sammy Larbi
-  company: 
-  blog: http://www.codeodor.com
-  location: Houston, TX
-  bio: 
-- login: philcrissman
-  id: 17895
-  avatar_url: https://avatars3.githubusercontent.com/u/17895?v=4
-  url: https://api.github.com/users/philcrissman
-  contributions: 5
-  html_url: https://github.com/philcrissman
-  name: Phil Crissman
-  company: Microsoft
-  blog: http://philcrissman.net
-  location: Seattle, WA
-  bio: 
-- login: ferbass
-  id: 209654
-  avatar_url: https://avatars0.githubusercontent.com/u/209654?v=4
-  url: https://api.github.com/users/ferbass
-  contributions: 4
-  html_url: https://github.com/ferbass
-  name: Fernando Bass
-  company: "@Drivemode "
-  blog: http://www.ferbass.com
-  location: 埼玉県、本庄市
-  bio: 
-- login: jrgifford
-  id: 567771
-  avatar_url: https://avatars2.githubusercontent.com/u/567771?v=4
-  url: https://api.github.com/users/jrgifford
-  contributions: 4
-  html_url: https://github.com/jrgifford
-  name: James Gifford
-  company: "@rvshare "
-  blog: https://armyofminions.com
-  location: Cleveland OH
-  bio: Startups and Software. I help make things not suck.
-- login: zzak
-  id: 277819
-  avatar_url: https://avatars1.githubusercontent.com/u/277819?v=4
-  url: https://api.github.com/users/zzak
-  contributions: 4
-  html_url: https://github.com/zzak
-  name: Zachary Scott
-  company: "@CircleCI"
-  blog: http://zzak.io
-  location: Yanaka, Tokyo
-  bio: 
-- login: pvande
-  id: 2350
-  avatar_url: https://avatars2.githubusercontent.com/u/2350?v=4
-  url: https://api.github.com/users/pvande
-  contributions: 3
-  html_url: https://github.com/pvande
-  name: Pieter van de Bruggen
-  company: 
-  blog: ''
-  location: Portland, OR
-  bio: 
-- login: citelao
-  id: 432939
-  avatar_url: https://avatars1.githubusercontent.com/u/432939?v=4
-  url: https://api.github.com/users/citelao
-  contributions: 2
-  html_url: https://github.com/citelao
-  name: Ben Stolovitz
-  company: 
-  blog: http://ben.stolovitz.com
-  location: ZZ9 Plural Z Alpha
-  bio: SWE at @Microsoft
-- login: chrisumbel
-  id: 92825
-  avatar_url: https://avatars0.githubusercontent.com/u/92825?v=4
-  url: https://api.github.com/users/chrisumbel
-  contributions: 2
-  html_url: https://github.com/chrisumbel
-  name: Chris Umbel
-  company: Pivotal
-  blog: http://www.chrisumbel.com
-  location: 
-  bio: Advisory Solutions Architect at Pivotal, embedded hobbyist, electronics enthusiast,
-    and maker.
-- login: danbernier
-  id: 13077
-  avatar_url: https://avatars2.githubusercontent.com/u/13077?v=4
-  url: https://api.github.com/users/danbernier
-  contributions: 2
-  html_url: https://github.com/danbernier
-  name: Dan Bernier
-  company: "@tedconf "
-  blog: http://invisibleblocks.com
-  location: CT, USA
-  bio: Lately, a Rubyist, getting into data science. I make generative art. I play
-    in Python, Lua, Julia, and Java. I used to do C#. I organize @newhavenio.
-- login: DarkTatka
-  id: 24458
-  avatar_url: https://avatars3.githubusercontent.com/u/24458?v=4
-  url: https://api.github.com/users/DarkTatka
-  contributions: 2
-  html_url: https://github.com/DarkTatka
-  name: Vojtech Salbaba
-  company: Friendly systems
-  blog: ''
-  location: Czech Republic
-  bio: 
-- login: jmhodges
-  id: 598
-  avatar_url: https://avatars2.githubusercontent.com/u/598?v=4
-  url: https://api.github.com/users/jmhodges
-  contributions: 2
-  html_url: https://github.com/jmhodges
-  name: Jeff Hodges
-  company: Darkish Green
-  blog: http://somethingsimilar.com
-  location: San Francisco
-  bio: 
-- login: atownley
-  id: 179614
-  avatar_url: https://avatars0.githubusercontent.com/u/179614?v=4
-  url: https://api.github.com/users/atownley
-  contributions: 1
-  html_url: https://github.com/atownley
-  name: Andrew S. Townley
-  company: 
-  blog: http://atownley.org
-  location: Cape Town, South Africa
-  bio: 
-- login: ecarnevale
-  id: 2395
-  avatar_url: https://avatars1.githubusercontent.com/u/2395?v=4
-  url: https://api.github.com/users/ecarnevale
-  contributions: 1
-  html_url: https://github.com/ecarnevale
-  name: Emanuel Carnevale
-  company: 
-  blog: http://twitter.com/onigiri
-  location: Italy
-  bio: 
-- login: evanfarrar
-  id: 7092
-  avatar_url: https://avatars0.githubusercontent.com/u/7092?v=4
-  url: https://api.github.com/users/evanfarrar
-  contributions: 1
-  html_url: https://github.com/evanfarrar
-  name: Evan Farrar
-  company: Pivotal
-  blog: ''
-  location: Los Angeles
-  bio: 
-- login: raggi
-  id: 348
-  avatar_url: https://avatars2.githubusercontent.com/u/348?v=4
-  url: https://api.github.com/users/raggi
-  contributions: 1
-  html_url: https://github.com/raggi
-  name: James Tucker
-  company: Google
-  blog: http://ra66i.org
-  location: California or Bermuda
-  bio: "Chief Technical ROFLSCALEr\r\n"
 - login: markzalar
   id: 787783
   avatar_url: https://avatars0.githubusercontent.com/u/787783?v=4
@@ -1250,17 +550,6 @@
   company: 
   blog: ''
   location: Pittsburgh, PA
-  bio: 
-- login: kavu
-  id: 1994
-  avatar_url: https://avatars0.githubusercontent.com/u/1994?v=4
-  url: https://api.github.com/users/kavu
-  contributions: 1
-  html_url: https://github.com/kavu
-  name: Max Riveiro
-  company: "@polys-vote "
-  blog: https://twitter.com/hornedkavu
-  location: Moscow, Russia
   bio: 
 - login: manveru
   id: 3507
@@ -1273,51 +562,6 @@
   blog: ''
   location: Germany
   bio: 
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 44
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 36
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
-- login: ccoupe
-  id: 222691
-  avatar_url: https://avatars3.githubusercontent.com/u/222691?v=4
-  url: https://api.github.com/users/ccoupe
-  contributions: 35
-  html_url: https://github.com/ccoupe
-  name: Cecil  Coupe
-  company: 
-  blog: http://walkabout.mvmanila.com
-  location: Boise, Id. USA
-  bio: 
-- login: jasonrclark
-  id: 130504
-  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
-  url: https://api.github.com/users/jasonrclark
-  contributions: 35
-  html_url: https://github.com/jasonrclark
-  name: Jason R. Clark
-  company: New Relic
-  blog: http://jasonrclark.com
-  location: Portland, OR
-  bio: Rubyist, cyclist, homebrewist
 - login: JesseHerrick
   id: 3150092
   avatar_url: https://avatars3.githubusercontent.com/u/3150092?v=4
@@ -1340,17 +584,6 @@
   blog: https://gitgetgot.com
   location: Philadelphia, PA
   bio: I work mainly in Ruby.
-- login: wasnotrice
-  id: 908
-  avatar_url: https://avatars2.githubusercontent.com/u/908?v=4
-  url: https://api.github.com/users/wasnotrice
-  contributions: 7
-  html_url: https://github.com/wasnotrice
-  name: Eric Watson
-  company: 
-  blog: ''
-  location: 
-  bio: 
 - login: nicholalexander
   id: 212288
   avatar_url: https://avatars1.githubusercontent.com/u/212288?v=4
@@ -1372,28 +605,6 @@
   company: Tesorio
   blog: jamesaanderson.com
   location: Los Angeles, CA
-  bio: 
-- login: fism88
-  id: 297730
-  avatar_url: https://avatars0.githubusercontent.com/u/297730?v=4
-  url: https://api.github.com/users/fism88
-  contributions: 5
-  html_url: https://github.com/fism88
-  name: Faraaz Ismail
-  company: 
-  blog: ''
-  location: Austin, TX
-  bio: 
-- login: mpapis
-  id: 48054
-  avatar_url: https://avatars0.githubusercontent.com/u/48054?v=4
-  url: https://api.github.com/users/mpapis
-  contributions: 4
-  html_url: https://github.com/mpapis
-  name: Michal Papis
-  company: Opensource, Toptal
-  blog: http://niczsoft.com
-  location: Gorzow Wlkp., Poland
   bio: 
 - login: nathancarnes
   id: 13486
@@ -1417,61 +628,6 @@
   blog: eliduke.com
   location: Portland, OR
   bio: 
-- login: kerrizor
-  id: 257689
-  avatar_url: https://avatars2.githubusercontent.com/u/257689?v=4
-  url: https://api.github.com/users/kerrizor
-  contributions: 3
-  html_url: https://github.com/kerrizor
-  name: Kerri Miller
-  company: 
-  blog: http://kerrizor.com
-  location: Seattle, WA
-  bio: "Developer and lackwit gadabout \U0001F496"
-- login: zzak
-  id: 277819
-  avatar_url: https://avatars1.githubusercontent.com/u/277819?v=4
-  url: https://api.github.com/users/zzak
-  contributions: 2
-  html_url: https://github.com/zzak
-  name: Zachary Scott
-  company: "@CircleCI"
-  blog: http://zzak.io
-  location: Yanaka, Tokyo
-  bio: 
-- login: plexus
-  id: 32212
-  avatar_url: https://avatars2.githubusercontent.com/u/32212?v=4
-  url: https://api.github.com/users/plexus
-  contributions: 2
-  html_url: https://github.com/plexus
-  name: Arne Brasseur
-  company: 
-  blog: http://www.arnebrasseur.net
-  location: Berlin
-  bio: 
-- login: davorb
-  id: 798427
-  avatar_url: https://avatars0.githubusercontent.com/u/798427?v=4
-  url: https://api.github.com/users/davorb
-  contributions: 2
-  html_url: https://github.com/davorb
-  name: Davor Babić
-  company: 
-  blog: ''
-  location: Lund, Sweden
-  bio: λ
-- login: BackOrder
-  id: 8844578
-  avatar_url: https://avatars2.githubusercontent.com/u/8844578?v=4
-  url: https://api.github.com/users/BackOrder
-  contributions: 1
-  html_url: https://github.com/BackOrder
-  name: Ian Trudel
-  company: Ian Trudel Software Designer
-  blog: http://mecenia.blogspot.com/
-  location: 
-  bio: 
 - login: garciadanny
   id: 1809980
   avatar_url: https://avatars2.githubusercontent.com/u/1809980?v=4
@@ -1482,28 +638,6 @@
   company: 
   blog: https://whatilearnedtoday.io
   location: Denver, CO
-  bio: 
-- login: jrgifford
-  id: 567771
-  avatar_url: https://avatars2.githubusercontent.com/u/567771?v=4
-  url: https://api.github.com/users/jrgifford
-  contributions: 1
-  html_url: https://github.com/jrgifford
-  name: James Gifford
-  company: "@rvshare "
-  blog: https://armyofminions.com
-  location: Cleveland OH
-  bio: Startups and Software. I help make things not suck.
-- login: KCErb
-  id: 4992244
-  avatar_url: https://avatars2.githubusercontent.com/u/4992244?v=4
-  url: https://api.github.com/users/KCErb
-  contributions: 1
-  html_url: https://github.com/KCErb
-  name: KC Erb
-  company: 
-  blog: ''
-  location: Salt Lake City, UT
   bio: 
 - login: piisalie
   id: 3163390
@@ -1527,62 +661,6 @@
   blog: ''
   location: Ocala, FL
   bio: 
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 1266
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
-- login: jasonrclark
-  id: 130504
-  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
-  url: https://api.github.com/users/jasonrclark
-  contributions: 1232
-  html_url: https://github.com/jasonrclark
-  name: Jason R. Clark
-  company: New Relic
-  blog: http://jasonrclark.com
-  location: Portland, OR
-  bio: Rubyist, cyclist, homebrewist
-- login: wasnotrice
-  id: 908
-  avatar_url: https://avatars2.githubusercontent.com/u/908?v=4
-  url: https://api.github.com/users/wasnotrice
-  contributions: 549
-  html_url: https://github.com/wasnotrice
-  name: Eric Watson
-  company: 
-  blog: ''
-  location: 
-  bio: 
-- login: ashbb
-  id: 25582
-  avatar_url: https://avatars2.githubusercontent.com/u/25582?v=4
-  url: https://api.github.com/users/ashbb
-  contributions: 208
-  html_url: https://github.com/ashbb
-  name: ashbb
-  company: 
-  blog: http://vgoff.posterous.com/
-  location: Japan
-  bio: 
-- login: KCErb
-  id: 4992244
-  avatar_url: https://avatars2.githubusercontent.com/u/4992244?v=4
-  url: https://api.github.com/users/KCErb
-  contributions: 173
-  html_url: https://github.com/KCErb
-  name: KC Erb
-  company: 
-  blog: ''
-  location: Salt Lake City, UT
-  bio: 
 - login: jaredmoody
   id: 27690
   avatar_url: https://avatars3.githubusercontent.com/u/27690?v=4
@@ -1594,28 +672,6 @@
   blog: jaredmoody.com
   location: Encinitas, CA
   bio: 
-- login: fism88
-  id: 297730
-  avatar_url: https://avatars0.githubusercontent.com/u/297730?v=4
-  url: https://api.github.com/users/fism88
-  contributions: 102
-  html_url: https://github.com/fism88
-  name: Faraaz Ismail
-  company: 
-  blog: ''
-  location: Austin, TX
-  bio: 
-- login: davorb
-  id: 798427
-  avatar_url: https://avatars0.githubusercontent.com/u/798427?v=4
-  url: https://api.github.com/users/davorb
-  contributions: 88
-  html_url: https://github.com/davorb
-  name: Davor Babić
-  company: 
-  blog: ''
-  location: Lund, Sweden
-  bio: λ
 - login: tapickell
   id: 1010618
   avatar_url: https://avatars2.githubusercontent.com/u/1010618?v=4
@@ -1638,17 +694,6 @@
   company: 
   blog: ''
   location: Chicago, IL
-  bio: 
-- login: plexus
-  id: 32212
-  avatar_url: https://avatars2.githubusercontent.com/u/32212?v=4
-  url: https://api.github.com/users/plexus
-  contributions: 26
-  html_url: https://github.com/plexus
-  name: Arne Brasseur
-  company: 
-  blog: http://www.arnebrasseur.net
-  location: Berlin
   bio: 
 - login: rjack1201
   id: 4944716
@@ -1684,17 +729,6 @@
   location: Mumbai
   bio: Software Engineer working in Nodejs and exploring Serverless. Open Source Enthusiast.
     Ruby and RoR fan. Sometimes dabbles in Python.
-- login: nicholalexander
-  id: 212288
-  avatar_url: https://avatars1.githubusercontent.com/u/212288?v=4
-  url: https://api.github.com/users/nicholalexander
-  contributions: 12
-  html_url: https://github.com/nicholalexander
-  name: nichol alexander
-  company: 
-  blog: ''
-  location: brooklyn
-  bio: Dad, husband, dev, human.
 - login: alindeman
   id: 395621
   avatar_url: https://avatars2.githubusercontent.com/u/395621?v=4
@@ -1761,17 +795,6 @@
   blog: http://phansch.net
   location: Berlin, Germany
   bio: Ruby & Elixir
-- login: nashby
-  id: 200500
-  avatar_url: https://avatars1.githubusercontent.com/u/200500?v=4
-  url: https://api.github.com/users/nashby
-  contributions: 6
-  html_url: https://github.com/nashby
-  name: Vasiliy Ermolovich
-  company: 
-  blog: http://twitter.com/nashby_
-  location: Belarus, Minsk
-  bio: 
 - login: chuckremes
   id: 43569
   avatar_url: https://avatars2.githubusercontent.com/u/43569?v=4
@@ -1783,17 +806,6 @@
   blog: ''
   location: Chicago, IL
   bio: 
-- login: steveklabnik
-  id: 27786
-  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
-  url: https://api.github.com/users/steveklabnik
-  contributions: 5
-  html_url: https://github.com/steveklabnik
-  name: Steve Klabnik
-  company: 
-  blog: http://words.steveklabnik.com/
-  location: Brooklyn
-  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
 - login: hkal
   id: 3802753
   avatar_url: https://avatars2.githubusercontent.com/u/3802753?v=4
@@ -1850,82 +862,3 @@
   blog: ''
   location: Haarlem, Netherlands
   bio: 
-- login: jrgifford
-  id: 567771
-  avatar_url: https://avatars2.githubusercontent.com/u/567771?v=4
-  url: https://api.github.com/users/jrgifford
-  contributions: 4
-  html_url: https://github.com/jrgifford
-  name: James Gifford
-  company: "@rvshare "
-  blog: https://armyofminions.com
-  location: Cleveland OH
-  bio: Startups and Software. I help make things not suck.
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 6
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
-- login: jasonrclark
-  id: 130504
-  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
-  url: https://api.github.com/users/jasonrclark
-  contributions: 12
-  html_url: https://github.com/jasonrclark
-  name: Jason R. Clark
-  company: New Relic
-  blog: http://jasonrclark.com
-  location: Portland, OR
-  bio: Rubyist, cyclist, homebrewist
-- login: PragTob
-  id: 606517
-  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
-  url: https://api.github.com/users/PragTob
-  contributions: 1
-  html_url: https://github.com/PragTob
-  name: Tobias Pfeiffer
-  company: "@liefery "
-  blog: http://pragtob.info/
-  location: Berlin
-  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
-    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
-- login: jasonrclark
-  id: 130504
-  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
-  url: https://api.github.com/users/jasonrclark
-  contributions: 8
-  html_url: https://github.com/jasonrclark
-  name: Jason R. Clark
-  company: New Relic
-  blog: http://jasonrclark.com
-  location: Portland, OR
-  bio: Rubyist, cyclist, homebrewist
-- login: jasonrclark
-  id: 130504
-  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
-  url: https://api.github.com/users/jasonrclark
-  contributions: 6
-  html_url: https://github.com/jasonrclark
-  name: Jason R. Clark
-  company: New Relic
-  blog: http://jasonrclark.com
-  location: Portland, OR
-  bio: Rubyist, cyclist, homebrewist
-- login: jasonrclark
-  id: 130504
-  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
-  url: https://api.github.com/users/jasonrclark
-  contributions: 2
-  html_url: https://github.com/jasonrclark
-  name: Jason R. Clark
-  company: New Relic
-  blog: http://jasonrclark.com
-  location: Portland, OR
-  bio: Rubyist, cyclist, homebrewist
