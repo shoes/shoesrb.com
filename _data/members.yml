@@ -1,0 +1,142 @@
+---
+- login: ashbb
+  id: 25582
+  avatar_url: https://avatars2.githubusercontent.com/u/25582?v=4
+  url: https://api.github.com/users/ashbb
+  html_url: https://github.com/ashbb
+  name: ashbb
+  company: 
+  blog: http://vgoff.posterous.com/
+  location: Japan
+  bio: 
+- login: davorb
+  id: 798427
+  avatar_url: https://avatars0.githubusercontent.com/u/798427?v=4
+  url: https://api.github.com/users/davorb
+  html_url: https://github.com/davorb
+  name: Davor Babić
+  company: 
+  blog: ''
+  location: Lund, Sweden
+  bio: λ
+- login: fism88
+  id: 297730
+  avatar_url: https://avatars0.githubusercontent.com/u/297730?v=4
+  url: https://api.github.com/users/fism88
+  html_url: https://github.com/fism88
+  name: Faraaz Ismail
+  company: 
+  blog: ''
+  location: Austin, TX
+  bio: 
+- login: jasonrclark
+  id: 130504
+  avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
+  url: https://api.github.com/users/jasonrclark
+  html_url: https://github.com/jasonrclark
+  name: Jason R. Clark
+  company: New Relic
+  blog: http://jasonrclark.com
+  location: Portland, OR
+  bio: Rubyist, cyclist, homebrewist
+- login: jrgifford
+  id: 567771
+  avatar_url: https://avatars2.githubusercontent.com/u/567771?v=4
+  url: https://api.github.com/users/jrgifford
+  html_url: https://github.com/jrgifford
+  name: James Gifford
+  company: "@rvshare "
+  blog: https://armyofminions.com
+  location: Cleveland OH
+  bio: Startups and Software. I help make things not suck.
+- login: KCErb
+  id: 4992244
+  avatar_url: https://avatars2.githubusercontent.com/u/4992244?v=4
+  url: https://api.github.com/users/KCErb
+  html_url: https://github.com/KCErb
+  name: KC Erb
+  company: 
+  blog: ''
+  location: Salt Lake City, UT
+  bio: 
+- login: mpapis
+  id: 48054
+  avatar_url: https://avatars0.githubusercontent.com/u/48054?v=4
+  url: https://api.github.com/users/mpapis
+  html_url: https://github.com/mpapis
+  name: Michal Papis
+  company: Opensource, Toptal
+  blog: http://niczsoft.com
+  location: Gorzow Wlkp., Poland
+  bio: 
+- login: nashby
+  id: 200500
+  avatar_url: https://avatars1.githubusercontent.com/u/200500?v=4
+  url: https://api.github.com/users/nashby
+  html_url: https://github.com/nashby
+  name: Vasiliy Ermolovich
+  company: 
+  blog: http://twitter.com/nashby_
+  location: Belarus, Minsk
+  bio: 
+- login: pjfitzgibbons
+  id: 11318
+  avatar_url: https://avatars2.githubusercontent.com/u/11318?v=4
+  url: https://api.github.com/users/pjfitzgibbons
+  html_url: https://github.com/pjfitzgibbons
+  name: Peter Fitzgibbons
+  company: 
+  blog: http://peter.fitzgibbons.info
+  location: Evanston, IL
+  bio: 
+- login: plexus
+  id: 32212
+  avatar_url: https://avatars2.githubusercontent.com/u/32212?v=4
+  url: https://api.github.com/users/plexus
+  html_url: https://github.com/plexus
+  name: Arne Brasseur
+  company: 
+  blog: http://www.arnebrasseur.net
+  location: Berlin
+  bio: 
+- login: PragTob
+  id: 606517
+  avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
+  url: https://api.github.com/users/PragTob
+  html_url: https://github.com/PragTob
+  name: Tobias Pfeiffer
+  company: "@liefery "
+  blog: http://pragtob.info/
+  location: Berlin
+  bio: Likes people. Teamplayer, Open Source Enthusiast, Software Developer, TDDer,
+    Speaker. Ruby, Elixir, JavaScript. Runs RUG::B. Loves green.
+- login: steveklabnik
+  id: 27786
+  avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
+  url: https://api.github.com/users/steveklabnik
+  html_url: https://github.com/steveklabnik
+  name: Steve Klabnik
+  company: 
+  blog: http://words.steveklabnik.com/
+  location: Brooklyn
+  bio: All i'm trying to do is enjoy every day to the fullest with my Pokémon.
+- login: wasnotrice
+  id: 908
+  avatar_url: https://avatars2.githubusercontent.com/u/908?v=4
+  url: https://api.github.com/users/wasnotrice
+  html_url: https://github.com/wasnotrice
+  name: Eric Watson
+  company: 
+  blog: ''
+  location: 
+  bio: 
+- login: ychatz
+  id: 567750
+  avatar_url: https://avatars1.githubusercontent.com/u/567750?v=4
+  url: https://api.github.com/users/ychatz
+  html_url: https://github.com/ychatz
+  name: Yannis Chatzimichos
+  company: Google
+  blog: ''
+  location: Zurich, Switzerland
+  bio: 
