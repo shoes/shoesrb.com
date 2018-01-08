@@ -17,8 +17,8 @@
 - name: shoes3
   html_url: https://github.com/shoes/shoes3
   url: https://api.github.com/repos/shoes/shoes3
-  stargazers_count: 76
-  open_issues_count: 86
+  stargazers_count: 80
+  open_issues_count: 88
 - name: shoes-contrib
   html_url: https://github.com/shoes/shoes-contrib
   url: https://api.github.com/repos/shoes/shoes-contrib
@@ -48,12 +48,12 @@
   html_url: https://github.com/shoes/shoesrb.com
   url: https://api.github.com/repos/shoes/shoesrb.com
   stargazers_count: 36
-  open_issues_count: 11
+  open_issues_count: 12
 - name: shoes4
   html_url: https://github.com/shoes/shoes4
   url: https://api.github.com/repos/shoes/shoes4
-  stargazers_count: 1188
-  open_issues_count: 99
+  stargazers_count: 1202
+  open_issues_count: 100
 - name: shoes-highlighter
   html_url: https://github.com/shoes/shoes-highlighter
   url: https://api.github.com/repos/shoes/shoes-highlighter

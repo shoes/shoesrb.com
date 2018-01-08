@@ -76,16 +76,8 @@ class Parser
   end
 end
 
-# get org members
-github = Github.new
-members = Parser.members(github.members)
-members.each do |member_hash|
-  user = github.user(member_hash['login'])
-  member_hash.merge! Parser.user(user)
-end
-File.open('_data/members.yml', 'w') { |f| f.write members.to_yaml }
-
 # get repos
+github = Github.new
 repos = Parser.repos(github.repos)
 File.open('_data/repos.yml', 'w') {|f| f.write repos.to_yaml } 
 
@@ -99,17 +91,27 @@ repos.each do |repo|
   end
   repo["contributors"] = contributors
 end
-File.open('_data/repo_with_contributors.yml', 'w') {|f| f.write repos.to_yaml}
 
-# build the community data
-# (unique contributors who are not org members)
-contributors = []
+# build user profile with cumulative 
+users = {}
+# build unique users with zero contribution count
 repos.each do |repo|
   repo['contributors'].each do |contributor|
-    contributors << contributor
+    user_id = contributor['id']
+    data = contributor.dup
+    data = data.tap{|contributor_hash| contributor_hash.delete('id')}
+    data['contributions'] = 0
+    users[user_id] = data
   end
 end
-contributors = contributors.uniq! {|e| e['login']}
-member_logins = members.map {|e| e['login']}
-community = contributors.select {|e| !member_logins.include? e['login']}
-File.open('_data/community.yml', 'w') {|f| f.write community.to_yaml}
+
+repos.each do |repo|
+  repo['contributors'].each do |contributor|
+    user_id = contributor['id']
+    contributions = contributor['contributions']
+    users[user_id]['contributions'] += contributions
+  end
+end
+# sort by reverse
+users = users.sort_by{|_user_id, user_data| user_data['contributions']}.reverse
+File.open('_data/users.yml', 'w') {|f| f.write users.to_yaml}
