@@ -10,16 +10,29 @@ class DataBuilder
   def initialize
     @github = Github.new
     @repos = nil
-    @users = {}
+    @community = {}
   end
 
   def run
+    puts "getting repos"
     get_repos
+    
+    puts "saving repos"
     save_repos
+    
+    puts "getting all contributors"
     get_contributor_info
-    build_users_list
+    
+    puts "building community list"
+    build_community_list
+    
+    puts "calculating total contribtions"
     tally_total_contributions
-    save_users
+    
+    puts "saving the community!"
+    save_community
+
+    puts "done."
   end
 
   private
@@ -44,15 +57,15 @@ class DataBuilder
     end
   end
 
-  def build_users_list
+  def build_community_list
     # build unique users with zero contribution count
     @repos.each do |repo|
       repo['contributors'].each do |contributor|
         user_id = contributor['id']
         data = contributor.dup
-        data = data.tap{|contributor_hash| contributor_hash.delete('id')}
+        data = data.tap{|data_hash| data_hash.delete('id')}
         data['contributions'] = 0
-        @users[user_id] = data
+        @community[user_id] = data
       end
     end
   end
@@ -63,14 +76,14 @@ class DataBuilder
       repo['contributors'].each do |contributor|
         user_id = contributor['id']
         contributions = contributor['contributions']
-        @users[user_id]['contributions'] += contributions
+        @community[user_id]['contributions'] += contributions
       end
     end
-    @users = @users.sort_by{|_user_id, user_data| user_data['contributions']}.reverse
+    @community = @community.sort_by{|_user_id, user_data| user_data['contributions']}.reverse
   end
 
-  def save_users
-    File.open('_data/users.yml', 'w') {|f| f.write @users.to_yaml}
+  def save_community
+    File.open('_data/community.yml', 'w') {|f| f.write @community.to_yaml}
   end
 end
 
