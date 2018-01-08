@@ -13,7 +13,7 @@ $ open http://localhost:4000
 Wooo!
 
 ## Building the contributors page.
-The contributors pages is built by adding the cumulative commits from all members of the community (all contributors to all repos in the Shoes organization).  You will need to set a GITHUB_TOKEN in a .env file and then run `ruby lib/build_contributors_data.rb`.
+The contributors pages is built by adding the cumulative commits from all members of the community (all contributors to all repos in the Shoes organization).  You will need to set a GITHUB_TOKEN in a .env file and then run `ruby lib/data_builder.rb`.
 
 This will generated a few data files which are save in the `_data` directory and used by the templates on the `contribute.html` page.
 
