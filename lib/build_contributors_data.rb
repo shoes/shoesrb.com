@@ -1,4 +1,5 @@
 require 'httparty'
+require 'dotenv/load'
 
 class Github
   include HTTParty
@@ -6,7 +7,7 @@ class Github
 
   def initialize
     @auth = {'User-Agent' => 'nicholalexander',
-      'Authorization' => 'Bearer xxxxxx'
+      'Authorization' => "Bearer #{ENV['GITHUB_TOKEN']}"
     }
   end
 
