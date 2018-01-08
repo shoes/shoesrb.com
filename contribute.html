@@ -11,29 +11,14 @@ permalink: /contribute/
 
     <div id="team">
       <div class="row">
-        {% for member in site.data.members %}
+        {% for member in site.data.community %}
+          {% assign member_data = member[1] %}
           <div class="col-xs-6 col-sm-2 team-member">
-            <img src="{{ member.avatar_url }}">
-            <h4><a href="{{ member.html_url }}" target="_blank">{{member.login}}</a></h4>
-            <p>{{member.name}}</p>
+            <img src="{{ member_data.avatar_url  }}">
+            <h4><a href="{{ member_data.html_url }}" target="_blank">{{member_data.login}}</a></h4>
+            <p>{{member_data.name}}</p>
           </div>
         {% endfor %}
-      </div>
-    </div>
-  </div>
-
-  <div class='jumbotron'>
-    <h1>Or!  C<i class="fa fa-github"></i>ntribute</h1>
-    <p>...and become a part of the Shoes Community!</p>
-    <div id="team">
-      <div class="row">
-        {% for user in site.data.community %}
-          <div class="col-xs-6 col-sm-2 team-member">
-            <img src="{{ user.avatar_url }}">
-            <h4><a href="{{ user.html_url }}" target="_blank">{{user.login}}</a></h4>
-            <p>{{user.name}}</p>
-          </div>
-        {% endfor %} 
       </div>
     </div>
   </div>
