@@ -1,6 +1,5 @@
 require 'httparty'
 require 'dotenv/load'
-require 'pry'
 
 require './lib/data_builder/github.rb'
 require './lib/data_builder/parser.rb'
@@ -20,7 +19,7 @@ class DataBuilder
     puts "saving repos"
     save_repos
     
-    puts "getting all contributors"
+    puts "getting all contributors to:"
     get_contributor_info
     
     puts "building community list"
@@ -45,12 +44,14 @@ class DataBuilder
   end
 
   def get_contributor_info
-    # get info on contributors to repos
+    # get info on contributors to repos by repo
     @repos.each do |repo|
+      puts "    #{repo['name']}"
       contributors = @github.contributors(repo['name'])
       contributors.map! do |contributor_hash|
         contribution_data = Parser.contributor(contributor_hash)
         user = @github.user(contributor_hash['login'])
+        contribution_data['avatar_url_100'] = "#{user['avatar_url']}&size=100"
         contribution_data.merge! Parser.user(user)
       end
       repo["contributors"] = contributors
