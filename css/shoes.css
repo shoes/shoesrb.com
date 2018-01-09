@@ -175,6 +175,7 @@ img{
 
 .team-member {
   height: 170px;
+  text-align: center;
 }
 
 .contribute {
@@ -191,5 +192,6 @@ img{
 }
 
 .community-spacing {
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

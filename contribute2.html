@@ -62,24 +62,24 @@ permalink: /contribute2/
   </div>
 
 <!-- community -->
-  <div class="row community-spacing">
+  <div class="row">
     <div class="col-md-3">
       <div class="community">
-        <h1>C<i class="fa fa-github"></i>mmunity</h1>
+        <!-- <h1>C<i class="fa fa-github"></i>mmunity</h1> -->
       </div>
     </div>
     <div class="col-md-9">
       <div class="row">
-        <div class="col-md-12">
-<!--           <h1>C<i class="fa fa-github"></i>mmunity</h1>
-          <p>...and become a part of the Shoes Team!</p> -->
-
+        <div class="col-md-12 community-spacing">
+          <hr>
+          <h1>C<i class="fa fa-github"></i>mmunity</h1>
+          <p>Contribute and become a part of the team!  Many thanks to all who have kept the shoes spirit alive and helped the project continue.</p>
         </div>
       </div>
       <div class="row">
         {% for member in site.data.community %}
           {% assign member_data = member[1] %}
-          <div class="col-xs-6 col-sm-2 team-member">
+          <div class="col-xs-6 col-md-2 team-member">
             <img src="{{ member_data.avatar_url_100  }}">
             <h4><a href="{{ member_data.html_url }}" target="_blank">{{member_data.login}}</a></h4>
             <p>{{member_data.name}}</p>
