@@ -4,6 +4,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/606517?v=4
     url: https://api.github.com/users/PragTob
     contributions: 1400
+    avatar_url_100: https://avatars1.githubusercontent.com/u/606517?v=4&size=100
     html_url: https://github.com/PragTob
     name: Tobias Pfeiffer
     company: "@liefery "
@@ -16,6 +17,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/130504?v=4
     url: https://api.github.com/users/jasonrclark
     contributions: 1345
+    avatar_url_100: https://avatars3.githubusercontent.com/u/130504?v=4&size=100
     html_url: https://github.com/jasonrclark
     name: Jason R. Clark
     company: New Relic
@@ -26,7 +28,8 @@
   - login: ccoupe
     avatar_url: https://avatars3.githubusercontent.com/u/222691?v=4
     url: https://api.github.com/users/ccoupe
-    contributions: 1275
+    contributions: 1276
+    avatar_url_100: https://avatars3.githubusercontent.com/u/222691?v=4&size=100
     html_url: https://github.com/ccoupe
     name: Cecil  Coupe
     company: 
@@ -38,6 +41,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/908?v=4
     url: https://api.github.com/users/wasnotrice
     contributions: 782
+    avatar_url_100: https://avatars2.githubusercontent.com/u/908?v=4&size=100
     html_url: https://github.com/wasnotrice
     name: Eric Watson
     company: 
@@ -49,6 +53,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/25582?v=4
     url: https://api.github.com/users/ashbb
     contributions: 598
+    avatar_url_100: https://avatars2.githubusercontent.com/u/25582?v=4&size=100
     html_url: https://github.com/ashbb
     name: ashbb
     company: 
@@ -60,6 +65,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/27786?v=4
     url: https://api.github.com/users/steveklabnik
     contributions: 366
+    avatar_url_100: https://avatars2.githubusercontent.com/u/27786?v=4&size=100
     html_url: https://github.com/steveklabnik
     name: Steve Klabnik
     company: 
@@ -71,6 +77,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/4182?v=4
     url: https://api.github.com/users/luislavena
     contributions: 328
+    avatar_url_100: https://avatars2.githubusercontent.com/u/4182?v=4&size=100
     html_url: https://github.com/luislavena
     name: Luis Lavena
     company: "@area17 "
@@ -82,6 +89,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/10730930?v=4
     url: https://api.github.com/users/passenger94
     contributions: 257
+    avatar_url_100: https://avatars2.githubusercontent.com/u/10730930?v=4&size=100
     html_url: https://github.com/passenger94
     name: 
     company: 
@@ -93,6 +101,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/4992244?v=4
     url: https://api.github.com/users/KCErb
     contributions: 174
+    avatar_url_100: https://avatars2.githubusercontent.com/u/4992244?v=4&size=100
     html_url: https://github.com/KCErb
     name: KC Erb
     company: 
@@ -104,6 +113,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/100322?v=4
     url: https://api.github.com/users/jonforums
     contributions: 160
+    avatar_url_100: https://avatars3.githubusercontent.com/u/100322?v=4&size=100
     html_url: https://github.com/jonforums
     name: Jon
     company: 
@@ -115,6 +125,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/27690?v=4
     url: https://api.github.com/users/jaredmoody
     contributions: 158
+    avatar_url_100: https://avatars3.githubusercontent.com/u/27690?v=4&size=100
     html_url: https://github.com/jaredmoody
     name: Jared Moody
     company: 
@@ -126,6 +137,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/8844578?v=4
     url: https://api.github.com/users/BackOrder
     contributions: 142
+    avatar_url_100: https://avatars2.githubusercontent.com/u/8844578?v=4&size=100
     html_url: https://github.com/BackOrder
     name: Ian Trudel
     company: Ian Trudel Software Designer
@@ -137,6 +149,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/297730?v=4
     url: https://api.github.com/users/fism88
     contributions: 107
+    avatar_url_100: https://avatars0.githubusercontent.com/u/297730?v=4&size=100
     html_url: https://github.com/fism88
     name: Faraaz Ismail
     company: 
@@ -148,6 +161,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/41417?v=4
     url: https://api.github.com/users/ender672
     contributions: 106
+    avatar_url_100: https://avatars2.githubusercontent.com/u/41417?v=4&size=100
     html_url: https://github.com/ender672
     name: Timothy Elliott
     company: Loggly
@@ -159,6 +173,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/798427?v=4
     url: https://api.github.com/users/davorb
     contributions: 90
+    avatar_url_100: https://avatars0.githubusercontent.com/u/798427?v=4&size=100
     html_url: https://github.com/davorb
     name: Davor Babić
     company: 
@@ -170,6 +185,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/2063?v=4
     url: https://api.github.com/users/vertiginous
     contributions: 59
+    avatar_url_100: https://avatars1.githubusercontent.com/u/2063?v=4&size=100
     html_url: https://github.com/vertiginous
     name: Gordon Thiesfeld
     company: 
@@ -181,6 +197,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/48888?v=4
     url: https://api.github.com/users/tnobuhito
     contributions: 39
+    avatar_url_100: https://avatars0.githubusercontent.com/u/48888?v=4&size=100
     html_url: https://github.com/tnobuhito
     name: tnobuhito
     company: Japan
@@ -192,6 +209,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/16215?v=4
     url: https://api.github.com/users/martindemello
     contributions: 30
+    avatar_url_100: https://avatars2.githubusercontent.com/u/16215?v=4&size=100
     html_url: https://github.com/martindemello
     name: Martin DeMello
     company: Google
@@ -203,6 +221,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/1010618?v=4
     url: https://api.github.com/users/tapickell
     contributions: 28
+    avatar_url_100: https://avatars2.githubusercontent.com/u/1010618?v=4&size=100
     html_url: https://github.com/tapickell
     name: Todd Pickell
     company: TAP Software Development
@@ -215,6 +234,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/32212?v=4
     url: https://api.github.com/users/plexus
     contributions: 28
+    avatar_url_100: https://avatars2.githubusercontent.com/u/32212?v=4&size=100
     html_url: https://github.com/plexus
     name: Arne Brasseur
     company: 
@@ -226,6 +246,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/277819?v=4
     url: https://api.github.com/users/zzak
     contributions: 28
+    avatar_url_100: https://avatars1.githubusercontent.com/u/277819?v=4&size=100
     html_url: https://github.com/zzak
     name: Zachary Scott
     company: "@CircleCI"
@@ -237,6 +258,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/4553329?v=4
     url: https://api.github.com/users/estensland
     contributions: 27
+    avatar_url_100: https://avatars2.githubusercontent.com/u/4553329?v=4&size=100
     html_url: https://github.com/estensland
     name: Eric Stensland
     company: 
@@ -248,6 +270,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/10729?v=4
     url: https://api.github.com/users/devyn
     contributions: 24
+    avatar_url_100: https://avatars1.githubusercontent.com/u/10729?v=4&size=100
     html_url: https://github.com/devyn
     name: Devyn Cairns
     company: "@Rebls "
@@ -259,6 +282,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/5200?v=4
     url: https://api.github.com/users/greatseth
     contributions: 24
+    avatar_url_100: https://avatars0.githubusercontent.com/u/5200?v=4&size=100
     html_url: https://github.com/greatseth
     name: Seth Thomas Rasmussen
     company: 
@@ -270,6 +294,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/31674?v=4
     url: https://api.github.com/users/wilkie
     contributions: 24
+    avatar_url_100: https://avatars3.githubusercontent.com/u/31674?v=4&size=100
     html_url: https://github.com/wilkie
     name: wilkie
     company: 
@@ -281,6 +306,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/11318?v=4
     url: https://api.github.com/users/pjfitzgibbons
     contributions: 23
+    avatar_url_100: https://avatars2.githubusercontent.com/u/11318?v=4&size=100
     html_url: https://github.com/pjfitzgibbons
     name: Peter Fitzgibbons
     company: 
@@ -292,6 +318,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/4944716?v=4
     url: https://api.github.com/users/rjack1201
     contributions: 21
+    avatar_url_100: https://avatars2.githubusercontent.com/u/4944716?v=4&size=100
     html_url: https://github.com/rjack1201
     name: Roger Jack
     company: 
@@ -303,6 +330,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/212288?v=4
     url: https://api.github.com/users/nicholalexander
     contributions: 19
+    avatar_url_100: https://avatars1.githubusercontent.com/u/212288?v=4&size=100
     html_url: https://github.com/nicholalexander
     name: nichol alexander
     company: 
@@ -314,6 +342,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/49883?v=4
     url: https://api.github.com/users/bosko
     contributions: 18
+    avatar_url_100: https://avatars3.githubusercontent.com/u/49883?v=4&size=100
     html_url: https://github.com/bosko
     name: Boško Ivanišević
     company: Quark Solutions
@@ -325,6 +354,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/567771?v=4
     url: https://api.github.com/users/jrgifford
     contributions: 15
+    avatar_url_100: https://avatars2.githubusercontent.com/u/567771?v=4&size=100
     html_url: https://github.com/jrgifford
     name: James Gifford
     company: "@rvshare "
@@ -336,6 +366,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/2380983?v=4
     url: https://api.github.com/users/GazCMarsh
     contributions: 14
+    avatar_url_100: https://avatars3.githubusercontent.com/u/2380983?v=4&size=100
     html_url: https://github.com/GazCMarsh
     name: Garry Marshall
     company: 
@@ -347,6 +378,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/12560808?v=4
     url: https://api.github.com/users/OrthoDex
     contributions: 13
+    avatar_url_100: https://avatars2.githubusercontent.com/u/12560808?v=4&size=100
     html_url: https://github.com/OrthoDex
     name: Ishaan Malhi
     company: "@only-much-louder "
@@ -359,6 +391,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/23479?v=4
     url: https://api.github.com/users/codeodor
     contributions: 12
+    avatar_url_100: https://avatars1.githubusercontent.com/u/23479?v=4&size=100
     html_url: https://github.com/codeodor
     name: Sammy Larbi
     company: 
@@ -370,6 +403,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/48054?v=4
     url: https://api.github.com/users/mpapis
     contributions: 11
+    avatar_url_100: https://avatars0.githubusercontent.com/u/48054?v=4&size=100
     html_url: https://github.com/mpapis
     name: Michal Papis
     company: Opensource, Toptal
@@ -381,6 +415,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/17895?v=4
     url: https://api.github.com/users/philcrissman
     contributions: 10
+    avatar_url_100: https://avatars3.githubusercontent.com/u/17895?v=4&size=100
     html_url: https://github.com/philcrissman
     name: Phil Crissman
     company: Microsoft
@@ -392,6 +427,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/114833?v=4
     url: https://api.github.com/users/tehgeekmeister
     contributions: 9
+    avatar_url_100: https://avatars1.githubusercontent.com/u/114833?v=4&size=100
     html_url: https://github.com/tehgeekmeister
     name: Ezekiel Smithburg
     company: 
@@ -403,6 +439,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/3150092?v=4
     url: https://api.github.com/users/JesseHerrick
     contributions: 9
+    avatar_url_100: https://avatars3.githubusercontent.com/u/3150092?v=4&size=100
     html_url: https://github.com/JesseHerrick
     name: Jesse Herrick
     company: Littlelines
@@ -414,6 +451,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/2350?v=4
     url: https://api.github.com/users/pvande
     contributions: 9
+    avatar_url_100: https://avatars2.githubusercontent.com/u/2350?v=4&size=100
     html_url: https://github.com/pvande
     name: Pieter van de Bruggen
     company: 
@@ -425,6 +463,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/14406?v=4
     url: https://api.github.com/users/voxik
     contributions: 9
+    avatar_url_100: https://avatars0.githubusercontent.com/u/14406?v=4&size=100
     html_url: https://github.com/voxik
     name: Vít Ondruch
     company: 
@@ -436,6 +475,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/200500?v=4
     url: https://api.github.com/users/nashby
     contributions: 9
+    avatar_url_100: https://avatars1.githubusercontent.com/u/200500?v=4&size=100
     html_url: https://github.com/nashby
     name: Vasiliy Ermolovich
     company: 
@@ -447,6 +487,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/395621?v=4
     url: https://api.github.com/users/alindeman
     contributions: 9
+    avatar_url_100: https://avatars2.githubusercontent.com/u/395621?v=4&size=100
     html_url: https://github.com/alindeman
     name: Andy Lindeman
     company: Salesforce
@@ -458,6 +499,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/209654?v=4
     url: https://api.github.com/users/ferbass
     contributions: 8
+    avatar_url_100: https://avatars0.githubusercontent.com/u/209654?v=4&size=100
     html_url: https://github.com/ferbass
     name: Fernando Bass
     company: "@Drivemode "
@@ -469,6 +511,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/5167293?v=4
     url: https://api.github.com/users/charlesetc
     contributions: 7
+    avatar_url_100: https://avatars1.githubusercontent.com/u/5167293?v=4&size=100
     html_url: https://github.com/charlesetc
     name: 
     company: 
@@ -480,6 +523,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/2722987?v=4
     url: https://api.github.com/users/jamesaanderson
     contributions: 7
+    avatar_url_100: https://avatars2.githubusercontent.com/u/2722987?v=4&size=100
     html_url: https://github.com/jamesaanderson
     name: James A. Anderson
     company: Tesorio
@@ -491,6 +535,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/437106?v=4
     url: https://api.github.com/users/rubycoder
     contributions: 7
+    avatar_url_100: https://avatars1.githubusercontent.com/u/437106?v=4&size=100
     html_url: https://github.com/rubycoder
     name: Wayne Vucenic
     company: No Bugs Software
@@ -502,6 +547,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/53117?v=4
     url: https://api.github.com/users/snaury
     contributions: 7
+    avatar_url_100: https://avatars3.githubusercontent.com/u/53117?v=4&size=100
     html_url: https://github.com/snaury
     name: Alexey Borzenkov
     company: Yandex
@@ -513,6 +559,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/138379?v=4
     url: https://api.github.com/users/swerner
     contributions: 7
+    avatar_url_100: https://avatars1.githubusercontent.com/u/138379?v=4&size=100
     html_url: https://github.com/swerner
     name: Scott Werner
     company: "@Sayspring "
@@ -524,6 +571,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/9064062?v=4
     url: https://api.github.com/users/snood1205
     contributions: 7
+    avatar_url_100: https://avatars3.githubusercontent.com/u/9064062?v=4&size=100
     html_url: https://github.com/snood1205
     name: Eli Sadoff
     company: "@comcast"
@@ -535,6 +583,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/2042399?v=4
     url: https://api.github.com/users/phansch
     contributions: 6
+    avatar_url_100: https://avatars3.githubusercontent.com/u/2042399?v=4&size=100
     html_url: https://github.com/phansch
     name: Philipp Hansch
     company: "@esanum "
@@ -546,6 +595,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/28198?v=4
     url: https://api.github.com/users/ericboehs
     contributions: 6
+    avatar_url_100: https://avatars0.githubusercontent.com/u/28198?v=4&size=100
     html_url: https://github.com/ericboehs
     name: Eric Boehs
     company: Idea Deployers
@@ -557,6 +607,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/598?v=4
     url: https://api.github.com/users/jmhodges
     contributions: 6
+    avatar_url_100: https://avatars2.githubusercontent.com/u/598?v=4&size=100
     html_url: https://github.com/jmhodges
     name: Jeff Hodges
     company: Darkish Green
@@ -568,6 +619,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/24458?v=4
     url: https://api.github.com/users/DarkTatka
     contributions: 6
+    avatar_url_100: https://avatars3.githubusercontent.com/u/24458?v=4&size=100
     html_url: https://github.com/DarkTatka
     name: Vojtech Salbaba
     company: Friendly systems
@@ -579,6 +631,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/15712?v=4
     url: https://api.github.com/users/larsch
     contributions: 6
+    avatar_url_100: https://avatars2.githubusercontent.com/u/15712?v=4&size=100
     html_url: https://github.com/larsch
     name: Lars Christensen
     company: 
@@ -590,6 +643,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/1996030?v=4
     url: https://api.github.com/users/davidbegin
     contributions: 5
+    avatar_url_100: https://avatars3.githubusercontent.com/u/1996030?v=4&size=100
     html_url: https://github.com/davidbegin
     name: David Begin
     company: 
@@ -602,6 +656,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/3802753?v=4
     url: https://api.github.com/users/hkal
     contributions: 5
+    avatar_url_100: https://avatars2.githubusercontent.com/u/3802753?v=4&size=100
     html_url: https://github.com/hkal
     name: 
     company: 
@@ -613,6 +668,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/43569?v=4
     url: https://api.github.com/users/chuckremes
     contributions: 5
+    avatar_url_100: https://avatars2.githubusercontent.com/u/43569?v=4&size=100
     html_url: https://github.com/chuckremes
     name: Chuck Remes
     company: 
@@ -624,6 +680,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/257689?v=4
     url: https://api.github.com/users/kerrizor
     contributions: 5
+    avatar_url_100: https://avatars2.githubusercontent.com/u/257689?v=4&size=100
     html_url: https://github.com/kerrizor
     name: Kerri Miller
     company: 
@@ -635,6 +692,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/13486?v=4
     url: https://api.github.com/users/nathancarnes
     contributions: 4
+    avatar_url_100: https://avatars0.githubusercontent.com/u/13486?v=4&size=100
     html_url: https://github.com/nathancarnes
     name: Nathan Carnes
     company: ActionSprout
@@ -646,6 +704,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/2653013?v=4
     url: https://api.github.com/users/jethroo
     contributions: 4
+    avatar_url_100: https://avatars0.githubusercontent.com/u/2653013?v=4&size=100
     html_url: https://github.com/jethroo
     name: Carsten Wirth
     company: 
@@ -657,6 +716,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/13077?v=4
     url: https://api.github.com/users/danbernier
     contributions: 4
+    avatar_url_100: https://avatars2.githubusercontent.com/u/13077?v=4&size=100
     html_url: https://github.com/danbernier
     name: Dan Bernier
     company: "@tedconf "
@@ -669,6 +729,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/432939?v=4
     url: https://api.github.com/users/citelao
     contributions: 4
+    avatar_url_100: https://avatars1.githubusercontent.com/u/432939?v=4&size=100
     html_url: https://github.com/citelao
     name: Ben Stolovitz
     company: 
@@ -680,6 +741,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/1859449?v=4
     url: https://api.github.com/users/ndrluis
     contributions: 4
+    avatar_url_100: https://avatars3.githubusercontent.com/u/1859449?v=4&size=100
     html_url: https://github.com/ndrluis
     name: Andre Luis Anastacio
     company: "@Helabs "
@@ -691,6 +753,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/1770364?v=4
     url: https://api.github.com/users/minivan
     contributions: 4
+    avatar_url_100: https://avatars3.githubusercontent.com/u/1770364?v=4&size=100
     html_url: https://github.com/minivan
     name: Ivan Zarea
     company: 
@@ -702,6 +765,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/741891?v=4
     url: https://api.github.com/users/passick
     contributions: 4
+    avatar_url_100: https://avatars3.githubusercontent.com/u/741891?v=4&size=100
     html_url: https://github.com/passick
     name: Gleb Posobin
     company: 
@@ -713,6 +777,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/92825?v=4
     url: https://api.github.com/users/chrisumbel
     contributions: 4
+    avatar_url_100: https://avatars0.githubusercontent.com/u/92825?v=4&size=100
     html_url: https://github.com/chrisumbel
     name: Chris Umbel
     company: Pivotal
@@ -725,6 +790,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/299230?v=4
     url: https://api.github.com/users/pweldon
     contributions: 4
+    avatar_url_100: https://avatars1.githubusercontent.com/u/299230?v=4&size=100
     html_url: https://github.com/pweldon
     name: Peter Weldon
     company: 
@@ -736,6 +802,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/12410314?v=4
     url: https://api.github.com/users/dredknight
     contributions: 3
+    avatar_url_100: https://avatars3.githubusercontent.com/u/12410314?v=4&size=100
     html_url: https://github.com/dredknight
     name: 
     company: 
@@ -747,6 +814,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/7092?v=4
     url: https://api.github.com/users/evanfarrar
     contributions: 3
+    avatar_url_100: https://avatars0.githubusercontent.com/u/7092?v=4&size=100
     html_url: https://github.com/evanfarrar
     name: Evan Farrar
     company: Pivotal
@@ -758,6 +826,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/2395?v=4
     url: https://api.github.com/users/ecarnevale
     contributions: 3
+    avatar_url_100: https://avatars1.githubusercontent.com/u/2395?v=4&size=100
     html_url: https://github.com/ecarnevale
     name: Emanuel Carnevale
     company: 
@@ -769,6 +838,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/1372520?v=4
     url: https://api.github.com/users/eliduke
     contributions: 3
+    avatar_url_100: https://avatars0.githubusercontent.com/u/1372520?v=4&size=100
     html_url: https://github.com/eliduke
     name: Eli Duke
     company: "@InQuicker "
@@ -780,6 +850,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/1474826?v=4
     url: https://api.github.com/users/bit4bit
     contributions: 2
+    avatar_url_100: https://avatars2.githubusercontent.com/u/1474826?v=4&size=100
     html_url: https://github.com/bit4bit
     name: Jovany Leandro G.C
     company: 
@@ -791,6 +862,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/179614?v=4
     url: https://api.github.com/users/atownley
     contributions: 2
+    avatar_url_100: https://avatars0.githubusercontent.com/u/179614?v=4&size=100
     html_url: https://github.com/atownley
     name: Andrew S. Townley
     company: 
@@ -802,6 +874,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/1199848?v=4
     url: https://api.github.com/users/tlemburg
     contributions: 2
+    avatar_url_100: https://avatars1.githubusercontent.com/u/1199848?v=4&size=100
     html_url: https://github.com/tlemburg
     name: Tyler Lemburg
     company: 
@@ -813,6 +886,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/231728?v=4
     url: https://api.github.com/users/XORwell
     contributions: 2
+    avatar_url_100: https://avatars1.githubusercontent.com/u/231728?v=4&size=100
     html_url: https://github.com/XORwell
     name: Christian Nennemann
     company: 
@@ -824,6 +898,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/6820182?v=4
     url: https://api.github.com/users/Fornost461
     contributions: 2
+    avatar_url_100: https://avatars3.githubusercontent.com/u/6820182?v=4&size=100
     html_url: https://github.com/Fornost461
     name: 
     company: 
@@ -835,6 +910,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/348?v=4
     url: https://api.github.com/users/raggi
     contributions: 2
+    avatar_url_100: https://avatars2.githubusercontent.com/u/348?v=4&size=100
     html_url: https://github.com/raggi
     name: James Tucker
     company: Google
@@ -846,6 +922,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/1994?v=4
     url: https://api.github.com/users/kavu
     contributions: 2
+    avatar_url_100: https://avatars0.githubusercontent.com/u/1994?v=4&size=100
     html_url: https://github.com/kavu
     name: Max Riveiro
     company: "@polys-vote "
@@ -857,6 +934,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/33736?v=4
     url: https://api.github.com/users/deepj
     contributions: 2
+    avatar_url_100: https://avatars0.githubusercontent.com/u/33736?v=4&size=100
     html_url: https://github.com/deepj
     name: 
     company: 
@@ -868,6 +946,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/12496?v=4
     url: https://api.github.com/users/rdp
     contributions: 2
+    avatar_url_100: https://avatars3.githubusercontent.com/u/12496?v=4&size=100
     html_url: https://github.com/rdp
     name: Roger Pack
     company: FamilySearch (LDS church)
@@ -879,6 +958,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/567750?v=4
     url: https://api.github.com/users/ychatz
     contributions: 2
+    avatar_url_100: https://avatars1.githubusercontent.com/u/567750?v=4&size=100
     html_url: https://github.com/ychatz
     name: Yannis Chatzimichos
     company: Google
@@ -890,6 +970,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/7901?v=4
     url: https://api.github.com/users/paulv
     contributions: 1
+    avatar_url_100: https://avatars3.githubusercontent.com/u/7901?v=4&size=100
     html_url: https://github.com/paulv
     name: Paul Visscher
     company: 
@@ -901,6 +982,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/47405?v=4
     url: https://api.github.com/users/mickeyreiss
     contributions: 1
+    avatar_url_100: https://avatars0.githubusercontent.com/u/47405?v=4&size=100
     html_url: https://github.com/mickeyreiss
     name: Mickey Reiss
     company: 
@@ -912,6 +994,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/213236?v=4
     url: https://api.github.com/users/s3v3n
     contributions: 1
+    avatar_url_100: https://avatars1.githubusercontent.com/u/213236?v=4&size=100
     html_url: https://github.com/s3v3n
     name: 
     company: 
@@ -923,6 +1006,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/3163390?v=4
     url: https://api.github.com/users/piisalie
     contributions: 1
+    avatar_url_100: https://avatars0.githubusercontent.com/u/3163390?v=4&size=100
     html_url: https://github.com/piisalie
     name: Paul Dawson
     company: 
@@ -934,6 +1018,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/1809980?v=4
     url: https://api.github.com/users/garciadanny
     contributions: 1
+    avatar_url_100: https://avatars2.githubusercontent.com/u/1809980?v=4&size=100
     html_url: https://github.com/garciadanny
     name: Danny Garcia
     company: 
@@ -945,6 +1030,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/787783?v=4
     url: https://api.github.com/users/markzalar
     contributions: 1
+    avatar_url_100: https://avatars0.githubusercontent.com/u/787783?v=4&size=100
     html_url: https://github.com/markzalar
     name: Mark Zalar
     company: 
@@ -956,6 +1042,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/12886?v=4
     url: https://api.github.com/users/dalton
     contributions: 1
+    avatar_url_100: https://avatars2.githubusercontent.com/u/12886?v=4&size=100
     html_url: https://github.com/dalton
     name: Adam
     company: IHMC
@@ -967,6 +1054,7 @@
     avatar_url: https://avatars1.githubusercontent.com/u/3507?v=4
     url: https://api.github.com/users/manveru
     contributions: 1
+    avatar_url_100: https://avatars1.githubusercontent.com/u/3507?v=4&size=100
     html_url: https://github.com/manveru
     name: Michael Fellinger
     company: "@XING"
@@ -978,6 +1066,7 @@
     avatar_url: https://avatars3.githubusercontent.com/u/27350?v=4
     url: https://api.github.com/users/kou
     contributions: 1
+    avatar_url_100: https://avatars3.githubusercontent.com/u/27350?v=4&size=100
     html_url: https://github.com/kou
     name: Kouhei Sutou
     company: ClearCode Inc.
@@ -989,6 +1078,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/18?v=4
     url: https://api.github.com/users/wayneeseguin
     contributions: 1
+    avatar_url_100: https://avatars0.githubusercontent.com/u/18?v=4&size=100
     html_url: https://github.com/wayneeseguin
     name: Wayne E. Seguin
     company: http://starkandwayne.com/
@@ -1000,6 +1090,7 @@
     avatar_url: https://avatars0.githubusercontent.com/u/188?v=4
     url: https://api.github.com/users/nex3
     contributions: 1
+    avatar_url_100: https://avatars0.githubusercontent.com/u/188?v=4&size=100
     html_url: https://github.com/nex3
     name: Natalie Weizenbaum
     company: 
@@ -1011,6 +1102,7 @@
     avatar_url: https://avatars2.githubusercontent.com/u/45554?v=4
     url: https://api.github.com/users/gwenn
     contributions: 1
+    avatar_url_100: https://avatars2.githubusercontent.com/u/45554?v=4&size=100
     html_url: https://github.com/gwenn
     name: gwenn
     company: 
