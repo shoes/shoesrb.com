@@ -1,9 +1,8 @@
 html{
-  background: fixed no-repeat center center url('/img/background.jpg');
+  /*background: fixed no-repeat center center url('/img/background.jpg');*/
 }
 body{
   background: no-repeat url('/img/star-background.png');
-  color: white;
 }
 
 .main{
@@ -13,6 +12,7 @@ body{
 
 .navbar{
   background: url('/img/star-background.png');
+  color: white;
 }
 
 .navbar a{
@@ -24,6 +24,11 @@ body{
 .intro{
   padding-top: 40px;
   padding-bottom: 40px;
+  color: white;
+}
+
+.intro h1{
+  line-height: 1.2;
 }
 
 .subtitle{
@@ -34,14 +39,30 @@ body{
   font-size: x-large;
 }
 
+.screenshots{
+  display: inline;
+}
+
+.screenshot{
+  position: relative;
+  top: 0;
+}
+
+.face{
+  margin-top: 20%;
+  margin-left: -20%;
+}
+
+.clock{
+  margin-top: 10%;
+  margin-left: -10%;
+}
+
 img.logo{
   margin: 40px auto 0;
   display: block;
 }
 
-.intro h1{
-  line-height: 1.2;
-}
 .center {
   width: 100%;
   text-align: center;
